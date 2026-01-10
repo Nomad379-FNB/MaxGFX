@@ -9,6 +9,9 @@
 		<style>
 			*{
 				font-family: trebuchet, Helvetica, sans-serif;
+				padding: 0;
+    				margin: 0;
+  				box-sizing: border-box;
 				}
 			h1{
 				color: indigo;
@@ -23,30 +26,49 @@
 				background-color: #C2EAF0;
 				margin: 2px;
 				}
-			#block1{
-			
+			.wrap960{
+   				max-width: 960px;
+    				margin: 0 auto;    
 				}
-				
+			.box{
+    				display: inline-block;
+    				*display: inline;
+    				zoom: 1;
+    				vertical-align: top;
+    				width: 31%;
+    				min-width: 250px;
+    				margin: 1%;
+   				border: 2px solid #f00;
+    				min-height: 200px;
+    				text-align: center;
+    				line-height: 200px;
 				}
-			#block2{
-				
+
+
+			@media only screen and (max-width: 960px) {
+    				.box{
+        				display: block;
+        				margin: 1% auto 0 auto;
+   					}
 				}
 		</style>
 	</head>
 	<body>
-		<center><h1><font size="7" face="trebuchet, helvetica, verdana">MaxGFX Digital Strategist</font></h1></center>
-		<div align="center"><img src="images/MaxGfx_Logo2-3-1-Bold.png" alt="MaxGFX Logo" width="128px" height="128px" align="middle" left-margin="50px">
+		<center><h1><font size="7" face="trebuchet, helvetica, verdana">MaxGFX Digital Strategist</font></h1></center>//title
+		<div align="center"><img src="images/MaxGfx_Logo2-3-1-Bold.png" alt="MaxGFX Logo" width="128px" height="128px" 				align="middle" left-margin="50px">//logo
 		</div>
 		<p><font size="3" face="trebuchet, helvetica, verdana">
 <b> Aboot Moi </b>
 		</font></p><hr><br>
 		<font size="5"><center>
-    		<div id="block2">
+    		<div id="box">
+lorem
     		</div>
-		<div id="block1">
+		<div id="box">
+lorem
     		</div>
 		</font>
-				<br>This Website was hand-made in Notepad. I do not collect, store, share, or sell your personal 						information. <br><br>
+				<br>This website was hand-made in Notepad. I do not collect, store, share, or sell your personal 						information. <br><br>
 		</font>
 		
 		<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"> View GitHub policies here. </a>
