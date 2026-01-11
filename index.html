@@ -5,40 +5,115 @@
 		<meta name=“viewport” content=“width=device-width, initial-scale=1”>
 		<meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
   		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-		<title>MaxGFX Digital Content Strategist</title>
+		<title>MaxGFX Digital Content Optimization Strategist</title>
 		<meta name="description" content="A bespoke SEO strategy engineered to balance AEO/GEO and organic search, complete with 			copy and creative crafted by a UI/UX content specialist. Your digital makeover awaits.">
 		<style>
 			*{
-				font-family: trebuchet, Helvetica, sans-serif;
+				font-family: trebuchet ms, Helvetica, sans-serif;
 				padding: 0;
     				margin: 0;
   				box-sizing: border-box;
 				max-width: 100%;
     				margin: 0 auto;
 				}
+			.topnav {
+  				background-color: DarkSlateGrey;
+				}
+
+			/* Style the links inside the navigation menu */
+			.topnav a {
+ 				color: white;
+  				padding: 14px 16px;
+  				text-decoration: none;
+  				font-size: 17px;
+				}
+
+			/* Hide the navigation links on mobile*/
+			.topnav #myLinks {
+  				display: none;
+				}
+
+
+
+			/* Style the image within the icon container */
+			.menu-image {
+  				width: 15%; 
+  				padding: 1%;
+				display: block;
+				margin: 0 auto;				
+				}
+
+			/* Add a grey background color on mouse-over */
+			.topnav a:hover {
+  				background-color: LightSteelBlue;
+  				color: navy;
+				}
+
+			/* Show the navigation menu links when the "responsive" class is added to topnav on mobile */
+			.topnav.responsive #myLinks {
+  				display: block;
+				}
+			li{
+				display: inline;
+				}
+
+  
 			h1{
-				color: indigo;
-				
+				color: navy;
+				margin: 5%;
+				text-align: center;
 				}
 			p{
 				color: teal;
-				margin: 3% 15%;
-
+				margin: 3% 10%;
+				font-size: auto;
 				}
 			body{
-				background-color: #C2EAF0;
+				background-color: mintcream;
 				margin: 2%;
 				}
 
 			.left, .right {
-    				float: none;
+    				color: teal;
+				float: none;
     				width: 100%;
     				}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: LightSteelBlue;
+}
+
+
     
     			@media only screen and (min-width: 768px) {
 				*{
 					max-width: 960px;
-				}	
+				}
+				.topnav #myLinks {
+    					display: block;
+					background-color: midnightblue;
+  				}
+
   				.left, .right {
       					height: 400px;
   				}
@@ -52,18 +127,43 @@
       					width: 50%;
 				}
 			}
+$(function(){
+    $('.menu-item').click(function(){
+        var uls = $(this).find("ul");
+        $('.menu-item').removeClass("active");
+        $(this).addClass("active");
+        $('.menu-item').find("ul").slideUp(200, function(){
+            uls.slideDown(500);
+        });   
+    });
+});
+
 		</style>
 	</head>
 	<body>
-		<center><h1><font size="7" face="trebuchet, helvetica, verdana">MaxGFX Digital Strategist</font></h1></center>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-		<div align="center"><img src="images/MaxGfx_Logo2-3-1-Bold.png" alt="MaxGFX Logo" width="128px" height="128px" 				align="middle" left-margin="50px">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+		</script>
+		
+		<div class="topnav">
+  			<ul><li><a href="#home"><img src="images/MaxGfx_Logo2-3-1-Boldw.png" alt="MaxGFX Logo" class="menu-image" align="center"></a></li>
+    			<div id="myLinks">
+				
+    				<li><a href="#portfolio">Portfolio</a></li>
+    				<li><a href="#contact">Contact</a></li>
+    				<li><a href="#about">About</a></li>
+  			</ul></div>
+ 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    
+			</a>
 		</div>
+		
+		<h1>Digital Optimization Guidance</h1>
+		
+		<p>Transform your brand and bring your expertise right into the hands of your waiting audience. With more than a decade of hands‑on experience in multi‑channel content strategy, I blend creative direction, data‑driven insights, and rigorous testing to deliver copy and campaigns that rank, resonate, and convert.<br>
+My work spans SEO and AEO optimization, content architecture, and full‑funnel strategy—supported by a strong foundation in analytics. I use advanced data tools and search insights to uncover opportunities, measure impact, and continuously refine performance.
+I also bring deep experience translating complex environmental topics—such as aquaculture, permaculture, and wetlands stewardship—into accessible, action‑driving content. Whether the goal is education, engagement, or organic growth, I build content ecosystems that make it easy for audiences to find answers and take action.<br>
+If you want content that’s strategic, search‑optimized, and built for continuous improvement, you’re in the right place.<br>
 
-		<p><font size="3" face="trebuchet, helvetica, verdana">
-		<b> 
-
-I provide digital content strategy packages with copy, creative, and complete marketing campaigns.
 
 <br>Your customers are searching for you. How will you reach them? </b>
 		</font></p><hr><br>
@@ -76,7 +176,7 @@ Modern Search Optimized Content
     		</center></div>
 	</div>
 		</font>
-		<center><br>This website was hand-made in Notepad. I do not collect, store, share, or sell your personal 						information. <br><br>
+		<center><br>This website was handmade in Notepad. I do not collect, store, share, or sell your personal information. <br><br>
 		</font>
 		
 		<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"> View GitHub policies here. </a>
