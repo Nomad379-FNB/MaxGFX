@@ -13,7 +13,7 @@
 				padding: 0;
     				margin: 0;
   				box-sizing: border-box;
-				max-width: 960px;
+				max-width: 100%;
     				margin: 0 auto;
 				}
 			h1{
@@ -27,46 +27,31 @@
 				}
 			body{
 				background-color: #C2EAF0;
-				margin: 2px;
-				}
-			.box{
-    				display: inline-block;
-    				*display: inline;
-    				zoom: 1;
-    				vertical-align: top;
-    				width: 31%;
-    				min-width: 250px;
-    				margin: 1%;
-   				border: 2px solid #f00;
-    				min-height: 200px;
-    				text-align: center;
-    				line-height: 200px;
+				margin: 2%;
 				}
 
 			.left, .right {
-      				height: 400px;
-				background: cyan;
-    				}
-    
-    			.left {
-      				float: left;
-     				width: 50%;
-   				}
-    
-    			.right {
-      				float: right;
-      				width: 50%;
-				}
-			@media only screen and (max-width: 960px) {
-    				.box{
-        			display: block;
-        			margin: 1% auto 0 auto;
-   					}
-  				.left, .right {
     				float: none;
     				width: 100%;
-  					}
+    				}
+    
+    			@media only screen and (min-width: 768px) {
+				*{
+					max-width: 960px;
+				}	
+  				.left, .right {
+      					height: 400px;
+  				}
+				.left {
+      					float: left;
+     					width: 50%;
+   				}
+    
+    				.right {
+      					float: right;
+      					width: 50%;
 				}
+			}
 		</style>
 	</head>
 	<body>
