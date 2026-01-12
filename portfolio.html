@@ -62,7 +62,7 @@
 			color: navy;
 			margin: 3vh 1vw 1vh;
 			text-align: center;
-				}
+			}
 		h2{
 			color: navy;
 			margin: 1vh 1vw;
@@ -74,8 +74,14 @@
 			font-size: auto;
 			}
 		body{
+			display: grid;
+			grid-template-rows: auto 1fr auto;
+			min-height: 100dvh;
 			background-color: mintcream;
-			margin: 2%;
+			margin: 0;
+			}
+		main{
+			padding: 1rem;
 			}
 		footer {
 			background-color: darkslategrey;
@@ -95,6 +101,7 @@
 			}
 
 #portfolioLinks{
+	width: 100vw;
 	font-size: 2em;
 	display: flex;
 	flex-direction: column;
@@ -189,7 +196,7 @@
 		<li><a href="contact.html">Contact</a></li>
 	</ul>
   </nav>
-
+<div class="pageContainer">
 <!-- draw header -->
   <h1>Portfolio</h1>
 
@@ -198,7 +205,6 @@
   <li><a href="copy.html" target="_blank">Copy</a></li>
   <li><a href="strategy.html" target="_blank">Strategy</a></li>
    <li><a href="creative.html" target="_blank">Creative</a></li>
-
    </ul></p>
   
 </div>
@@ -208,6 +214,7 @@
     This website was handmade in Notepad. I do not collect, store, share, or sell your personal information.<br>
     <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">View GitHub policies here.</a>
   </footer>
+  </div>
 
 <!-- fetch bootstrap -->
 <script>

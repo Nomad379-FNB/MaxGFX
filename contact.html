@@ -39,7 +39,7 @@
 
 #myLinks li a {
     display: block;
-    color: white;
+    color: mintcream;
     padding: 2vh 4vw;
     text-decoration: none;
     font-size: 1.3rem;
@@ -66,7 +66,7 @@
 			color: navy;
 			margin: 3vh 1vw 1vh;
 			text-align: center;
-				}
+			}
 		h2{
 			color: navy;
 			margin: 1vh 1vw;
@@ -78,8 +78,13 @@
 			font-size: auto;
 			}
 		body{
+			display: grid;
+			grid-template-rows: auto 1fr auto;
+			min-height: 100dvh;
 			background-color: mintcream;
-			margin: 2%;
+			margin: 0;
+		main{
+			padding: 1rem;
 			}
 		footer {
 			background-color: darkslategrey;
@@ -97,7 +102,25 @@
 			display: flex;
 			justify-content: center;
 			}
+#contactLinks{
+	width: 100vw;
+	font-size: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;   
+    padding: 2vh 2vh 15vh 2vh;
+	list-style-type: none;
+	}
 
+#contactLinks li a{
+	color: teal;
+	text-decoration: none;
+	}
+	
+#contactLinks li a:hover {
+    color: navy;
+	}
 
 /*responsive design for desktop*/
 	@media screen and (min-width: 768px) {
@@ -173,15 +196,16 @@
 		<li><a href="portfolio.html">Portfolio</a></li>
 		<li><a href="about.html">About</a></li>
 		<li><a href="contact.html">Contact</a></li>
-	</ul>
-  </nav>
+	</ul></nav>
 
 <!-- draw header -->
   <h1>Contact</h1>
 
 <!-- draw body text -->
-  <p>
-  <a href="http://www.linkedin.com/in/maxgfxloel">LinkedIn</a>
+  <p><ul id="contactLinks">
+  <li><a href="mailto:maxgfx3@gmail.com" target="_blank">e-Mail MaxGFX</a></li>
+  <li><a href="http://www.linkedin.com/in/maxgfxloel" target="_blank">Connect on LinkedIn</a></li>
+  </ul>
   </p>
   
 </div>
