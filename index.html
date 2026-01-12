@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="“viewport”" content="“width=device-width", initial-scale="1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
   <title>MaxGFX Digital Content Optimization Strategist</title>
   <meta name="description" content="A bespoke SEO strategy engineered to balance AEO/GEO and organic search, complete with copy and creative crafted by a UI/UX content specialist. Your digital makeover awaits.">
+
   <style>
 /* mobile first display */
 
                         *{
                                 font-family: trebuchet ms, Helvetica, sans-serif;
                                 padding: 0;
-                                box-sizing: border-box;
-                                max-width: 100vw;
-                                margin: 0 auto;
+                                box-sizing: border-box;                              
                                 }
 /* define nav bar container */
                         nav {
                                 background-color: DarkSlateGrey;
                                 display: flex;
+				justify-content: center;
+				align-items: center;
                                 }
 
 
@@ -28,35 +29,19 @@
                         nav #myLinks {
                                 display: none;
                                 }
-
-/* Style logo within nav container */
-                        .menu-image {
-                                width: 7vw;
-                                height: auto; 
-                                padding: 1%;
-                                display: flex;
-				justify-content: center;
-  				align-items: center;
-                              
-                                }
 			nav ul {
   				list-style-type: none;
   				margin: 0;
-  				padding: 0;
   				overflow: hidden;
-
  				}
 
-  			nav ul li {
- 
-  				}
+  			
 
   			nav ul li a {
   				display: flex;
   				justify-content: center;
   				align-items: center;
   				color: white;
-  				text-align: center;
  				padding: 2vh 1vw;
  				text-decoration: none;
   				font-size: 17px;
@@ -66,15 +51,30 @@
   				background-color: LightSteelBlue;
   				color: navy;
   				}
+
+/* Style logo within nav container */
+                        .menu-image {
+                                width: 10vw;
+                                height: auto; 
+                                padding: 1vh 1vw;
+                                display: flex;
+				justify-content: center;
+  				align-items: center;
+                                }
 /* style section elements */
                         h1{
                                 color: navy;
-                                margin: 5%;
+                                margin: 5vh 1vw;
                                 text-align: center;
                                 }
+                        h2{
+                                color: navy;
+                                margin: 5vh 1vw;
+                                text-align: center;
+				}
                         p{
                                 color: teal;
-                                margin: 3vw 5vh;
+                                margin: 3vh 5vw;
                                 font-size: auto;
                                 }
                         body{
@@ -92,37 +92,56 @@
 			footer a {
   				color: lightsteelblue;
   				}
-                        .left, .right {
+                        div #left, #right {
                                 color: teal;
-                                float: none;
                                 width: 100vw;
+                                display: flex;
+				justify-content: center;
                                 }
   
   
  /*responsive design for desktop*/
 		@media (min-width: 768px) {
-                               
+			nav {
+				justify-content: space-between;
+				align-content: center;
+				}
+			nav ul {
+				justify-content: space-between;
+				align-content: center;
+				}
+
 			nav #myLinks {
  				display: flex;
-				justify-content: center;
-				align-items: center;
+				justify-content: space-between;
+				align-content: center;
 				color: midnightblue;
                                 }
+			nav ul li {
+ 				display: flex;
+				justify-content: space-between;
+				padding: 1vw;
+  				}
                         .menu-image {
-                                width: 3vw;
-				float: left;
+				width: 5vw;
+ 				display: flex;
+				justify-content: space-between;
+				padding: 1vh 1vw;
                                 }
-      			.left, .right {
-                                        height: 400px;
-                                }
+      			.flex-row {
+					width: 100vw;
+                                        height: auto;
+                                	display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					padding: 1vh 1vw;
+					}
 			.left {
-                                        float: left;
-                                        width: 35vw;
+				flex: 1 1 48vw;
                                 }
     
 			.right {
-                                        float: right;
-                                        width: 35vw;
+				flex: 1 1 48vw;
                                 }
                         }
 
@@ -133,24 +152,24 @@
   </style>
 </head>
 <body>
-<!-- fetch bootstrap -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <!-- write nav bar -->
   <nav>
+	<a href="javascript:void(0);" onclick="myFunction()"><img src="images/MaxGfx_Logo2-3-1-Boldw.png" alt="MaxGFX Logo" class="menu-image"></a>
+
     <ul>
-	<li><a href="index.html"><img src="images/MaxGfx_Logo2-3-1-Boldw.png" alt="MaxGFX Logo" class="menu-image" align="center"></a></li>
-	<div id="myLinks">
+	<nav id="myLinks">
+		<li><a href="index.html">Home</a></li>
 		<li><a href="#portfolio">Portfolio</a></li>
-		<li><a href="#contact">Contact</a></li>
 		<li><a href="#about">About</a></li>
-	</div>
-    </ul><a href="javascript:void(0);" onclick="myFunction()"></a>
+		<li><a href="#contact">Contact</a></li>
+	</nav>
+    </ul>
   </nav>
 
 <!-- draw header -->
   <h1>Digital Optimization Guidance</h1>
+
 <!-- draw body text -->
   <p>Transform your brand and bring your expertise right into the hands of your waiting audience. With more than a decade of hands‑on experience in multi‑channel content strategy, I blend creative direction, data‑driven insights, and rigorous testing to deliver copy and campaigns that rank, resonate, and convert.<br>
   My work spans SEO and AEO optimization, content architecture, and full‑funnel strategy—supported by a strong foundation in analytics. I use advanced data tools and search insights to uncover opportunities, measure impact, and continuously refine performance. I also bring deep experience translating complex environmental topics—such as aquaculture, permaculture, and wetlands stewardship—into accessible, action‑driving content. Whether the goal is education, engagement, or organic growth, I build content ecosystems that make it easy for audiences to find answers and take action.<br>
@@ -159,15 +178,23 @@
   Your customers are searching for you. How will you reach them?<br></p>
   <hr>
   <br>
+<div class="flex-row">
   <div class="left">
-    <font size="5"><b>Data-Driven Strategy & Reporting</b></font>
+    <h2>Data-Driven Strategy & Reporting</h2>
+<p>Transform your brand and bring your expertise right into the hands of your waiting audience. With more than a decade of hands‑on experience in multi‑channel content strategy, I blend creative direction, data‑driven insights, and rigorous testing to deliver copy and campaigns that rank, resonate, and convert.</p>
   </div>
+
   <div class="right">
-    <font size="5"><b>Modern Search Optimized Content</b></font>
+    <h2>Modern Search Optimized Content</h2>
+<p>Transform your brand and bring your expertise right into the hands of your waiting audience. With more than a decade of hands‑on experience in multi‑channel content strategy, I blend creative direction, data‑driven insights, and rigorous testing to deliver copy and campaigns that rank, resonate, and convert.</p>
   </div>
+</div>
   <footer>
     This website was handmade in Notepad. I do not collect, store, share, or sell your personal information.<br>
     <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">View GitHub policies here.</a>
   </footer>
+
+<!-- fetch bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
