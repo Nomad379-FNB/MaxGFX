@@ -11,160 +11,169 @@
   <style>
 /* mobile first display */
 
-                        *{
-                                font-family: trebuchet ms, Helvetica, sans-serif;
-                                padding: 0;
-                                box-sizing: border-box;                              
-                                }
+		*{
+			font-family: trebuchet ms, Helvetica, sans-serif;
+			padding: 0;
+			box-sizing: border-box;                              
+			}
 /* define nav bar container */
-                        nav {
-                                background-color: DarkSlateGrey;
-                                display: flex;
-				justify-content: center;
-				align-items: center;
-                                }
+		nav {
+			background-color: DarkSlateGrey;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			}
 
 
 /* hide nav links on mobile */
-                        nav #myLinks {
-                                display: none;
-                                }
-			nav ul {
-  				list-style-type: none;
-  				margin: 0;
-  				overflow: hidden;
- 				}
+		#myLinks {
+			display: none;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			background-color: DarkSlateGrey;
+}
 
-  			
 
-  			nav ul li a {
-  				display: flex;
-  				justify-content: center;
-  				align-items: center;
-  				color: white;
- 				padding: 2vh 1vw;
- 				text-decoration: none;
-  				font-size: 17px;
- 				}
 
-  			nav ul li a:hover {
-  				background-color: LightSteelBlue;
-  				color: navy;
-  				}
+#myLinks li a {
+    display: block;
+    color: white;
+    padding: 2vh 4vw;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
 
+#myLinks li a:hover {
+    background-color: LightSteelBlue;
+    color: navy;
+}
+
+
+	
 /* Style logo within nav container */
-                        .menu-image {
-                                width: 10vw;
-                                height: auto; 
-                                padding: 1vh 1vw;
-                                display: flex;
-				justify-content: center;
-  				align-items: center;
-                                }
+		.menu-image {
+			width: 10vw;
+			height: auto; 
+			padding: 2vh 1vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			}
 /* style section elements */
-                        h1{
-                                color: navy;
-                                margin: 5vh 1vw;
-                                text-align: center;
-                                }
-                        h2{
-                                color: navy;
-                                margin: 5vh 1vw;
-                                text-align: center;
+		h1{
+			color: navy;
+			margin: 3vh 1vw 1vh;
+			text-align: center;
 				}
-                        p{
-                                color: teal;
-                                margin: 3vh 5vw;
-                                font-size: auto;
-                                }
-                        body{
-                                background-color: mintcream;
-                                margin: 2%;
-                                }
-			footer {
-  				background-color: darkslategrey;
-  				color: white; 
-  				text-align: center; 
-  				padding: 10vh 0; 
-  				width: 100vw;
-  				overflow: hidden;
-  				}
-			footer a {
-  				color: lightsteelblue;
-  				}
-                        div #left, #right {
-                                color: teal;
-                                width: 100vw;
-                                display: flex;
-				justify-content: center;
-                                }
-  
-  
- /*responsive design for desktop*/
-		@media (min-width: 768px) {
-			nav {
-				justify-content: space-between;
-				align-content: center;
+		h2{
+			color: navy;
+			margin: 1vh 1vw;
+			text-align: center;
+			}
+		p{
+			color: teal;
+			margin: 1vh 5vw 3vh;
+			font-size: auto;
+			}
+		body{
+			background-color: mintcream;
+			margin: 2%;
+			}
+		footer {
+			background-color: darkslategrey;
+			color: white; 
+			text-align: center; 
+			padding: 1%; 
+			overflow: hidden;
+			}
+		footer a {
+			color: lightsteelblue;
+			}
+		div #left, div #right {
+			color: teal;
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+			}
+
+
+/*responsive design for desktop*/
+	@media screen and (min-width: 768px) {
+		nav {
+			justify-content: space-between;
+			align-content: center;
+			}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			overflow: hidden;
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+			}
+
+		#myLinks {
+			display: flex;
+			justify-content: flex-end;
+			align-content: center;
+			color: midnightblue;
+							}
+										
+		nav ul li a {
+			color: white;
+			padding: 2vh 1vw;
+			text-decoration: none;
+			font-size: 1.5rem;
+			}
+
+		nav ul li a:hover {
+			background-color: LightSteelBlue;
+			color: navy;
+			}
+
+		nav ul li {
+			display: flex;
+			justify-content: space-between;
+			padding: 1vw;
+			}
+		.menu-image {
+			width: 7vw;
+			display: flex;
+			justify-content: space-between;
+			padding: 1vh 1vw;
+			}
+		.flex-row {
+			width: 100vw;
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			padding: 1vh 1vw;
+			}
+		.left {
+			flex: 1 1 48vw;
+			}
+
+		.right {
+			flex: 1 1 48vw;
 				}
-			nav ul {
-				justify-content: space-between;
-				align-content: center;
-				}
-
-			nav #myLinks {
- 				display: flex;
-				justify-content: space-between;
-				align-content: center;
-				color: midnightblue;
-                                }
-			nav ul li {
- 				display: flex;
-				justify-content: space-between;
-				padding: 1vw;
-  				}
-                        .menu-image {
-				width: 5vw;
- 				display: flex;
-				justify-content: space-between;
-				padding: 1vh 1vw;
-                                }
-      			.flex-row {
-					width: 100vw;
-                                        height: auto;
-                                	display: flex;
-					flex-direction: row;
-					flex-wrap: wrap;
-					padding: 1vh 1vw;
-					}
-			.left {
-				flex: 1 1 48vw;
-                                }
-    
-			.right {
-				flex: 1 1 48vw;
-                                }
-                        }
-
-
-    
-                       
-
+	   }
+	   
   </style>
 </head>
 <body>
-
 <!-- write nav bar -->
   <nav>
-	<a href="javascript:void(0);" onclick="myFunction()"><img src="images/MaxGfx_Logo2-3-1-Boldw.png" alt="MaxGFX Logo" class="menu-image"></a>
+	<a href="javascript:void(0);" class="menu-image" onclick="myFunction()"><img src="images/MaxGfx_Logo2-3-1-Boldw.png" alt="MaxGFX Logo" class="menu-image"></a>
 
-    <ul>
-	<nav id="myLinks">
+	<ul id="myLinks">
 		<li><a href="index.html">Home</a></li>
 		<li><a href="#portfolio">Portfolio</a></li>
 		<li><a href="#about">About</a></li>
 		<li><a href="#contact">Contact</a></li>
-	</nav>
-    </ul>
+	</ul>
   </nav>
 
 <!-- draw header -->
@@ -177,7 +186,7 @@
   <br>
   Your customers are searching for you. How will you reach them?<br></p>
   <hr>
-  <br>
+  
 <div class="flex-row">
   <div class="left">
     <h2>Data-Driven Strategy & Reporting</h2>
@@ -195,6 +204,18 @@
   </footer>
 
 <!-- fetch bootstrap -->
+<script>
+function myFunction() {
+	if (window.innerWidth >= 768) return;
+
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
