@@ -107,7 +107,13 @@
 			display: flex;
 			justify-content: center;
 			}
+		#serviceList{
+			list-style-type: none;
+			color: teal;
+			display: grid;
+			font-size: 1.3rem;
 
+			}
 
 /*responsive design for desktop*/
 	@media screen and (min-width: 768px) {
@@ -160,14 +166,17 @@
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
-			padding: 1vh 1vw;
+			padding: 1rem;
 			}
 		.left {
-			flex: 1 1 48vw;
+			flex: 1 1 auto;
+			margin: 1vh 1vw 1vh 20vw;
 			}
 
 		.right {
-			flex: 1 1 48vw;
+			flex: 1 1 auto;
+			margin: 1vh;
+
 				}
 	   }
 	   
@@ -181,20 +190,59 @@
 	<ul id="myLinks">
 		<li><a href="index.html">Home</a></li>
 		<li><a href="portfolio.html">Portfolio</a></li>
-		<li><a href="about.html">About</a></li>
+		<li><a href="about.html">Services</a></li>
 		<li><a href="contact.html">Contact</a></li>
 	</ul>
   </nav>
 
 <!-- draw header -->
-  <h1>About MaxGFX</h1>
+  <h1>Digital Optimization Services</h1>
 
 <!-- draw body text -->
-  <p>Transform your brand and bring your expertise right into the hands of your waiting audience. With more than a decade of hands‑on experience in multi‑channel content strategy, I blend creative direction, data‑driven insights, and rigorous testing to deliver copy and campaigns that rank, resonate, and convert.<br>
-  My work spans SEO and AEO optimization, content architecture, and full‑funnel strategy—supported by a strong foundation in analytics. I use advanced data tools and search insights to uncover opportunities, measure impact, and continuously refine performance. I also bring deep experience translating complex environmental topics—such as aquaculture, permaculture, and wetlands stewardship—into accessible, action‑driving content. Whether the goal is education, engagement, or organic growth, I build content ecosystems that make it easy for audiences to find answers and take action.<br>
-  If you want content that’s strategic, search‑optimized, and built for continuous improvement, you’re in the right place.<br>
-  <br>
-  Your customers are searching for you. How will you reach them?</p>
+  <p>
+  
+  <div class="flex-row">
+  <div class="left">
+  <ul id="serviceList">
+<li>A/B Testing</li>
+<li>Ad Design</li>
+<li>Advertising Campaign Management</li>
+<li>B2B/D2C Marketing Campaigns</li>
+<li>Blogging</li>
+<li>Branding</li>
+<li>Competitive Research</li>
+<li>Copy Editing</li>
+<li>Copy Writing</li>
+<li>Data Analytics</li>
+<li>E-Commerce Content Creation</li>
+<li>Email Marketing</li>
+<li>Meta Advertising</li>
+<li>Google Ads</li>
+<li>Graphic Design</li>
+</ul>
+</div>
+
+  <div class="right">
+  <ul id="serviceList">
+<li>Keyword Research</li>
+<li>Layout Design</li>
+<li>Logo Design</li>
+<li>Mobile Marketing </li>
+<li>Omnichannel Marketing Campaigns</li>
+<li>Proofreading</li>
+<li>Public Relations</li>
+<li>SEO/AEO/GEO Strategic Campaigns</li>
+<li>Technical Writing</li>
+<li>Typography</li>
+<li>User Experience (UX) Optimization</li>
+<li>User Interface (UI) Development</li>
+<li>Web Design</li>
+<li>Web Development</li>
+<li>Wireframing</li>
+</div></ul>
+</div>
+
+ </p>
   
 </div>
   <footer>
