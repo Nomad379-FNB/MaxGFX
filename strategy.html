@@ -61,7 +61,7 @@ main {
   padding: 1rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: navy;
   text-align: center;
   margin: 2rem 0 1rem;
@@ -74,6 +74,56 @@ p {
   max-width: 900px;
   line-height: 1.6;
 }
+
+.featured-case-study {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.case-study-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.case-study-summary {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.case-study-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.metric {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.metric-value {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+
+.case-study-focus {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
 
 /* SECTIONS */
 .section {
@@ -161,9 +211,69 @@ footer a {color: lightsteelblue}
   <p>A curated selection of timelines, strategy decks, and performance reports showcasing SEO, ASO, and content campaigns.</p>
 </section>
 
+<!-- FEATURED CASE STUDY -->
+<section class="section featured-case-study">
+  <h2>Featured Case Study</h2>
+
+  <div class="case-study-card">
+    <h3>Stabilizing Seasonal SEO & Scaling AI Visibility</h3>
+
+    <p class="case-study-summary">
+      Led a full-funnel SEO + AEO strategy to eliminate seasonal keyword volatility and build compounding organic growth across traditional search and LLM-driven discovery.
+    </p>
+
+   <div class="case-study-metrics">
+  <div class="metric">
+    <span class="metric-value">+55%</span>
+    <span class="metric-label">Top 50 Keywords</span>
+  </div>
+
+  <div class="metric">
+    <span class="metric-value">+23%</span>
+    <span class="metric-label">Top 3 Rankings</span>
+  </div>
+
+  <div class="metric">
+    <span class="metric-value">+574%</span>
+    <span class="metric-label">AI Overviews Visibility</span>
+  </div>
+
+  <div class="metric">
+    <span class="metric-value">+49%</span>
+    <span class="metric-label">SERP Features</span>
+  </div>
+
+  <div class="metric">
+    <span class="metric-value">#1</span>
+    <span class="metric-label">ChatGPT Sentiment</span>
+  </div>
+
+</div>
+
+
+    <p>
+      By replacing campaign-based SEO with a persistent topical authority model, I transformed cyclical performance into sustained growth—removing slow-season drop-offs and accelerating keyword expansion from 3% to 55% post-strategy deployment.
+    </p>
+
+    <p class="case-study-focus">
+      <strong>Focus:</strong> Content strategy, technical SEO, AEO optimization, keyword stabilization, AI discoverability
+    </p>
+
+    <!-- Optional CTA -->
+    <!-- <a href="/case-studies/seo-aeo-2025.html" class="btn">View Full Case Study</a> -->
+  </div>
+</section>
+
+
+
 <!-- CARDS GRID -->
 <section class="section cards">
 
+ <div class="card">
+    <img src="resources/cellImage_716624588_2.jpg" alt="2025 SEO Report">
+    <div><a href="https://docs.google.com/presentation/d/1jf2KCJl1dmoE7CeOY8iklWzadDCxBZeHU5hjE-28_SA/edit?usp=sharing" target="_blank">2024/25 SEO Results</a></div>
+  </div>
+  
   <div class="card">
     <img src="resources/cellImage_716624588_0.jpg" alt="Project Timeline">
     <div><a href="https://docs.google.com/spreadsheets/d/1TXQfH6sJH1cp1ABSgntRWgaJTbqUejCpxQ5tBFii94o/edit?usp=sharing" target="_blank">Example Project Deliverable Timeline</a></div>
@@ -174,10 +284,7 @@ footer a {color: lightsteelblue}
     <div><a href="https://docs.google.com/presentation/d/1lWPt3vmcUmM-qMgBHadjxoiuUm20c90aYCHlA-WuEC8/edit?usp=sharing" target="_blank">Example SEO Strategy Deck</a></div>
   </div>
 
-  <div class="card">
-    <img src="resources/cellImage_716624588_2.jpg" alt="2025 SEO Report">
-    <div><a href="https://docs.google.com/presentation/d/1jf2KCJl1dmoE7CeOY8iklWzadDCxBZeHU5hjE-28_SA/edit?usp=sharing" target="_blank">2025 Annual SEO Strategy Performance Report</a></div>
-  </div>
+ 
 
   <div class="card">
     <img src="resources/cellImage_716624588_3.jpg" alt="2024 SEO Data">
