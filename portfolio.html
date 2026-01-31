@@ -72,6 +72,7 @@
 			color: teal;
 			margin: 1vh 5vw 3vh;
 			font-size: auto;
+			text-align: center;
 			}
 		body{
 			display: grid;
@@ -118,16 +119,23 @@
     padding: 2vh;
 	list-style-type: none;
 	}
-
 #portfolioLinks li a{
 	color: teal;
 	text-decoration: none;
 	}
-	
 #portfolioLinks li a:hover {
     color: navy;
 	}
-	
+	#listy{
+			width: 100vw;
+			list-style-type: none;
+			color: teal;
+			justify-items: center;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			font-size: 1.3rem;
+			}
+
 /*responsive design for desktop*/
 	@media screen and (min-width: 768px) {
 		nav {
@@ -148,7 +156,7 @@
 			justify-content: flex-end;
 			align-content: center;
 			color: midnightblue;
-							}
+			}
 										
 		nav ul li a {
 			color: white;
@@ -188,7 +196,7 @@
 		.right {
 			flex: 1 1 48vw;
 				}
-	   }
+
 	   
   </style>
 </head>
@@ -214,11 +222,21 @@
   <li><a href="strategy.html" target="_blank">Strategy</a></li>
    <li><a href="creative.html" target="_blank">Creative</a></li>
    </ul></p>
-  
-</div>
-  <div id="logoWall">
-	<p>Worked with:</p>
-    <img src="images/asFeatured.png" alt="As Featured by The Pond Guy, Gummicube, Amazon, Headspace, Adobe & more"><br>
+  <p> Content Trusted By:
+<ul id="listy">
+  <li>PetCo</li>
+  <li>The Pond Guy</li>
+  <li>Headspace</li>
+  <li>Sephora</li>
+  <li>Nike</li>
+  <li>Coinbase</li>
+  <li>Gummicube</li>
+  <li>Adobe</li>
+  <li>Amazon</li>
+  <li>Microsoft</li>
+  <li>Realtor.com</li>
+  <li>& More</li>
+  </ul></p>
 	</div>
 <footer>
     This website was handmade in Notepad. I do not collect, store, share, or sell your personal information.<br>
