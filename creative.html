@@ -1,11 +1,215 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link type="text/css" rel="stylesheet" href="resources/sheet.css" >
-<style type="text/css">.ritz .waffle a { color: inherit; }.ritz .waffle .s2{background-color:#ffffff;text-align:center;color:#2c2c4d;font-family:docs-Comfortaa,Arial;font-size:10pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:0;}.ritz .waffle .s1{background-color:#ffffff;text-align:center;color:#2c2c4d;font-family:docs-Comfortaa,Arial;font-size:10pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s3{background-color:#ffffff;text-align:left;color:#2c2c4d;font-family:docs-Comfortaa,Arial;font-size:10pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s0{background-color:#ffffff;text-align:left;color:#2c2c4d;font-family:docs-Comfortaa,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}</style>
-<div class="ritz grid-container" dir="ltr"><table class="waffle" cellspacing="0" cellpadding="0"><thead><tr><th class="row-header freezebar-origin-ltr"></th><th id="1058706373C0" style="width:19px;" class="column-headers-background">
-</th><th id="1058706373C1" style="width:385px;" class="column-headers-background"></th><th id="1058706373C2" style="width:331px;" class="column-headers-background"></th></tr></thead><tbody><tr style="height: 20px"><th id="1058706373R0" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">
-</div></th><td class="s0"></td><td class="s0"></td><td class="s0"></td></tr><tr style="height: 181px"><th id="1058706373R1" style="height: 181px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 181px">
-</div></th><td class="s1"></td><td class="s2"><div style="width:385px;height:181px;"><img src="resources/cellImage_1058706373_0.jpg" style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;pointer-events:none;"/></div></td><td class="s3" dir="ltr">Event Flyer, Digital, c. 2019</td></tr><tr style="height: 181px"><th id="1058706373R2" style="height: 181px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 181px">
-</div></th><td class="s1"></td><td class="s2"><div style="width:385px;height:181px;"><img src="resources/cellImage_1058706373_1.jpg" style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;pointer-events:none;"/></div></td><td class="s3" dir="ltr">Event Flyer, Digital, c. 2019</td></tr><tr style="height: 181px"><th id="1058706373R3" style="height: 181px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 181px">
-</div></th><td class="s1"></td><td class="s2"><div style="width:385px;height:181px;"><img src="resources/cellImage_1058706373_2.jpg" style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;pointer-events:none;"/></div></td><td class="s3" dir="ltr">Event Flyer, Digital, c. 2019</td></tr><tr style="height: 181px"><th id="1058706373R4" style="height: 181px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 181px">
-</div></th><td class="s1"></td><td class="s2"><div style="width:385px;height:181px;"><img src="resources/cellImage_1058706373_3.jpg" style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;pointer-events:none;"/></div></td><td class="s3" dir="ltr">Event Flyer, Digital, c. 2019</td></tr><tr style="height: 181px"><th id="1058706373R5" style="height: 181px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 181px">
-</div></th><td class="s1"></td><td class="s2"><div style="width:385px;height:181px;"><img src="resources/cellImage_1058706373_4.jpg" style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;pointer-events:none;"/></div></td><td class="s3" dir="ltr">Painting Lesson, Acrylic on Canvas, c. 2019 - 2020</td></tr><tr style="height: 181px"><th id="1058706373R6" style="height: 181px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 181px">
-</div></th><td class="s1"></td><td class="s2"><div style="width:385px;height:181px;"><img src="resources/cellImage_1058706373_5.jpg" style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;pointer-events:none;"/></div></td><td class="s3" dir="ltr">Painting Lesson, Acrylic on Wood, c. 2018</td></tr></tbody></table></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MaxGFX — Artwork & Event Flyers</title>
+
+<style>
+/* BASE */
+* {
+  font-family: trebuchet ms, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  background-color: mintcream;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: DarkSlateGrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myLinks {
+  display: none;
+  list-style: none;
+  width: 100%;
+  background-color: DarkSlateGrey;
+  padding: 0;
+  margin: 0;
+}
+
+#myLinks li a {
+  display: block;
+  color: mintcream;
+  padding: 2vh 4vw;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+#myLinks li a:hover {
+  background-color: LightSteelBlue;
+  color: navy;
+}
+
+.menu-image {
+  width: 10vw;
+  padding: 2vh 1vw;
+}
+
+/* TYPOGRAPHY */
+main {
+  padding: 1rem;
+}
+
+h1, h2 {
+  color: navy;
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+p {
+  color: teal;
+  text-align: center;
+  margin: 1rem auto 2rem;
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+/* SECTIONS */
+.section {
+  background: mintcream;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+}
+
+/* CARDS GRID */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  background: linear-gradient(#fdfefe, #e8f4f4);
+  border: 1px solid #ccc;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card img {
+  width: 150px;
+  height: 120px;
+  object-fit: scale-down;
+}
+
+.card div {
+  color: teal;
+  font-weight: bold;
+}
+footer {
+	background-color: darkslategrey;
+	color: white; 
+	text-align: center; 
+	padding: 1%; 
+	overflow: hidden;
+}
+footer a {color: lightsteelblue}
+
+/* DESKTOP GRID */
+@media screen and (min-width:768px) {
+  nav { justify-content: space-between; }
+  nav ul { display:flex; }
+  #myLinks { display:flex; justify-content:flex-end; }
+  .menu-image { width:7vw; }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="javascript:void(0);" class="menu-image" onclick="myFunction()">
+    <img src="images/MaxGfx_Logo2-3-1-Boldw.png" alt="MaxGFX Logo" class="menu-image">
+  </a>
+  <ul id="myLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="section">
+  <h1>Artwork & Event Flyers</h1>
+  <p>A curated gallery of event flyers and painting lessons from 2018–2020, showcasing design and visual storytelling.</p>
+</section>
+
+<!-- CARDS GRID -->
+<section class="section cards">
+
+  <div class="card">
+    <img src="resources/cellImage_1058706373_0.jpg" alt="Event Flyer 2019">
+    <div>Event Flyer, Digital, c. 2019</div>
+  </div>
+
+  <div class="card">
+    <img src="resources/cellImage_1058706373_1.jpg" alt="Event Flyer 2019">
+    <div>Event Flyer, Digital, c. 2019</div>
+  </div>
+
+  <div class="card">
+    <img src="resources/cellImage_1058706373_2.jpg" alt="Event Flyer 2019">
+    <div>Event Flyer, Digital, c. 2019</div>
+  </div>
+
+  <div class="card">
+    <img src="resources/cellImage_1058706373_3.jpg" alt="Event Flyer 2019">
+    <div>Event Flyer, Digital, c. 2019</div>
+  </div>
+
+  <div class="card">
+    <img src="resources/cellImage_1058706373_4.jpg" alt="Painting Lesson Acrylic Canvas">
+    <div>Painting Lesson, Acrylic on Canvas, c. 2019–2020</div>
+  </div>
+
+  <div class="card">
+    <img src="resources/cellImage_1058706373_5.jpg" alt="Painting Lesson Acrylic on Wood">
+    <div>Painting Lesson, Acrylic on Wood, c. 2018</div>
+  </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  This website was handmade in Notepad. I do not collect, store, share, or sell your personal information.<br>
+  <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">View GitHub policies here.</a>
+</footer>
+
+<script>
+function myFunction() {
+  if (window.innerWidth >= 768) return;
+  var x = document.getElementById("myLinks");
+  x.style.display = x.style.display === "block" ? "none" : "block";
+}
+window.addEventListener("resize", function () {
+  var x = document.getElementById("myLinks");
+  x.style.display = window.innerWidth >= 768 ? "flex" : "none";
+});
+</script>
+
+</body>
+</html>
