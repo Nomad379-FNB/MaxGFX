@@ -31,27 +31,29 @@ main{
 /* NAV — unchanged */
 
 nav {
-	background-color: teal;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #myLinks {
-	display: none;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	background-color: teal;
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background-color: teal;
 }
 
 #myLinks li a {
-	display: block;
-	color: mintcream;
-	padding: 2vh 4vw;
-	text-decoration: none;
-	font-size: 1.3rem;
+  display: block;
+  color: mintcream;
+  padding: 2vh 0;
+  text-decoration: none;
+  font-size: 1.3rem;
 }
 
 #myLinks li a:hover {
@@ -224,7 +226,12 @@ nav ul{
 
 <nav>
 <a href="javascript:void(0);" class="menu-image" onclick="myFunction()">
-<img src="images/MaxGfx_Logo2-3-1-Boldw.png" class="menu-image">
+<picture>
+  <!-- Desktop image-->
+	<source media="(min-width: 768px)" srcset="images/MaxGfx_Logo2-3-1-Boldw.png" class="menu-image" alt="MaxGFX Logo">
+  <!-- Mobile image -->
+  <img src="images/logoMenu.png" class="menu-image" alt="Menu Logo">
+</picture>
 </a>
 
 <ul id="myLinks">
