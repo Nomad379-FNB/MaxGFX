@@ -72,8 +72,14 @@ nav {
   }
 
 /* TYPOGRAPHY */
-h1,h2 { color: navy; text-align: center; margin: 1rem; }
-p, h3 { color: teal; margin: 1vh 5vw 2vh; line-height: 1.6; }
+h1,h2 { color: navy; 
+		text-align: center; 
+		margin: 1rem; }
+p, h3 { color: teal; 
+		text-align: center; 
+		margin: 1vh 5vw 2vh; 
+		line-height: 1.6; 
+		}
 
 /* HERO */
 .hero {
@@ -94,6 +100,69 @@ p, h3 { color: teal; margin: 1vh 5vw 2vh; line-height: 1.6; }
 
 .hero-buttons a:hover{
 	background:navy;
+}
+.btn {
+	display: grid;
+	text-align: center;
+	align-items: center;
+	color: white;
+	background-color: teal;
+	text-decoration: none;
+	outline: 2px solid lightsteelblue; border-radius: 50px; padding: 10px;
+}
+.btn:hover{
+ color: white;
+ background-color: navy;
+ text-decoration: none;
+ outline: 2px solid white; border-radius: 50px; padding: 10px;
+}
+.featured-case-study {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.case-study-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.case-study-summary {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.case-study-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.metric {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.metric-value {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+
+.case-study-focus {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
 }
 /* CARDS */
 .cards {
@@ -187,14 +256,79 @@ footer a { color: lightsteelblue; }
 
 <!-- HERO -->
 <section class="hero">
-<h1>Selected Work & Strategic Experience</h1>
-<p>MaxGFX helps teams translate complex products into clear, measurable digital growth. Digital specialties span content strategy, SEO/AEO architecture, UX-informed copy, and performance optimization — supporting organizations from startups to global brands.</p>
+<h1>Portfolio & Strategic Experience</h1>
+<p>Digital specialties span content strategy, SEO/AEO architecture, UX-informed copy, and performance optimization.</p>
 <div class="hero-buttons">
 <a href="about.html">Browse Services</a>
 <a href="contact.html">Book a Consultation</a>
 </div>
 </section>
 
+<!-- FEATURED CASE STUDY -->
+<section class="section featured-case-study">
+  <h2>Featured Case Study</h2>
+
+  <div class="case-study-card">
+    <h3>Stabilizing Seasonal SEO & Scaling AI Visibility</h3>
+
+    <p class="case-study-summary">
+      Led a full-funnel SEO + AEO strategy to eliminate seasonal keyword volatility and build compounding organic growth across traditional search and LLM-driven discovery.
+    </p>
+
+   <div class="case-study-metrics">
+  <div class="metric">
+    <span class="metric-value">+55%</span>
+    <span class="metric-label">Top 50 Keywords</span>
+  </div>
+
+  <div class="metric">
+    <span class="metric-value">+23%</span>
+    <span class="metric-label">Top 3 Rankings</span>
+  </div>
+
+  <div class="metric">
+    <span class="metric-value">+574%</span>
+    <span class="metric-label">AI Overviews Visibility</span>
+  </div>
+
+  <div class="metric">
+    <span class="metric-value">+49%</span>
+    <span class="metric-label">SERP Features</span>
+  </div>
+
+  <div class="metric">
+    <span class="metric-value">#1</span>
+    <span class="metric-label">Sentiment - ChatGPT</span>
+  </div>
+
+  <div class="metric">
+    <span class="metric-value">+1,350%</span>
+    <span class="metric-label">Organic Shopping Active Users</span>
+  </div>
+  
+  <div class="metric">
+    <span class="metric-value">#1</span>
+    <span class="metric-label">SOV:Sentiment - Google AIO</span>
+  </div>
+    
+  <div class="metric">
+    <span class="metric-value">3.7M</span>
+    <span class="metric-label">Monthly Audience</span>
+  </div>
+</div>
+
+
+    <p>
+      By replacing campaign-based SEO with a persistent topical authority model, I transformed cyclical performance into sustained growth—removing slow-season drop-offs and accelerating keyword expansion from 3% to 55% post-strategy deployment.
+    </p>
+
+    <p class="case-study-focus">
+      <strong>Focus:</strong> Content strategy, technical SEO, AEO optimization, keyword stabilization, AI discoverability
+    </p>
+
+    <a href="images/MaxGFX_Featured_Case_Study.pdf" class="btn">View Full Case Study</a>
+  </div>
+</section>
 <!-- PORTFOLIO LINKS -->
 <section class="section center">
 <h2>Portfolio Areas</h2>
