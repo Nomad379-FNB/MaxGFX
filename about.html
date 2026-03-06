@@ -4,9 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>MaxGFX Digital Content Optimization Strategist</title>
+<title>Services | MaxGFX AI Search Optimization Consultancy</title>
+<meta name="description" content="MaxGFX is a boutique AI Search Optimization consultancy. We build the strategy, content, and off-site presence that gets your brand cited by ChatGPT, Google AI Overviews, and Perplexity. Retainers from $4,500/month.">
 
 <style>
+
 /* BASE */
 * {
   font-family: trebuchet ms, Helvetica, sans-serif;
@@ -20,10 +22,9 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100dvh;
   background-color: mintcream;
-  margin: 0;
 }
 
-main { padding: 1rem; }
+main { padding: 0; }
 
 /* NAV */
 nav {
@@ -32,6 +33,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 #myLinks {
@@ -58,109 +62,464 @@ nav {
 }
 
 .menu-image {
-  width: 10vw;
+  width: 15vw;
   height: auto;
-  padding: 2vh 1vw;
+  padding: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* TYPOGRAPHY */
-h1,h2,h3 { color: navy; text-align: center; margin: 1rem; }
-p { color: teal; margin: 1vh 5vw 2vh; line-height: 1.6; }
+h1, h2, h3 { color: navy; text-align: center; margin: 1rem; }
+p { color: teal; line-height: 1.65; margin: 0; }
 
 /* HERO */
 .hero {
+  background: navy;
   text-align: center;
-  padding: 4rem 1rem;
-  background: linear-gradient(#fdfefe,#e8f4f4);
+  padding: 4.5rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent, transparent 40px,
+    rgba(0,128,128,0.04) 40px,
+    rgba(0,128,128,0.04) 80px
+  );
+  pointer-events: none;
+}
+
+.hero > * { position: relative; z-index: 1; }
+
+.hero-eyebrow {
+  display: inline-block;
+  background: rgba(0,128,128,0.6);
+  color: mintcream;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.32rem 1rem;
+  border-radius: 3px;
+  margin-bottom: 1.2rem;
+  border: 1px solid rgba(173,216,230,0.35);
+}
+
+.hero h1 {
+  color: mintcream;
+  font-size: clamp(1.8rem, 4vw, 2.9rem);
+  max-width: 780px;
+  margin: 0 auto 1rem;
+  line-height: 1.2;
+}
+
+.hero h1 span { color: lightsteelblue; }
+
+.hero p {
+  color: mintcream;
+  opacity: 0.88;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
 }
 
 .hero-buttons a {
   display: inline-block;
   background: teal;
   color: white;
-  padding: 10px 18px;
-  margin: 10px;
+  padding: 12px 26px;
+  margin: 6px;
   text-decoration: none;
   border-radius: 6px;
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.15s;
 }
 
-.hero-buttons a:hover{
-	background:navy;
+.hero-buttons a:hover { background: #006666; transform: translateY(-2px); }
+
+.hero-buttons a.outline {
+  background: transparent;
+  border: 2px solid mintcream;
+  color: mintcream;
 }
+
+.hero-buttons a.outline:hover { background: rgba(255,255,255,0.1); }
+
 /* SECTIONS */
 .section {
-  background: mintcream;
-  margin: 2rem auto;
-  padding: 3rem 1rem;
   max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
 }
 
-.center { text-align:center; }
-
-/* STATS */
-.stats {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+.section-dark {
+  background: navy;
+  padding: 4rem 1.5rem;
 }
 
-.stat {
-  background: linear-gradient(#fdfefe,#e8f4f4);
-  padding: 2rem;
+.section-dark h2 { color: lightsteelblue; }
+.section-dark h3 { color: mintcream; }
+.section-dark p  { color: mintcream; opacity: 0.85; }
+
+.section-tint {
+  background: linear-gradient(#f0fafa, #e4f4f4);
+  padding: 4rem 1.5rem;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-sub {
   text-align: center;
+  color: teal;
+  max-width: 620px;
+  margin: 0 auto 2.5rem;
+  font-size: 0.97rem;
+  line-height: 1.65;
 }
 
-/* CARDS / SERVICES */
-.cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
-
-.card {
-  border: 1px solid #ccc;
-  padding: 2rem;
-  text-align: center;
-}
- .service-list {
-    list-style: none; /* Removes bullets */
-    padding: 0;
-    margin: 0;
-	color: teal;
-  }
-
-  .service-list li {
-    margin-bottom: 0.5em; 
-  }
-/* FEATURED */
-.work {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
-
-.work img { width: 100%; }
-
-/* PROCESS */
-.process {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: .75rem;
-  text-align: center;
-}
-
-/* ABOUT */
-.about {
+/* OFFERINGS */
+.offerings {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
-.about img { width: 100%; }
+.offering {
+  background: white;
+  border: 1px solid #c0dada;
+  border-top: 4px solid teal;
+  border-radius: 6px;
+  padding: 2.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.offering:hover {
+  box-shadow: 0 8px 28px rgba(0,100,100,0.13);
+  transform: translateY(-3px);
+}
+
+.offering.featured { border-top-color: navy; }
+
+.offering-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: teal;
+  background: #e0f4f4;
+  padding: 0.2rem 0.65rem;
+  border-radius: 3px;
+  margin-bottom: 0.85rem;
+}
+
+.offering h3 {
+  text-align: left;
+  margin: 0 0 0.3rem;
+  font-size: 1.35rem;
+}
+
+.offering-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: teal;
+  margin-bottom: 1.1rem;
+}
+
+.offering-price .price-note {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: steelblue;
+  margin-left: 0.4rem;
+}
+
+.offering > p {
+  color: #336;
+  font-size: 0.97rem;
+  line-height: 1.68;
+  margin-bottom: 1.5rem;
+}
+
+.offering-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #ddeaea;
+  padding-top: 1.1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.offering-features li {
+  font-size: 0.9rem;
+  color: #225;
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.offering-features li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: teal;
+  font-size: 0.82rem;
+}
+
+.offering-cta {
+  display: inline-block;
+  margin-top: 1.75rem;
+  background: navy;
+  color: white;
+  padding: 11px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.97rem;
+  font-weight: bold;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.offering-cta:hover { background: #001a4d; transform: translateY(-1px); }
+.offering-cta.teal-btn { background: teal; }
+.offering-cta.teal-btn:hover { background: #006666; }
+
+/* RETAINER STRUCTURE */
+.retainer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  margin-top: 1.8rem;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.retainer-item {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(173,216,230,0.22);
+  border-left: 4px solid teal;
+  border-radius: 0 6px 6px 0;
+  padding: 1.3rem 1.5rem;
+}
+
+.retainer-item h3 {
+  text-align: left;
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  color: lightsteelblue;
+}
+
+.retainer-item p { font-size: 0.9rem; opacity: 0.82; }
+
+/* SERVICE MENU */
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.menu-item {
+  background: white;
+  border: 1px solid #c0dada;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: box-shadow 0.15s;
+}
+
+.menu-item:hover { box-shadow: 0 4px 16px rgba(0,100,100,0.1); }
+
+.menu-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+
+.menu-item h3 {
+  text-align: left;
+  margin: 0 0 0.25rem;
+  font-size: 0.97rem;
+  color: navy;
+}
+
+.menu-item p {
+  font-size: 0.85rem;
+  color: #448;
+  line-height: 1.55;
+}
+
+/* ── TEAM SECTION ── */
+.team-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.team-card {
+  background: white;
+  border: 1px solid #c0dada;
+  border-radius: 6px;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.team-card:hover {
+  box-shadow: 0 6px 22px rgba(0,100,100,0.11);
+  transform: translateY(-2px);
+}
+
+.team-avatar {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, teal, navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.team-card.lead .team-avatar {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  background: linear-gradient(135deg, navy, #003366);
+  border: 3px solid teal;
+}
+
+.team-info h3 {
+  text-align: left;
+  margin: 0 0 0.15rem;
+  font-size: 1.05rem;
+  color: navy;
+}
+
+.team-role {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: white;
+  background: teal;
+  padding: 0.18rem 0.65rem;
+  border-radius: 3px;
+  margin-bottom: 0.65rem;
+}
+
+.team-card.lead .team-role { background: navy; }
+
+.team-info p {
+  font-size: 0.88rem;
+  color: #448;
+  line-height: 1.6;
+}
+
+.team-info .team-focus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.focus-tag {
+  font-size: 0.75rem;
+  color: teal;
+  background: #e8f7f7;
+  border: 1px solid #b8dede;
+  padding: 0.18rem 0.6rem;
+  border-radius: 12px;
+}
+
+.dog-card {
+  background: linear-gradient(#fffdf8, #fff8ee);
+  border-color: #d4c8a8;
+  border-top: 2px dashed #c8a96e;
+}
+
+.dog-avatar {
+  background: linear-gradient(135deg, #c8a96e, #a07840) !important;
+}
+
+.dog-role {
+  background: #a07840 !important;
+}
+
+/* BIO */
+.bio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bio-photo {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid teal;
+}
+
+.bio-text h2 { text-align: left; margin-left: 0; }
+.bio-text p  { color: #336; margin-bottom: 1rem; }
+
+.bio-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.cred-tag {
+  background: #e0f4f4;
+  color: navy;
+  font-size: 0.78rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 20px;
+  border: 1px solid #b0d8d8;
+}
+
+/* CTA */
+.cta-strip {
+  background: linear-gradient(135deg, teal 0%, #004d4d 100%);
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+}
+
+.cta-strip h2 { color: mintcream; font-size: clamp(1.3rem, 3vw, 1.9rem); }
+.cta-strip p  { color: mintcream; opacity: 0.88; max-width: 520px; margin: 0 auto 1.5rem; }
+
+.cta-strip a {
+  display: inline-block;
+  background: navy;
+  color: white;
+  padding: 13px 32px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.cta-strip a:hover { background: #001a4d; transform: translateY(-2px); }
 
 /* FOOTER */
 footer {
@@ -168,25 +527,42 @@ footer {
   color: white;
   text-align: center;
   padding: 1%;
-  overflow: hidden;
 }
 
 footer a { color: lightsteelblue; }
 
 /* DESKTOP */
-@media screen and (min-width:768px) {
-  nav {flex-direction: row;
-  justify-content: space-between; }
-  nav ul { display:flex; }
-  #myLinks { display:flex; justify-content:flex-end; }
-  .menu-image { width:7vw; padding:0.3rem;}
+@media screen and (min-width: 768px) {
+  nav { flex-direction: row; justify-content: space-between; }
+  nav ul { display: flex; }
+  #myLinks { display: flex; justify-content: flex-end; }
+  .menu-image { width: 7vw; padding: 0.3rem; }
 
-  .stats { grid-template-columns: repeat(3,1fr); }
-  .cards { grid-template-columns: repeat(3,1fr); }
-  .work { grid-template-columns: repeat(2,1fr); }
-  .process { grid-template-columns: repeat(5,1fr); }
-  .about { grid-template-columns: 200px 1fr; }
+  .offerings          { grid-template-columns: repeat(2, 1fr); }
+  .retainer-grid      { grid-template-columns: repeat(2, 1fr); }
+  .menu-grid          { grid-template-columns: repeat(2, 1fr); }
+  .bio-grid           { grid-template-columns: 220px 1fr; }
+  .offering-features  { grid-template-columns: 1fr 1fr; }
+  .team-grid          { grid-template-columns: repeat(3, 1fr); flex-direction: column; }
+
+  .team-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
+
+/* FADE IN */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-eyebrow { animation: fadeUp 0.4s ease both 0.1s; }
+.hero h1      { animation: fadeUp 0.4s ease both 0.22s; }
+.hero p       { animation: fadeUp 0.4s ease both 0.36s; }
+.hero-buttons { animation: fadeUp 0.4s ease both 0.48s; }
+
 </style>
 </head>
 
@@ -194,80 +570,298 @@ footer a { color: lightsteelblue; }
 
 <!-- NAV -->
 <nav>
-<a href="javascript:void(0);" class="menu-image" onclick="myFunction()">
-<picture>
-  <!-- Desktop image-->
-	<source media="(min-width: 768px)" srcset="images/MaxGfx_Logo2-3-1-Boldw.png" class="menu-image" alt="MaxGFX Logo">
-  <!-- Mobile image -->
-  <img src="images/logoMenu.png" class="menu-image" alt="Menu Logo">
-</picture>
-</a>
-
-<ul id="myLinks">
-<li><a href="index.html">Home</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="about.html">Services</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+  <a href="javascript:void(0);" class="menu-image" onclick="myFunction()">
+    <picture>
+      <source media="(min-width: 768px)" srcset="images/MaxGFX-dog-Logo-White.png" alt="MaxGFX Logo">
+      <img src="images/MaxGFX-dog-Logo-MenuW.png" class="menu-image" alt="Menu Logo">
+    </picture>
+  </a>
+  <ul id="myLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
 
 <main>
 
-<!-- HERO -->
-<section class="hero">
-<h1>Digital Strategies Driving Growth</h1>
-<p>Transform your brand and bring your expertise directly to your audience. MaxGFX blends creative direction, data-driven insights, and rigorous testing to deliver strategies that adapt to emerging technologies. Advanced analytics guide modern SEO, AEO, content architecture, and full-funnel strategy. <br>Expect content ecosystems that make it easy for audiences to find answers and take action.</p>
-<div class="hero-buttons">
-<a href="portfolio.html">View Case Studies</a>
-<a href="contact.html">Book a Consultation</a>
-</div>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-eyebrow">AI Search Optimization · AEO · GEO · SEO</div>
+    <h1>Content That Gets Your Brand <span><br>Into the Answer.</span></h1>
+    <p>AI visibility is a content problem. MaxGFX builds the strategy, structure, and writing that earns citations from ChatGPT, Google AI Overviews, and Perplexity — and compounds every month.</p>
+    <div class="hero-buttons">
+      <a href="contact.html">Book a Consultation</a>
+      <a href="portfolio.html" class="outline">See Documented Results</a>
+    </div>
+  </section>
+
+  <!-- OFFERINGS -->
+  <section class="section center">
+    <h2>How MaxGFX Works With You</h2>
+    <p class="section-sub">Most engagements start with an Audit. It tells you exactly where your brand stands in AI search, what's suppressing your citations, and what a realistic strategy looks like. From there, a monthly retainer is scoped to your situation.</p>
+
+    <div class="offerings">
+
+      <div class="offering">
+        <span class="offering-tag">Start Here</span>
+        <h3>AI Visibility Audit</h3>
+        <div class="offering-price">$1,500 – $3,000 <span class="price-note">one-time · scope-dependent</span></div>
+        <p>A structured review of how ChatGPT, Perplexity, and Google AI Overviews currently see your brand — what's being cited, what's being missed, and exactly why. Delivered as a prioritized, actionable roadmap you can implement immediately or carry into a retainer.</p>
+        <ul class="offering-features">
+          <li>AI citation landscape analysis</li>
+          <li>Brand sentiment review across LLMs</li>
+          <li>Schema and structured data gap report</li>
+          <li>Entity authority assessment</li>
+          <li>Competitive AI visibility comparison</li>
+          <li>Prioritized fix roadmap with impact estimates</li>
+          <li>Results walkthrough call included</li>
+        </ul>
+      </div>
+
+      <div class="offering featured">
+        <span class="offering-tag">Monthly Retainer</span>
+        <h3>AI Search Optimization</h3>
+        <div class="offering-price">$4,500+ <span class="price-note">per month · scope discussed on call</span></div>
+        <p>Ongoing strategy, content production, and performance reporting built to grow AI citation share and organic visibility month over month. Scope is defined upfront each term — deliverables are agreed before work begins, not billed by the hour after the fact.</p>
+        <ul class="offering-features">
+          <li>Monthly SEO/AEO strategy roadmap</li>
+          <li>SERP and answer engine analysis</li>
+          <li>Keyword and topic research</li>
+          <li>Search intent mapping</li>
+          <li>Content production from service menu</li>
+          <li>Schema markup and structured data</li>
+          <li>QA on all published pages</li>
+          <li>Monthly AI visibility and ranking report</li>
+          <li>Consultation calls each term</li>
+        </ul>
+       </div>
+
+    </div>
+  </section>
+
+  <!-- HOW THE RETAINER WORKS -->
+  <section class="section-dark">
+    <div class="section-inner center">
+      <h2>How Every Retainer Term Works</h2>
+      <p class="section-sub" style="color:mintcream; opacity:0.8;">Each monthly term is structured the same way — strategy first, then production. Content doesn't get written without a strategic reason behind it.</p>
+
+      <div class="retainer-grid">
+        <div class="retainer-item">
+          <h3>Strategy Opens Every Term</h3>
+          <p>Each month begins with a fresh roadmap, updated keyword research, and search intent mapping. The strategy layer informs every piece of content produced that month — the two are inseparable.</p>
+        </div>
+        <div class="retainer-item">
+          <h3>Flexible Content Scope</h3>
+          <p>Production is drawn from a defined service menu agreed upfront — new AEO pages, revisions, metadata, social copy, community seeding, and more. Scope is locked before the term begins so there are no surprises mid-month.</p>
+        </div>
+        <div class="retainer-item">
+          <h3>Measured and Reported Monthly</h3>
+          <p>AI citation share, SERP feature acquisition, ranking movement, and organic traffic are tracked every term. You always know what changed, why, and what the next move is.</p>
+        </div>
+        <div class="retainer-item">
+          <h3>Built to Compound</h3>
+          <p>Content authority, entity signals, and structured data accumulate over time. Each term's work builds directly on the last — which is why the results curve steepens after month three, not flattens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE MENU -->
+  <section class="section">
+    <div class="section-inner center">
+      <h2>What Gets Produced</h2>
+      <p class="section-sub">Retainer content is drawn from this menu each term. Every item is built to satisfy both AI extractability and human readability — because in 2026, they're the same problem.</p>
+
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <div class="menu-icon">✍️</div>
+          <div>
+            <h3>SEO/AEO Content — New Pages</h3>
+            <p>Original, LLM-extractable content built around search intent, structured data, and topical authority. Optimized for traditional search and AI citation simultaneously.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">🔄</div>
+          <div>
+            <h3>Page Revisions and Optimization</h3>
+            <p>Existing URLs updated for AI visibility, schema compliance, keyword alignment, and Helpful Content standards. Often the fastest path to measurable citation gains.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">🏷️</div>
+          <div>
+            <h3>Metadata Optimization</h3>
+            <p>Title tags, meta descriptions, and video metadata written to improve click-through in traditional SERP and signal entity relevance to AI engines.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">📱</div>
+          <div>
+            <h3>Social Media Content</h3>
+            <p>On-brand post batches written to extend content reach, reinforce topical authority signals, and maintain consistent brand voice across channels.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">📝</div>
+          <div>
+            <h3>SEO/AEO Content Briefs</h3>
+            <p>Structured briefs for internal writers or agencies — keyword targets, intent mapping, heading architecture, and AEO formatting guidance built in.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">🖼️</div>
+          <div>
+            <h3>Creative Proofing and Alt-Text</h3>
+            <p>Image alt-text and creative asset copy written for accessibility compliance and image search visibility — a frequently overlooked AI citation signal.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">🔗</div>
+          <div>
+            <h3>Backlink Outreach and Copy</h3>
+            <p>Prospecting research and outreach copy for earning editorial backlinks and brand mentions — both weighted heavily as entity authority signals by AI engines.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">💬</div>
+          <div>
+            <h3>Community Presence — Reddit and Forums</h3>
+            <p>Subreddit and forum mapping, account strategy, and a participation playbook. Reddit is one of the most-cited domains in AI-generated responses — a brand presence there is an LLM signal, not just a social tactic.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">🗣️</div>
+          <div>
+            <h3>Community Engagement Posts</h3>
+            <p>Authentic, problem-first participation across targeted subreddits and forums. Builds the off-site discussion signals that AI engines scrape and cite — written as a contributor, not a brand account.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">💼</div>
+          <div>
+            <h3>Job Description Optimization</h3>
+            <p>Role descriptions structured for organic visibility, on-brand voice, and candidate conversion — useful for growing teams in active hiring cycles.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <!-- TEAM -->
+  <section class="section-tint">
+    <div class="section-inner center">
+      <h2>The Team</h2>
+      <p class="section-sub">MaxGFX is a boutique consultancy. Strategy and client relationships run through Max directly. Every engagement is supported by a vetted network of specialists whose work gets reviewed, tested, and signed off before it reaches you.</p>
+
+      <div class="team-grid">
+
+        <div class="team-card lead">
+          <div class="team-avatar">M</div>
+          <div class="team-info">
+            <h3>Max Loel</h3>
+            <span class="team-role">Lead Strategist</span>
+            <p>Leads all client strategy, content architecture, and account direction. Your primary contact from the first call through final delivery. 10+ years in SEO, AEO, and content systems with documented results for national brands.</p>
+            <div class="team-focus">
+              <span class="focus-tag">AEO / GEO Strategy</span>
+              <span class="focus-tag">Content Architecture</span>
+              <span class="focus-tag">LLM Visibility</span>
+              <span class="focus-tag">Client Lead</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">✓</div>
+          <div class="team-info">
+            <h3>QA and Content Specialist</h3>
+            <span class="team-role">Quality Assurance</span>
+            <p>Reviews all published deliverables against brand standards, AEO formatting requirements, and factual accuracy before sign-off. Every page and piece that leaves MaxGFX passes a structured QA process — not just a read-through.</p>
+            <div class="team-focus">
+              <span class="focus-tag">Content QA</span>
+              <span class="focus-tag">Proofreading</span>
+              <span class="focus-tag">AEO Formatting</span>
+              <span class="focus-tag">Brand Compliance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">💬</div>
+          <div class="team-info">
+            <h3>Community and Social Strategist</h3>
+            <span class="team-role">Off-Site Presence</span>
+            <p>Manages brand participation across Reddit, forums, and social channels — written as a knowledgeable contributor, not a brand account. Builds the off-site discussion signals that AI engines scrape, reference, and cite.</p>
+            <div class="team-focus">
+              <span class="focus-tag">Reddit Strategy</span>
+              <span class="focus-tag">Forum Presence</span>
+              <span class="focus-tag">Social Copy</span>
+              <span class="focus-tag">Community Seeding</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card dog-card">
+          <div class="team-avatar dog-avatar">🐾</div>
+          <div class="team-info">
+            <h3>Harley</h3>
+            <span class="team-role dog-role">Chief Morale Officer</span>
+            <p>Holds down the office with an unmatched work ethic — specifically around nap optimization and treat acquisition. Harley's presence during strategy sessions has been scientifically linked to better ideas and shorter meetings.</p>
+            <div class="team-focus">
+              <span class="focus-tag">Morale</span>
+              <span class="focus-tag">Nap Strategy</span>
+              <span class="focus-tag">Treat Logistics</span>
+              <span class="focus-tag">Emotional Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card dog-card">
+          <div class="team-avatar dog-avatar">🐾</div>
+          <div class="team-info">
+            <h3>Quigley</h3>
+            <span class="team-role dog-role">Director of First Impressions</span>
+            <p>Greets every video call with enthusiasm that no human team member has been able to match. Quigley handles ambient quality control — any content that fails to hold his attention during production is sent back for revision.</p>
+            <div class="team-focus">
+              <span class="focus-tag">Client Relations</span>
+              <span class="focus-tag">Ambient QA</span>
+              <span class="focus-tag">Zoomies</span>
+              <span class="focus-tag">Vibes</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
 
-<!-- SERVICES -->
-<section class="section center">
-  <h2>Digital Optimization Services</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Strategy & Analytics</h3>
-      <ul class="service-list">
-        <li>Data-driven insights</li>
-        <li>Competitive research</li>
-        <li>Campaign optimization</li>
-        <li>Reporting</li>
-		<li>A/B Testing</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Content & SEO</h3>
-      <ul class="service-list">
-        <li>Search-optimized copy</li>
-        <li>AEO/GEO strategy</li>
-        <li>Blogging</li>
-        <li>Technical writing</li>
-        <li>E-commerce content</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Design & Marketing</h3>
-      <ul class="service-list">
-        <li>Advertising Campaigns</li>
-        <li>Branding & Redesign</li>
-        <li>Graphic Design</li>
-        <li>UX/UI Protyping & Content</li>
-        <li>Omnichannel Marketing</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
+  <!-- CTA -->
+  <section class="cta-strip">
+    <h2>Not Sure Where to Start?</h2>
+    <p>Most clients begin with an Audit. A free 15-minute intro call is the fastest way to find out if that's the right move for your brand.</p>
+    <a href="contact.html">Talk to Max</a>
+  </section>
 
 </main>
 
 <!-- FOOTER -->
 <footer>
-This website was handmade in Notepad. I do not collect, store, share, or sell your personal information.<br>
-<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">View GitHub policies here.</a>
+  This website was handmade in Notepad. I do not collect, store, share, or sell your personal information.<br>
+  <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">View GitHub policies here.</a>
 </footer>
 
 <script>
