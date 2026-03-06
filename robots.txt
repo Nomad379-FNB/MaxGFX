@@ -1,0 +1,10 @@
+# robots.txt — maxgfx.dog
+
+User-agent: *
+Allow: /
+
+# Keep crawlers out of any asset folders that hold no indexable content
+Disallow: /images/
+
+# Sitemap location
+Sitemap: https://www.maxgfx.dog/sitemap.xml
