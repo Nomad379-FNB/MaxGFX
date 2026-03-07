@@ -23,22 +23,24 @@ body {
   background-color: mintcream;
 }
 
+/* ── NAV ── */
 nav {
-  background-color: teal;
+  background: teal;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 #myLinks {
   display: none;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  list-style: none;
   width: 100%;
   text-align: center;
-  background-color: teal;
+  background: teal;
 }
 
 #myLinks li a {
@@ -46,17 +48,13 @@ nav {
   color: mintcream;
   padding: 2vh 2rem;
   text-decoration: none;
-  font-size: 1.3rem;
-}
-#myLinks li a:hover {
-  background-color: LightSteelBlue;
-  color: navy;
+  font-size: 1.1rem;
+  transition: background .15s;
 }
 
-.menu-image {
-  width: 10vw;
-  padding: 0 auto;
-}
+#myLinks li a:hover { background: rgba(255,255,255,.15); }
+
+.menu-image { width: 15vw; height: auto; display: flex; align-items: center; justify-content: center; }
 
 main {
   padding: 1rem;

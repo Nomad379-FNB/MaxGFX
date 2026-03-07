@@ -3,33 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Portfolio & Case Studies | MaxGFX AI Search Optimization</title>
- <link rel="icon" type="image/x-icon" href="images/MaxGFX-favicon.ico">
-<meta name="description" content="MaxGFX case study: 574% Google AI Overview growth, #1 ChatGPT category sentiment, +1,350% organic shopping users. Full SEO and AEO strategy breakdown for a national e-commerce brand.">
+<title>Portfolio &amp; Case Studies | MaxGFX AI Search Optimization</title>
+<link rel="icon" type="image/x-icon" href="images/MaxGFX-favicon.ico">
+<meta name="description" content="Three documented case studies: +574% AI Overview visibility, 60.9% article revision yield rate, +1,328% organic Shopping traffic. MaxGFX AI Search Optimization.">
 
 <style>
 
-/* BASE */
-* {
-  font-family: trebuchet ms, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+/* ── BASE ── */
+*, *::before, *::after {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  padding: 0; margin: 0; box-sizing: border-box;
+}
+
+:root {
+  --navy:   #0B1F3A;
+  --teal:   #009999;
+  --accent: #1DBBBB;
+  --mint:   mintcream;
+  --steel:  lightsteelblue;
+  --muted:  #546E7A;
+  --text:   #22333B;
+  --border: #c2dede;
 }
 
 body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100dvh;
-  background-color: mintcream;
+  background: mintcream;
+  color: var(--text);
+  line-height: 1.68;
 }
 
-main { padding: 0; }
-
-/* NAV */
+/* ── NAV ── */
 nav {
-  background-color: teal;
+  background: teal;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,12 +46,10 @@ nav {
 
 #myLinks {
   display: none;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  list-style: none;
   width: 100%;
   text-align: center;
-  background-color: teal;
+  background: teal;
 }
 
 #myLinks li a {
@@ -54,32 +57,19 @@ nav {
   color: mintcream;
   padding: 2vh 2rem;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  transition: background .15s;
 }
 
-#myLinks li a:hover {
-  background-color: LightSteelBlue;
-  color: navy;
-}
+#myLinks li a:hover { background: rgba(255,255,255,.15); }
 
-.menu-image {
-  width: 15vw;
-  height: auto;
-  padding: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* TYPOGRAPHY */
-h1, h2, h3 { color: navy; text-align: center; margin: 1rem; }
-p { color: teal; line-height: 1.65; margin: 0; }
+.menu-image { width: 15vw; height: auto; display: flex; align-items: center; justify-content: center; }
 
 /* ── HERO ── */
 .hero {
   background: navy;
+  padding: 5rem 1.5rem 4.5rem;
   text-align: center;
-  padding: 4.5rem 1.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -101,166 +91,255 @@ p { color: teal; line-height: 1.65; margin: 0; }
 
 .hero-eyebrow {
   display: inline-block;
-  background: rgba(0,128,128,0.6);
-  color: mintcream;
-  font-size: 0.82rem;
-  letter-spacing: 0.12em;
+  background: rgba(29,187,187,.2);
+  border: 1px solid rgba(29,187,187,.4);
+  color: var(--accent);
+  font-size: .75rem;
+  letter-spacing: .13em;
   text-transform: uppercase;
-  padding: 0.32rem 1rem;
+  padding: .3rem .9rem;
   border-radius: 3px;
   margin-bottom: 1.2rem;
-  border: 1px solid rgba(173,216,230,0.35);
 }
 
 .hero h1 {
-  color: mintcream;
-  font-size: clamp(1.8rem, 4vw, 2.9rem);
+  color: #fff;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   max-width: 780px;
   margin: 0 auto 1rem;
-  line-height: 1.2;
+  line-height: 1.18;
 }
 
-.hero h1 span { color: lightsteelblue; }
+.hero h1 em { color: var(--accent); font-style: normal; }
 
 .hero p {
-  color: mintcream;
-  opacity: 0.88;
-  max-width: 580px;
-  margin: 0 auto 2rem;
-  font-size: 1.05rem;
+  color: rgba(255,255,255,.78);
+  max-width: 560px;
+  margin: 0 auto 2.2rem;
+  font-size: 1.03rem;
 }
 
 .hero-buttons a {
   display: inline-block;
-  background: teal;
-  color: white;
-  padding: 12px 26px;
-  margin: 6px;
+  background: var(--teal);
+  color: #fff;
+  padding: 11px 26px;
+  margin: 5px;
   text-decoration: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: background 0.2s, transform 0.15s;
+  border-radius: 5px;
+  font-size: .97rem;
+  transition: background .2s, transform .15s;
 }
 
 .hero-buttons a:hover { background: #006666; transform: translateY(-2px); }
 
 .hero-buttons a.outline {
   background: transparent;
-  border: 2px solid mintcream;
-  color: mintcream;
+  border: 2px solid rgba(255,255,255,.6);
+  color: rgba(255,255,255,.88);
 }
 
-.hero-buttons a.outline:hover { background: rgba(255,255,255,0.1); }
+.hero-buttons a.outline:hover { background: rgba(255,255,255,.1); }
 
-/* ── SECTIONS ── */
-.section {
-  max-width: 1000px;
-  margin: 3rem auto;
-  padding: 0 1.5rem;
-}
+/* ── SECTION WRAPPERS ── */
+.section      { max-width: 980px; margin: 3.5rem auto; padding: 0 1.5rem; }
+.section-tint { background: linear-gradient(#f0fafa, #e4f4f4); padding: 4rem 1.5rem; }
+.section-inner { max-width: 980px; margin: 0 auto; }
 
-.section-dark {
-  background: navy;
-  padding: 4rem 1.5rem;
-}
-
-.section-dark h2  { color: lightsteelblue; }
-.section-dark h3  { color: mintcream; }
-.section-dark p   { color: mintcream; opacity: 0.85; }
-
-.section-tint {
-  background: linear-gradient(#f0fafa, #e4f4f4);
-  padding: 4rem 1.5rem;
-}
-
-.section-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-}
+h2 { color: navy; text-align: center; margin-bottom: .6rem; font-size: clamp(1.3rem, 3vw, 1.75rem); }
 
 .section-sub {
   text-align: center;
-  color: teal;
-  max-width: 620px;
-  margin: 0 auto 2.5rem;
-  font-size: 0.97rem;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto 2.8rem;
+  font-size: .95rem;
   line-height: 1.65;
 }
 
-/* ── CASE STUDY SHELL ── */
-.case-study {
-  background: white;
-  border: 1px solid #c0dada;
+/* ── PROOF BAR (paid/organic signal) ── */
+.proof-bar {
+  background: var(--teal);
+  padding: 1.4rem 1.5rem;
+  text-align: center;
+}
+
+.proof-bar-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem 2.4rem;
+}
+
+.pb-stat { text-align: center; }
+
+.pb-val {
+  display: block;
+  font-size: 1.45rem;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+}
+
+.pb-label {
+  font-size: .68rem;
+  color: navy;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.pb-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255,255,255,.12);
+  display: none;
+}
+
+.pb-note {
+  font-size: .78rem;
+  color: navy;
+  max-width: 480px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+/* ── ACCORDION CASE STUDY CARDS ── */
+.cs-stack { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.cs-card {
+  background: #fff;
+  border: 1px solid var(--border);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 24px rgba(0,80,80,0.08);
+  box-shadow: 0 3px 18px rgba(0,70,70,.07);
+  transition: box-shadow .2s;
 }
 
-.cs-header {
-  background: navy;
-  padding: 2.5rem 2rem 2rem;
+.cs-card:hover { box-shadow: 0 6px 28px rgba(0,70,70,.12); }
+
+/* ── CARD TRIGGER ── */
+.cs-trigger {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.6rem 1.8rem;
+  cursor: pointer;
+  background: var(--navy);
   position: relative;
   overflow: hidden;
+  border: none;
+  width: 100%;
+  text-align: left;
+  transition: background .2s;
 }
 
-.cs-header::after {
+.cs-trigger::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(
-    -45deg,
-    transparent, transparent 30px,
-    rgba(0,128,128,0.06) 30px,
-    rgba(0,128,128,0.06) 60px
-  );
+  background: repeating-linear-gradient(-45deg, transparent, transparent 30px, rgba(0,153,153,.05) 30px, rgba(0,153,153,.05) 60px);
+  pointer-events: none;
 }
 
-.cs-header > * { position: relative; z-index: 1; }
+.cs-trigger:hover { background: #0d2a45; }
+
+.cs-trigger > * { position: relative; z-index: 1; }
+
+.cs-trigger-left { flex: 1; }
 
 .cs-tag {
   display: inline-block;
-  background: rgba(0,128,128,0.7);
-  color: mintcream;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
+  background: rgba(29,187,187,.2);
+  border: 1px solid rgba(29,187,187,.35);
+  color: var(--accent);
+  font-size: .68rem;
+  letter-spacing: .11em;
   text-transform: uppercase;
-  padding: 0.28rem 0.85rem;
+  padding: .2rem .7rem;
   border-radius: 3px;
-  margin-bottom: 0.85rem;
-  border: 1px solid rgba(173,216,230,0.3);
+  margin-bottom: .6rem;
 }
 
-.cs-header h2 {
-  color: mintcream;
-  text-align: left;
-  font-size: clamp(1.3rem, 3vw, 1.8rem);
-  margin: 0 0 0.75rem;
-  max-width: 680px;
-  line-height: 1.25;
-}
-
-.cs-header p {
-  color: mintcream;
-  opacity: 0.82;
-  font-size: 0.97rem;
-  max-width: 640px;
+.cs-trigger h3 {
+  color: #fff;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: 1.22;
+  margin: 0 0 .5rem;
   text-align: left;
 }
 
-/* ── METRICS GRID ── */
+.cs-headline {
+  display: flex;
+  align-items: baseline;
+  gap: .6rem;
+  flex-wrap: wrap;
+}
+
+.cs-big {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: bold;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.cs-big-label {
+  font-size: .82rem;
+  color: rgba(255,255,255,.6);
+}
+
+.cs-chevron {
+  width: 34px;
+  height: 34px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform .25s, background .2s;
+}
+
+.cs-chevron svg {
+  width: 16px;
+  height: 16px;
+  stroke: rgba(255,255,255,.7);
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform .25s;
+}
+
+.cs-card.open .cs-chevron svg { transform: rotate(180deg); }
+.cs-card.open .cs-chevron { background: rgba(29,187,187,.25); }
+
+/* ── ACCORDION PANEL ── */
+.cs-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s cubic-bezier(.4,0,.2,1);
+}
+
+.cs-card.open .cs-panel { max-height: 900px; }
+
+/* ── METRICS GRID inside panel ── */
 .cs-metrics {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0;
-  border-bottom: 1px solid #ddeaea;
+  border-bottom: 1px solid var(--border);
 }
 
 .metric {
-  padding: 1.5rem 1.25rem;
+  padding: 1.25rem 1rem;
   text-align: center;
-  border-right: 1px solid #ddeaea;
-  border-bottom: 1px solid #ddeaea;
-  transition: background 0.15s;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  transition: background .15s;
 }
 
 .metric:hover { background: #f5fdfd; }
@@ -268,347 +347,183 @@ p { color: teal; line-height: 1.65; margin: 0; }
 
 .metric-value {
   display: block;
-  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-size: clamp(1.35rem, 3vw, 1.9rem);
   font-weight: bold;
-  color: navy;
+  color: var(--navy);
   line-height: 1.1;
-  margin-bottom: 0.3rem;
+  margin-bottom: .25rem;
 }
 
-.metric-value.highlight { color: teal; }
+.metric-value.hi { color: var(--teal); }
 
 .metric-label {
-  font-size: 0.78rem;
-  color: steelblue;
+  font-size: .73rem;
+  color: var(--muted);
   line-height: 1.4;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: .05em;
 }
 
-/* ── CASE STUDY BODY ── */
-.cs-body {
-  padding: 2.5rem 2rem;
+/* ── PANEL BODY ── */
+.cs-panel-body {
+  padding: 1.8rem 1.8rem 2rem;
 }
 
-.cs-body h3 {
-  text-align: left;
-  color: navy;
-  font-size: 1.1rem;
-  margin: 0 0 0.75rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 2px solid #c0eaea;
+.cs-panel-body p {
+  color: #334;
+  font-size: .95rem;
+  line-height: 1.72;
+  margin-bottom: 1.4rem;
 }
 
-.cs-body p {
-  color: #336;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  text-align: left;
-}
-
-/* before/after banner */
-.before-after {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 0;
-  background: linear-gradient(135deg, #f8fafa, #eef6f6);
-  border: 1px solid #c0dada;
-  border-radius: 6px;
-  overflow: hidden;
-  margin: 1.5rem 0 2rem;
-  text-align: center;
-}
-
-.ba-before, .ba-after {
-  padding: 1.5rem 1.25rem;
-}
-
-.ba-before { background: rgba(240,240,255,0.6); }
-.ba-after  { background: rgba(224,248,248,0.6); }
-
-.ba-label {
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: steelblue;
-  margin-bottom: 0.4rem;
-}
-
-.ba-value {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: navy;
-  line-height: 1;
-}
-
-.ba-after .ba-value { color: teal; }
-
-.ba-desc {
-  font-size: 0.8rem;
-  color: #558;
-  margin-top: 0.35rem;
-}
-
-.ba-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  padding: 0 0.5rem;
-  color: teal;
-  font-weight: bold;
-  background: rgba(0,128,128,0.06);
-}
-
-/* strategy pillars */
-.strategy-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin: 0 0 1.5rem;
-}
-
-.strategy-item {
-  background: linear-gradient(#f8fefe, #eef8f8);
-  border: 1px solid #c8e4e4;
-  border-left: 4px solid teal;
-  border-radius: 0 6px 6px 0;
-  padding: 1.1rem 1.25rem;
-}
-
-.strategy-item h4 {
-  color: navy;
-  font-size: 0.95rem;
-  margin: 0 0 0.35rem;
-}
-
-.strategy-item p {
-  font-size: 0.88rem;
-  color: #448;
-  margin: 0;
-  line-height: 1.55;
-}
-
-/* execution bullets */
-.exec-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.45rem;
-}
-
-.exec-list li {
-  font-size: 0.9rem;
-  color: #336;
-  padding-left: 1.25rem;
-  position: relative;
-  line-height: 1.5;
-}
-
-.exec-list li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: teal;
-}
-
-/* AEO highlight box */
-.aeo-highlight {
-  background: navy;
-  border-radius: 6px;
-  padding: 1.75rem 2rem;
-  margin: 1.5rem 0 2rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.aeo-stat {
-  text-align: center;
-}
-
-.aeo-stat .aeo-value {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  font-weight: bold;
-  color: lightsteelblue;
-  display: block;
-  line-height: 1.1;
-  margin-bottom: 0.3rem;
-}
-
-.aeo-stat .aeo-label {
-  font-size: 0.8rem;
-  color: mintcream;
-  opacity: 0.75;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-}
-
-.cs-cta {
+.cs-panel-cta {
   display: inline-block;
-  background: navy;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 6px;
+  background: var(--navy);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 5px;
   text-decoration: none;
-  font-size: 0.97rem;
+  font-size: .92rem;
   font-weight: bold;
-  transition: background 0.2s, transform 0.15s;
-  margin-top: 0.5rem;
+  transition: background .2s, transform .15s;
 }
 
-.cs-cta:hover { background: #001a4d; transform: translateY(-1px); }
+.cs-panel-cta:hover { background: #051229; transform: translateY(-1px); }
+
+.cs-panel-cta.sec {
+  background: transparent;
+  border: 2px solid var(--navy);
+  color: var(--navy);
+  margin-left: .6rem;
+}
+
+.cs-panel-cta.sec:hover { background: var(--navy); color: #fff; }
 
 /* ── PORTFOLIO CARDS ── */
 .cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin-top: 0.5rem;
+  gap: 1.2rem;
+  margin-top: 1rem;
 }
 
 .card {
-  border: 1px solid #c0dada;
-  border-top: 4px solid teal;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--teal);
   padding: 2rem;
-  background: white;
+  background: #fff;
   border-radius: 6px;
   text-align: center;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition: box-shadow .2s, transform .2s;
 }
 
-.card:hover {
-  box-shadow: 0 6px 22px rgba(0,100,100,0.12);
-  transform: translateY(-3px);
-}
+.card:hover { box-shadow: 0 6px 22px rgba(0,100,100,.12); transform: translateY(-3px); }
 
-.card h3 { color: navy; margin-bottom: 0.5rem; }
-.card p   { color: #448; font-size: 0.9rem; margin-bottom: 1.25rem; }
+.card h3 { color: var(--navy); margin-bottom: .5rem; }
+
+.card p { color: #448; font-size: .9rem; line-height: 1.6; margin-bottom: 1.25rem; }
 
 .card a {
   display: inline-block;
-  color: navy;
-  background: lightsteelblue;
+  color: var(--navy);
+  background: var(--steel);
   text-decoration: none;
   border-radius: 50px;
   padding: 9px 22px;
-  font-size: 0.9rem;
+  font-size: .9rem;
   font-weight: bold;
-  transition: background 0.2s, color 0.2s;
+  transition: background .2s, color .2s;
 }
 
-.card a:hover {
-  background: navy;
-  color: white;
-}
+.card a:hover { background: var(--navy); color: #fff; }
 
 /* ── CLIENTS ── */
 .clients-section {
   text-align: center;
   padding: 0 1.5rem 1rem;
-  max-width: 1000px;
-  margin: 0 auto 3rem;
+  max-width: 980px;
+  margin: 0 auto 3.5rem;
 }
 
+.clients-section h2 { margin-bottom: 1rem; }
+
 .feature_image {
-  width: 100%;
+  width: 70vw;
   max-width: 680px;
   height: auto;
   display: block;
-  margin: 1rem auto;
+  margin: 0 auto;
   border-radius: 4px;
 }
 
 /* ── CTA STRIP ── */
 .cta-strip {
-  background: linear-gradient(135deg, teal 0%, #004d4d 100%);
+  background: linear-gradient(135deg, var(--teal) 0%, #004d4d 100%);
   padding: 3.5rem 1.5rem;
   text-align: center;
 }
 
-.cta-strip h2 { color: mintcream; font-size: clamp(1.3rem, 3vw, 1.9rem); }
-.cta-strip p  { color: mintcream; opacity: 0.88; max-width: 520px; margin: 0 auto 1.5rem; }
+.cta-strip h2 { color: mintcream; font-size: clamp(1.3rem, 3vw, 1.9rem); margin-bottom: .7rem; }
+.cta-strip p  { color: rgba(255,255,255,.85); max-width: 500px; margin: 0 auto 1.5rem; }
 
 .cta-strip a {
   display: inline-block;
   background: navy;
-  color: white;
-  padding: 13px 32px;
+  color: #fff;
+  padding: 12px 30px;
   text-decoration: none;
-  border-radius: 6px;
-  font-size: 1.05rem;
-  transition: background 0.2s, transform 0.15s;
-  margin: 6px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background .2s, transform .15s;
+  margin: 5px;
 }
 
-.cta-strip a:hover { background: #001a4d; transform: translateY(-2px); }
+.cta-strip a:hover { background: #051229; transform: translateY(-2px); }
 
 .cta-strip a.outline {
   background: transparent;
-  border: 2px solid mintcream;
-  color: mintcream;
+  border: 2px solid rgba(255,255,255,.6);
+  color: rgba(255,255,255,.88);
 }
 
-.cta-strip a.outline:hover { background: rgba(255,255,255,0.1); }
+.cta-strip a.outline:hover { background: rgba(255,255,255,.1); }
 
-/* FOOTER */
+/* ── FOOTER ── */
 footer {
-  background-color: teal;
-  color: white;
+  background: teal;
+  color: #fff;
   text-align: center;
-  padding: 1%;
+  padding: 1rem 1.5rem;
+  font-size: .85rem;
 }
 
-footer a { color: lightsteelblue; }
+footer a { color: var(--steel); }
 
-/* DESKTOP */
+/* ── DESKTOP ── */
 @media screen and (min-width: 768px) {
   nav { flex-direction: row; justify-content: space-between; }
-  nav ul { display: flex; }
-  #myLinks { display: flex; justify-content: flex-end; }
-  .menu-image { width: 7vw; padding: 0.3rem; }
-
-  .cs-metrics         { grid-template-columns: repeat(4, 1fr); }
-  .metric:nth-child(2n)   { border-right: 1px solid #ddeaea; }
-  .metric:nth-child(4n)   { border-right: none; }
-  .strategy-grid      { grid-template-columns: 1fr 1fr 1fr; }
-  .exec-list          { grid-template-columns: 1fr 1fr; }
-  .aeo-highlight      { grid-template-columns: repeat(3, 1fr); }
-  .cards              { grid-template-columns: repeat(3, 1fr); }
+  #myLinks { display: flex !important; justify-content: flex-end; }
+  .menu-image { width: 7vw; padding: .3rem; }
+  .cs-metrics { grid-template-columns: repeat(4, 1fr); }
+  .metric:nth-child(2n) { border-right: 1px solid var(--border); }
+  .metric:nth-child(4n) { border-right: none; }
+  .cards { grid-template-columns: repeat(3, 1fr); }
+  .pb-divider { display: block; }
 }
 
-/* FADE IN */
+/* ── ANIMATIONS ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(14px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.hero-eyebrow { animation: fadeUp 0.4s ease both 0.1s; }
-.hero h1      { animation: fadeUp 0.4s ease both 0.22s; }
-.hero p       { animation: fadeUp 0.4s ease both 0.36s; }
-.hero-buttons { animation: fadeUp 0.4s ease both 0.48s; }
-
-@keyframes countUp {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-.metric { animation: countUp 0.4s ease both; }
-.metric:nth-child(1) { animation-delay: 0.05s; }
-.metric:nth-child(2) { animation-delay: 0.1s; }
-.metric:nth-child(3) { animation-delay: 0.15s; }
-.metric:nth-child(4) { animation-delay: 0.2s; }
-.metric:nth-child(5) { animation-delay: 0.25s; }
-.metric:nth-child(6) { animation-delay: 0.3s; }
-.metric:nth-child(7) { animation-delay: 0.35s; }
-.metric:nth-child(8) { animation-delay: 0.4s; }
+.hero-eyebrow { animation: fadeUp .4s ease both .1s; }
+.hero h1      { animation: fadeUp .4s ease both .22s; }
+.hero p       { animation: fadeUp .4s ease both .34s; }
+.hero-buttons { animation: fadeUp .4s ease both .46s; }
 
 </style>
 </head>
-
 <body>
 
 <!-- NAV -->
@@ -629,201 +544,228 @@ footer a { color: lightsteelblue; }
 
 <main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-eyebrow">Featured Case Study</div>
-    <h1>From Seasonal Volatility to <span>Category-Leading AI Visibility</span></h1>
-    <p>A national e-commerce brand. Five years of keyword decline reversed. The first documented category-first result in ChatGPT sentiment for a brand in this vertical.</p>
-    <div class="hero-buttons">
-      <a href="#case-study">Read the Case Study</a>
-      <a href="contact.html" class="outline">Work With MaxGFX</a>
-    </div>
-  </section>
-
-  <!-- CASE STUDY -->
-  <section class="section" id="case-study">
-    <div class="case-study">
-
-      <!-- HEADER -->
-      <div class="cs-header">
-        <span class="cs-tag">SEO · AEO · GEO · Content Strategy</span>
-        <h2>Stabilizing Seasonal SEO &amp; Scaling AI Visibility</h2>
-        <p>Transformed cyclical organic performance into compounding, year-round growth across traditional search and LLM-driven discovery — for a national e-commerce brand competing in a high-intent seasonal vertical.</p>
-      </div>
-
-      <!-- METRICS -->
-      <div class="cs-metrics">
-        <div class="metric">
-          <span class="metric-value highlight">+55%</span>
-          <span class="metric-label">Top 50 Keywords<br>+2,295 new terms</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value">+23%</span>
-          <span class="metric-label">Top 3 Rankings</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value highlight">+574%</span>
-          <span class="metric-label">Google AI Overview<br>Visibility</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value">+49%</span>
-          <span class="metric-label">SERP Feature<br>Acquisitions</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value highlight">#1</span>
-          <span class="metric-label">ChatGPT Sentiment<br>69% share in category</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value">4.5%</span>
-          <span class="metric-label">Google AIO Share<br>of Voice</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value highlight">+1,350%</span>
-          <span class="metric-label">Google Organic<br>Shopping Active Users</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value">3.7M+</span>
-          <span class="metric-label">Monthly Audience<br>Reached</span>
-        </div>
-      </div>
-
-      <!-- BODY -->
-      <div class="cs-body">
-
-        <!-- CHALLENGE -->
-        <h3>The Challenge</h3>
-        <p>Organic performance had followed the same pattern for years: a spike during peak season, then a steep drop-off. Rankings didn't compound. Content efforts were campaign-based and disconnected. The five-year keyword trajectory heading into the engagement was a net 3% gain — effectively flat, with significant volatility on either side of that number. The core question: how do you replace seasonal spikes with durable, always-on discoverability across both traditional search and an emerging AI search landscape?</p>
-
-        <!-- BEFORE / AFTER -->
-        <div class="before-after">
-          <div class="ba-before">
-            <div class="ba-label">Before Strategy</div>
-            <div class="ba-value">-3%</div>
-            <div class="ba-desc">5-year top-50 keyword growth<br>with steep seasonal drop-offs</div>
-          </div>
-          <div class="ba-arrow">→</div>
-          <div class="ba-after">
-            <div class="ba-label">After Strategy</div>
-            <div class="ba-value">+55%</div>
-            <div class="ba-desc">Top-50 keyword growth<br>volatility largely eliminated</div>
-          </div>
-        </div>
-
-        <!-- STRATEGY -->
-        <h3>Strategy</h3>
-        <p>The approach replaced one-off content campaigns with a persistent optimization model built around three compounding pillars:</p>
-
-        <div class="strategy-grid">
-          <div class="strategy-item">
-            <h4>1. Topical Authority and Keyword Stabilization</h4>
-            <p>Built seasonally complete topic ecosystems so the brand held rankings year-round — including during the months it had historically abandoned to competitors.</p>
-          </div>
-          <div class="strategy-item">
-            <h4>2. AI and SERP Optimization</h4>
-            <p>Optimized content architecture for Google AI Overviews, answer engine extractability, and LLM discovery through entity clarity, structured data, and schema markup. Added off-site community presence to strengthen AI signaling.</p>
-          </div>
-          <div class="strategy-item">
-            <h4>3. Continuous Data-Driven Iteration</h4>
-            <p>Used ranking signals, feature acquisition data, and AI sentiment tracking monthly to guide content prioritization — replacing gut-driven decisions with a measurable feedback loop.</p>
-          </div>
-        </div>
-
-        <!-- EXECUTION -->
-        <h3>Execution Highlights</h3>
-        <ul class="exec-list">
-          <li>Built topic clusters supporting year-round search intent across every season</li>
-          <li>Optimized priority pages for AI summarization and LLM extractability</li>
-          <li>Implemented schema markup and structured data across product and content pages</li>
-          <li>Transitioned from campaign SEO to persistent, always-on optimization</li>
-          <li>Established off-site community presence on forums to strengthen AI citation signals</li>
-          <li>Aligned product page content with Google Helpful Content standards</li>
-          <li>Tracked and reported AI citation share, sentiment, and SERP features monthly</li>
-          <li>Managed freelance copywriters across blog, technical, and product content workflows</li>
-        </ul>
-
-        <!-- AEO RESULTS -->
-        <h3>AI Search Results</h3>
-        <p>The AEO layer of this engagement produced the most significant documented results of the strategy. By the time reporting closed, the brand had established category-leading positions across every major AI search platform:</p>
-
-        <div class="aeo-highlight">
-          <div class="aeo-stat">
-            <span class="aeo-value">69%</span>
-            <span class="aeo-label">ChatGPT Sentiment Share — #1 in Category</span>
-          </div>
-          <div class="aeo-stat">
-            <span class="aeo-value">4.5%</span>
-            <span class="aeo-label">Google AI Overview Share of Voice</span>
-          </div>
-          <div class="aeo-stat">
-            <span class="aeo-value">75%</span>
-            <span class="aeo-label">Google AIO Sentiment — Category Leader</span>
-          </div>
-        </div>
-
-        <!-- OUTCOME -->
-        <h3>Outcome</h3>
-        <p>Organic growth shifted from reactive and seasonal to compounding and durable. Keyword volatility was largely neutralized — the slow-season drop-offs that had defined five years of performance were eliminated. The brand entered 2025 with stronger topical authority, broader AI citation presence, and a content system built to continue growing without needing to restart from scratch each cycle.</p>
-
-        <a href="images/MaxGFX_Featured_Case_Study.pdf" target="_blank" class="cs-cta">Download Full Case Study PDF</a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTFOLIO AREAS -->
-  <section class="section-tint">
-    <div class="section-inner center">
-      <h2>Portfolio Areas</h2>
-      <p class="section-sub">The case study is the headline. The portfolio covers the full range of content, strategy, and creative work behind it.</p>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Copy &amp; Messaging</h3>
-          <p>Product descriptions, landing pages, blog content, and brand voice work built to convert and rank.</p>
-          <a href="copy.html" target="_blank">View Content</a>
-        </div>
-        <div class="card">
-          <h3>Content Strategy &amp; SEO</h3>
-          <p>Keyword architecture, topical authority frameworks, and AEO/GEO strategy documentation.</p>
-          <a href="strategy.html" target="_blank">View Case Studies</a>
-        </div>
-        <div class="card">
-          <h3>Creative Direction</h3>
-          <p>Brand identity, UX/UI prototyping, visual systems, and digital design across web and print.</p>
-          <a href="creative.html" target="_blank">View Creative</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CLIENTS -->
-  <div class="clients-section">
-    <h2>Worked With</h2>
-    <img src="images/asFeatured.png" class="feature_image" alt="Clients and brands MaxGFX has worked with">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">Case Studies &middot; Specialty Outdoor Retailer &middot; 2023&ndash;2025</div>
+  <h1>From Seasonal Volatility to <em>Category-Leading AI Visibility</em></h1>
+  <p>AI visibility, seasonal keyword stabilization, and eCommerce Shopping traffic results — with proof.</p>
+  <div class="hero-buttons">
+    <a href="#case-studies">Read the Case Studies</a>
+    <a href="contact.html" class="outline">Work With MaxGFX</a>
   </div>
+</section>
 
-  <!-- CTA -->
-  <section class="cta-strip">
-    <h2>These Results Are Repeatable.</h2>
-    <p>The strategy that produced them is documented, tested, and available as a retainer. Start with an AI Visibility Audit to see where your brand stands today.</p>
-    <a href="contact.html">Start With an Audit</a>
-    <a href="about.html" class="outline">See Services</a>
-  </section>
+<!-- PROOF BAR -->
+<div class="proof-bar">
+  <div class="proof-bar-inner">
+    <div class="pb-stat">
+      <span class="pb-val">+28%</span>
+      <span class="pb-label">Organic Traffic at 6 Mo.</span>
+    </div>
+    <div class="pb-divider"></div>
+    <div class="pb-stat">
+      <span class="pb-val">&minus;33%</span>
+      <span class="pb-label">Paid Traffic, Same Period</span>
+    </div>
+    <div class="pb-divider"></div>
+    <p class="pb-note">Organic grew while paid declined simultaneously — ruling out market tailwinds as the explanation. The organic channel absorbed queries that had required paid support.</p>
+  </div>
+</div>
+
+<!-- CASE STUDIES -->
+<section class="section" id="case-studies">
+  <h2>Case Studies</h2>
+  <p class="section-sub">Each case study covers a distinct strategy, a distinct mechanism, and a distinct data source. Expand any card for the key metrics and a link to the full write-up.</p>
+
+  <div class="cs-stack">
+
+    <!-- CS1: AEO -->
+    <div class="cs-card" id="cs-aeo">
+      <button class="cs-trigger" onclick="toggleCard('cs-aeo')" aria-expanded="false">
+        <div class="cs-trigger-left">
+          <div class="cs-tag">AEO &middot; LLM Visibility &middot; Content Strategy</div>
+          <h3>From Invisible to the Most-Cited Brand Across Every Major AI Platform</h3>
+          <div class="cs-headline">
+            <span class="cs-big">#1</span>
+            <span class="cs-big-label">ChatGPT Category Sentiment &middot; 69% Favorable Score</span>
+          </div>
+        </div>
+        <div class="cs-chevron">
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </button>
+      <div class="cs-panel">
+        <div class="cs-metrics">
+          <div class="metric">
+            <span class="metric-value hi">#1</span>
+            <span class="metric-label">ChatGPT Sentiment<br>in Category</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">694</span>
+            <span class="metric-label">Number-One AI<br>Overview Positions</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value hi">+574%</span>
+            <span class="metric-label">AI Overview<br>Visibility YoY</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">3.7M+</span>
+            <span class="metric-label">Monthly AI<br>Audience Reached</span>
+          </div>
+        </div>
+        <div class="cs-panel-body">
+          <p>A direct competitor dropped 71% following Google's Helpful Content Update. This client held ground — because the content architecture had already been built around semantic entity depth, not keyword density. That same architecture transferred directly into AI citation performance: the same structure that earns HCU-era rankings earns LLM citations, because both systems solve the same underlying graph and co-occurrence problem. The strategy was built once. It worked in two places simultaneously.</p>
+          <a href="case-study-aeo.html" class="cs-panel-cta">Read Full Case Study</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CS2: Seasonal -->
+    <div class="cs-card" id="cs-seasonal">
+      <button class="cs-trigger" onclick="toggleCard('cs-seasonal')" aria-expanded="false">
+        <div class="cs-trigger-left">
+          <div class="cs-tag">SEO Strategy &middot; Topical Authority &middot; Content Architecture</div>
+          <h3>Five Years of 3% Keyword Growth. Then a 12-Month Calendar Changed the Trajectory.</h3>
+          <div class="cs-headline">
+            <span class="cs-big">+55%</span>
+            <span class="cs-big-label">Top-50 Keyword Growth &middot; Seasonal Floor Eliminated</span>
+          </div>
+        </div>
+        <div class="cs-chevron">
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </button>
+      <div class="cs-panel">
+        <div class="cs-metrics">
+          <div class="metric">
+            <span class="metric-value hi">+55%</span>
+            <span class="metric-label">Top-50 Keyword<br>Growth (2 Years)</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">15.6&rarr;8.2</span>
+            <span class="metric-label">Avg. Position<br>Full Year</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value hi">+27%</span>
+            <span class="metric-label">Total Keywords<br>at 6 Months</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">60.9%</span>
+            <span class="metric-label">Article Revision<br>Yield Rate</span>
+          </div>
+        </div>
+        <div class="cs-panel-body">
+          <p>Seasonal keyword volatility is an architecture problem, not a traffic problem. Five years of near-zero off-season rankings were not caused by algorithm headwinds — they were caused by an absence of content for the queries that dominate those months. A 12-month intent calendar with five topic areas per month filled every gap. A parallel article revision program — tracked weekly in Looker Studio, with a documented 60.9% performant yield rate — rebuilt the existing library for HCU-era semantic standards. One article alone went from 4 ranked keywords to 294 in six months. The position improvement arc runs continuously: 15.6 at strategy start, 11.9 at six months, 8.2 at full year.</p>
+          <a href="case-study-seasonal.html" class="cs-panel-cta">Read Full Case Study</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CS3: Shopping -->
+    <div class="cs-card" id="cs-shopping">
+      <button class="cs-trigger" onclick="toggleCard('cs-shopping')" aria-expanded="false">
+        <div class="cs-trigger-left">
+          <div class="cs-tag">eCommerce SEO &middot; Google Shopping &middot; Product Feed</div>
+          <h3>A Per-SKU Competitive Rewrite. +1,328% Organic Google Shopping Traffic.</h3>
+          <div class="cs-headline">
+            <span class="cs-big">+1,328%</span>
+            <span class="cs-big-label">Organic Shopping Active Users &middot; Zero Ad Spend</span>
+          </div>
+        </div>
+        <div class="cs-chevron">
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </button>
+      <div class="cs-panel">
+        <div class="cs-metrics">
+          <div class="metric">
+            <span class="metric-value hi">+1,328%</span>
+            <span class="metric-label">Organic Shopping<br>Traffic Growth</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">16,460</span>
+            <span class="metric-label">Shopping Active<br>Users 2025</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value hi">60+</span>
+            <span class="metric-label">SKUs Individually<br>Audited &amp; Rewritten</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">3-Phase</span>
+            <span class="metric-label">Formal eCommerce<br>SEO Framework</span>
+          </div>
+        </div>
+        <div class="cs-panel-body">
+          <p>Most Shopping feed rewrites apply one title formula across every SKU. This program treated each product individually — because keyword opportunities differ meaningfully by product type and competitive set. Every title was researched against top Shopping competitors, rewritten to the 47&ndash;60 character spec, and structured with a primary keyword, product type, and one differentiating attribute. Every description was rebuilt to 150&ndash;160 characters, benefit-forward, with a deliberate free-shipping conversion signal at the close for qualifying products. 1,152 organic Shopping users in 2024. 16,460 in 2025. Same products, same prices, new feed data.</p>
+          <a href="case-study-shopping.html" class="cs-panel-cta">Read Full Case Study</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PORTFOLIO AREAS -->
+<section class="section-tint">
+  <div class="section-inner">
+    <h2>Portfolio Areas</h2>
+    <p class="section-sub">The case studies are the headline. The portfolio covers the full range of content, strategy, and creative work behind them.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Copy &amp; Messaging</h3>
+        <p>Product descriptions, landing pages, blog content, and brand voice work built to convert and rank.</p>
+        <a href="copy.html">View Content</a>
+      </div>
+      <div class="card">
+        <h3>Content Strategy &amp; SEO</h3>
+        <p>Keyword architecture, topical authority frameworks, and AEO/GEO strategy documentation.</p>
+        <a href="strategy.html">View Strategy Work</a>
+      </div>
+      <div class="card">
+        <h3>Creative Direction</h3>
+        <p>Brand identity, UX/UI prototyping, visual systems, and digital design across web and print.</p>
+        <a href="creative.html">View Creative</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<div class="clients-section">
+  <h2>Worked With</h2>
+  <img src="images/asFeatured.png" class="feature_image" alt="Clients and brands MaxGFX has worked with">
+</div>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <h2>These Results Are Repeatable.</h2>
+  <p>The strategy that produced them is documented, tested, and available as a retainer. Start with an AI Visibility Audit to see where your brand stands today.</p>
+  <a href="contact.html">Start With an Audit</a>
+  <a href="about.html" class="outline">See Services</a>
+</section>
 
 </main>
 
-<!-- FOOTER -->
 <footer>
   This website was handmade in Notepad. I do not collect, store, share, or sell your personal information.<br>
   <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">View GitHub policies here.</a>
 </footer>
 
 <script>
+function toggleCard(id) {
+  const card = document.getElementById(id);
+  const btn  = card.querySelector('.cs-trigger');
+  const isOpen = card.classList.contains('open');
+  card.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+
 function myFunction() {
   if (window.innerWidth >= 768) return;
   var x = document.getElementById("myLinks");
   x.style.display = x.style.display === "block" ? "none" : "block";
 }
+
 window.addEventListener("resize", function() {
   var x = document.getElementById("myLinks");
   x.style.display = window.innerWidth >= 768 ? "flex" : "none";
