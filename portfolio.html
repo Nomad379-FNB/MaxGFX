@@ -91,9 +91,9 @@ nav {
 
 .hero-eyebrow {
   display: inline-block;
-  background: rgba(29,187,187,.2);
+  background: rgba(29,187,187,0.6);
   border: 1px solid rgba(29,187,187,.4);
-  color: var(--accent);
+  color: mintcream;
   font-size: .75rem;
   letter-spacing: .13em;
   text-transform: uppercase;
@@ -528,8 +528,8 @@ footer a { color: var(--steel); }
 
 <!-- NAV -->
 <nav>
-  <a href="javascript:void(0);" class="menu-image" onclick="myFunction()">
-    <picture>
+ <a href="index.html" class="menu-image" onclick="return myFunction()">
+ <picture>
       <source media="(min-width: 768px)" srcset="images/MaxGFX-dog-Logo-White.png" alt="MaxGFX Logo">
       <img src="images/MaxGFX-dog-Logo-MenuW.png" class="menu-image" alt="Menu Logo">
     </picture>
@@ -548,7 +548,7 @@ footer a { color: var(--steel); }
 <section class="hero">
   <div class="hero-eyebrow">Case Studies &middot; Specialty Outdoor Retailer &middot; 2023&ndash;2025</div>
   <h1>From Seasonal Volatility to <em>Category-Leading AI Visibility</em></h1>
-  <p>AI visibility, seasonal keyword stabilization, and eCommerce Shopping traffic results — with proof.</p>
+  <p>AI visibility, seasonal keyword stabilization, and eCommerce Shopping traffic results with proof.</p>
   <div class="hero-buttons">
     <a href="#case-studies">Read the Case Studies</a>
     <a href="contact.html" class="outline">Work With MaxGFX</a>
@@ -568,14 +568,14 @@ footer a { color: var(--steel); }
       <span class="pb-label">Paid Traffic, Same Period</span>
     </div>
     <div class="pb-divider"></div>
-    <p class="pb-note">Organic grew while paid declined simultaneously — ruling out market tailwinds as the explanation. The organic channel absorbed queries that had required paid support.</p>
+    <p class="pb-note">Organic grew while paid declined simultaneously, ruling out market tailwinds as the explanation. The organic channel absorbed queries that had required paid support.</p>
   </div>
 </div>
 
 <!-- CASE STUDIES -->
 <section class="section" id="case-studies">
   <h2>Case Studies</h2>
-  <p class="section-sub">Each case study covers a distinct strategy, a distinct mechanism, and a distinct data source. Expand any card for the key metrics and a link to the full write-up.</p>
+  <p class="section-sub">Each case study covers a distinct strategy, mechanism, and data source. Expand any card for the key metrics and a link to the full write-up.</p>
 
   <div class="cs-stack">
 
@@ -615,7 +615,7 @@ footer a { color: var(--steel); }
         </div>
         <div class="cs-panel-body">
           <p>A direct competitor dropped 71% following Google's Helpful Content Update. This client held ground — because the content architecture had already been built around semantic entity depth, not keyword density. That same architecture transferred directly into AI citation performance: the same structure that earns HCU-era rankings earns LLM citations, because both systems solve the same underlying graph and co-occurrence problem. The strategy was built once. It worked in two places simultaneously.</p>
-          <a href="case-study-aeo.html" class="cs-panel-cta">Read Full Case Study</a>
+          <a href="case-study-aeo.html" class="cs-panel-cta" target="_blank">Read Full Case Study (New Tab)</a>
         </div>
       </div>
     </div>
@@ -656,7 +656,7 @@ footer a { color: var(--steel); }
         </div>
         <div class="cs-panel-body">
           <p>Seasonal keyword volatility is an architecture problem, not a traffic problem. Five years of near-zero off-season rankings were not caused by algorithm headwinds — they were caused by an absence of content for the queries that dominate those months. A 12-month intent calendar with five topic areas per month filled every gap. A parallel article revision program — tracked weekly in Looker Studio, with a documented 60.9% performant yield rate — rebuilt the existing library for HCU-era semantic standards. One article alone went from 4 ranked keywords to 294 in six months. The position improvement arc runs continuously: 15.6 at strategy start, 11.9 at six months, 8.2 at full year.</p>
-          <a href="case-study-seasonal.html" class="cs-panel-cta">Read Full Case Study</a>
+          <a href="case-study-seasonal.html" class="cs-panel-cta" target="_blank">Read Full Case Study (New Tab)</a>
         </div>
       </div>
     </div>
@@ -697,7 +697,7 @@ footer a { color: var(--steel); }
         </div>
         <div class="cs-panel-body">
           <p>Most Shopping feed rewrites apply one title formula across every SKU. This program treated each product individually — because keyword opportunities differ meaningfully by product type and competitive set. Every title was researched against top Shopping competitors, rewritten to the 47&ndash;60 character spec, and structured with a primary keyword, product type, and one differentiating attribute. Every description was rebuilt to 150&ndash;160 characters, benefit-forward, with a deliberate free-shipping conversion signal at the close for qualifying products. 1,152 organic Shopping users in 2024. 16,460 in 2025. Same products, same prices, new feed data.</p>
-          <a href="case-study-shopping.html" class="cs-panel-cta">Read Full Case Study</a>
+          <a href="case-study-shopping.html" class="cs-panel-cta" target="_blank">Read Full Case Study (New Tab)</a>
         </div>
       </div>
     </div>
@@ -709,8 +709,7 @@ footer a { color: var(--steel); }
 <section class="section-tint">
   <div class="section-inner">
     <h2>Portfolio Areas</h2>
-    <p class="section-sub">The case studies are the headline. The portfolio covers the full range of content, strategy, and creative work behind them.</p>
-    <div class="cards">
+       <div class="cards">
       <div class="card">
         <h3>Copy &amp; Messaging</h3>
         <p>Product descriptions, landing pages, blog content, and brand voice work built to convert and rank.</p>
@@ -747,7 +746,7 @@ footer a { color: var(--steel); }
 </main>
 
 <footer>
-  This website was handmade in Notepad. I do not collect, store, share, or sell your personal information.<br>
+  This website was made in Notepad. I do not collect, store, share, or sell your personal information.<br>
   <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">View GitHub policies here.</a>
 </footer>
 
@@ -761,9 +760,10 @@ function toggleCard(id) {
 }
 
 function myFunction() {
-  if (window.innerWidth >= 768) return;
+  if (window.innerWidth >= 768) return true;
   var x = document.getElementById("myLinks");
   x.style.display = x.style.display === "block" ? "none" : "block";
+  return false;
 }
 
 window.addEventListener("resize", function() {

@@ -144,7 +144,7 @@ footer a { color: lightsteelblue; }
 
 <!-- NAV -->
 <nav>
-<a href="javascript:void(0);" class="menu-image" onclick="myFunction()">
+<a href="index.html" class="menu-image" onclick="return myFunction()">
 <picture>
   <!-- Desktop image-->
 	<source media="(min-width: 768px)" srcset="images/MaxGFX-dog-Logo-White.png" class="menu-image" alt="MaxGFX Logo">
@@ -162,7 +162,7 @@ footer a { color: lightsteelblue; }
 <main>
 
 <h1>Copy Portfolio</h1>
-<p>Filter or sort the table below to find examples of work from different topics, titles, and sources.</p>
+<p>Filter or sort the table below to find examples of work from different topics, titles, and sources. All links open in new tabs.</p>
 
 <div class="filter-container">
   <input type="text" id="tableFilter" placeholder="Search table…" oninput="applyFilter()">
@@ -184,7 +184,7 @@ footer a { color: lightsteelblue; }
 
 <!-- FOOTER -->
 <footer>
-This website was handmade in Notepad. I do not collect, store, share, or sell your personal information.<br>
+This website was made in Notepad. I do not collect, store, share, or sell your personal information.<br>
 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">View GitHub policies here.</a>
 </footer>
 
@@ -496,9 +496,10 @@ function applyFilter() {
 
 // nav toggle
 function myFunction() {
-  if (window.innerWidth >= 768) return;
-  const x = document.getElementById("myLinks");
+  if (window.innerWidth >= 768) return true;
+  var x = document.getElementById("myLinks");
   x.style.display = x.style.display === "block" ? "none" : "block";
+  return false;
 }
 window.addEventListener("resize", () => {
   const x = document.getElementById("myLinks");
