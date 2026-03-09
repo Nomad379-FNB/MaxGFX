@@ -6,199 +6,36 @@
 <title>MaxGFX — Project Deliverables & Reports</title>
  <link rel="icon" type="image/x-icon" href="images/MaxGFX-favicon.ico">
 
-<style>
-/* BASE */
-* {
-  font-family: trebuchet ms, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+<link rel="stylesheet" href="stylish.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://maxgfx.dog/#organization",
+  "name": "MaxGFX",
+  "url": "https://maxgfx.dog",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://maxgfx.dog/images/MaxGFX-dog-Logo-MenuW.png"
+  },
+  "description": "MaxGFX is a boutique AI search optimization consultancy building content architecture and entity authority that earns citations from ChatGPT, Google AI Overviews, and Perplexity.",
+  "founder": {
+    "@type": "Person",
+    "@id": "https://maxgfx.dog/#max-loel",
+    "name": "Max Loel",
+    "jobTitle": "Search Strategist",
+    "url": "https://maxgfx.dog"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "url": "https://maxgfx.dog/contact.html",
+    "contactType": "customer service"
+  },
+  "sameAs": [
+    "https://www.reddit.com/user/maxgfxdotdog"
+  ]
 }
-
-body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100dvh;
-  background-color: mintcream;
-}
-
-/* ── NAV ── */
-nav {
-  background: teal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-#myLinks {
-  display: none;
-  list-style: none;
-  width: 100%;
-  text-align: center;
-  background: teal;
-}
-
-#myLinks li a {
-  display: block;
-  color: mintcream;
-  padding: 2vh 2rem;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: background .15s;
-}
-
-#myLinks li a:hover { background: rgba(255,255,255,.15); }
-
-.menu-image { width: 15vw; height: auto; display: flex; align-items: center; justify-content: center; }
-
-/* TYPOGRAPHY */
-main {
-  padding: 1rem;
-}
-
-h1, h2, h3{
-  color: navy;
-  text-align: center;
-  margin: 2rem 0 1rem;
-}
-
-p {
-  color: teal;
-  text-align: center;
-  margin: 1rem auto 2rem;
-  max-width: 900px;
-  line-height: 1.6;
-}
-.btn {
-	display: grid;
-	text-align: center;
-	align-items: center;
- color: white;
- background-color: teal;
- text-decoration: none;
- outline: 2px solid lightsteelblue; border-radius: 50px; padding: 10px;
-}
-.btn:hover{
- color: white;
- background-color: navy;
- text-decoration: none;
- outline: 2px solid white; border-radius: 50px; padding: 10px;
-}
-.featured-case-study {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.case-study-card {
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 2rem;
-}
-
-.case-study-summary {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-.case-study-metrics {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1.25rem;
-  margin: 1.5rem 0;
-}
-
-.metric {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: center;
-}
-
-.metric-value {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
-.metric-label {
-  font-size: 0.85rem;
-  opacity: 0.8;
-}
-
-
-.case-study-focus {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  opacity: 0.85;
-}
-
-
-/* SECTIONS */
-.section {
-  background: mintcream;
-  max-width: 1100px;
-  margin: 2rem auto;
-  padding: 2rem 1rem;
-}
-
-/* CARDS GRID */
-.cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
-
-.card {
-  background: linear-gradient(#fdfefe, #e8f4f4);
-  border: 1px solid #ccc;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.card img {
-  width: 150px;
-  height: 100px;
-  object-fit: scale-down;
-}
-
-.card a {
-  color: teal;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.card a:hover {
-  color: navy;
-}
-footer {
-	background-color: teal;
-	color: white; 
-	text-align: center; 
-	padding: 1%; 
-	overflow: hidden;
-}
-footer a {color: lightsteelblue}
-
-/* DESKTOP GRID */
-@media screen and (min-width:768px) {
-  nav {     flex-direction: row; justify-content: space-between; }
-  nav ul { display:flex; }
-  #myLinks { display:flex; justify-content:flex-end; }
-  .menu-image { width:7vw; padding:0.3rem;}
-
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-}
-</style>
+</script>
 </head>
 
 <body>
@@ -215,7 +52,7 @@ footer a {color: lightsteelblue}
   <ul id="myLinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="about.html">Services</a></li>
+    <li><a href="services.html">Services</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>

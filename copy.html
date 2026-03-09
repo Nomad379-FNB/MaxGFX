@@ -7,137 +7,36 @@
  <link rel="icon" type="image/x-icon" href="images/MaxGFX-favicon.ico">
 
 
-<style>
-/* BASE */
-* {
-  font-family: trebuchet ms, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+<link rel="stylesheet" href="stylish.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://maxgfx.dog/#organization",
+  "name": "MaxGFX",
+  "url": "https://maxgfx.dog",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://maxgfx.dog/images/MaxGFX-dog-Logo-MenuW.png"
+  },
+  "description": "MaxGFX is a boutique AI search optimization consultancy building content architecture and entity authority that earns citations from ChatGPT, Google AI Overviews, and Perplexity.",
+  "founder": {
+    "@type": "Person",
+    "@id": "https://maxgfx.dog/#max-loel",
+    "name": "Max Loel",
+    "jobTitle": "Search Strategist",
+    "url": "https://maxgfx.dog"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "url": "https://maxgfx.dog/contact.html",
+    "contactType": "customer service"
+  },
+  "sameAs": [
+    "https://www.reddit.com/user/maxgfxdotdog"
+  ]
 }
-
-body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100dvh;
-  background-color: mintcream;
-}
-
-/* ── NAV ── */
-nav {
-  background: teal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-#myLinks {
-  display: none;
-  list-style: none;
-  width: 100%;
-  text-align: center;
-  background: teal;
-}
-
-#myLinks li a {
-  display: block;
-  color: mintcream;
-  padding: 2vh 2rem;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: background .15s;
-}
-
-#myLinks li a:hover { background: rgba(255,255,255,.15); }
-
-.menu-image { width: 15vw; height: auto; display: flex; align-items: center; justify-content: center; }
-
-main {
-  padding: 1rem;
-}
-
-h1, h2 {
-  color: navy;
-  text-align: center;
-  margin: 2rem 0 1rem;
-}
-
-p {
-  color: teal;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-/* FILTER / SEARCH */
-.filter-container {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.filter-container input {
-  padding: .5rem;
-  width: 80%;
-  max-width: 500px;
-  border: 2px solid teal;
-  border-radius: 8px;
-}
-
-/* TABLE STYLES */
-table {
-  width: 95vw;
-  border-collapse: collapse;
-  margin-top: 1rem;
-}
-
-th, td {
-  padding: .75rem 1rem;
-  border-bottom: 1px solid rgba(0,0,0,.15);
-  text-align: left;
-}
-
-th {
-  background: linear-gradient(#fdfefe,#e8f4f4);
-  cursor: pointer;
-  position: relative;
-}
-
-th.sort-asc::after {
-  content: " ▲";
-  font-size: .7rem;
-}
-
-th.sort-desc::after {
-  content: " ▼";
-  font-size: .7rem;
-}
-
-tbody tr:hover {
-  background-color: rgba(31,182,178,.1);
-}
-
-/* FOOTER */
-footer {
-  background-color: teal;
-  color: white;
-  text-align: center;
-  padding: 1%;
-}
-
-footer a { color: lightsteelblue; }
-
-/* DESKTOP */
-@media screen and (min-width:768px) {
-  nav {     flex-direction: row; justify-content: space-between; }
-  nav ul { display:flex; }
-  #myLinks { display:flex; justify-content:flex-end; }
-  .menu-image { width:7vw; padding:0.3rem;}
-}
-</style>
+</script>
 </head>
 
 <body>
@@ -154,7 +53,7 @@ footer a { color: lightsteelblue; }
 <ul id="myLinks">
   <li><a href="index.html">Home</a></li>
   <li><a href="portfolio.html">Portfolio</a></li>
-  <li><a href="about.html">Services</a></li>
+  <li><a href="services.html">Services</a></li>
   <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>

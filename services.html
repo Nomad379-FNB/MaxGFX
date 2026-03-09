@@ -8,559 +8,97 @@
  <link rel="icon" type="image/x-icon" href="images/MaxGFX-favicon.ico">
 <meta name="description" content="MaxGFX is a boutique AI Search Optimization consultancy. We build the strategy, content, and off-site presence that gets your brand cited by ChatGPT, Google AI Overviews, and Perplexity. Retainers from $4,500/month.">
 
-<style>
-
-/* BASE */
-* {
-  font-family: trebuchet ms, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+<link rel="stylesheet" href="stylish.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://maxgfx.dog/#organization",
+  "name": "MaxGFX",
+  "url": "https://maxgfx.dog",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://maxgfx.dog/images/MaxGFX-dog-Logo-MenuW.png"
+  },
+  "description": "MaxGFX is a boutique AI search optimization consultancy building content architecture and entity authority that earns citations from ChatGPT, Google AI Overviews, and Perplexity.",
+  "founder": {
+    "@type": "Person",
+    "@id": "https://maxgfx.dog/#max-loel",
+    "name": "Max Loel",
+    "jobTitle": "Search Strategist",
+    "url": "https://maxgfx.dog"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "url": "https://maxgfx.dog/contact.html",
+    "contactType": "customer service"
+  },
+  "sameAs": [
+    "https://www.reddit.com/user/maxgfxdotdog"
+  ]
 }
-
-body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100dvh;
-  background-color: mintcream;
-}
-
-main { padding: 0; }
-
-/* ── NAV ── */
-nav {
-  background: teal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-#myLinks {
-  display: none;
-  list-style: none;
-  width: 100%;
-  text-align: center;
-  background: teal;
-}
-
-#myLinks li a {
-  display: block;
-  color: mintcream;
-  padding: 2vh 2rem;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: background .15s;
-}
-
-#myLinks li a:hover { background: rgba(255,255,255,.15); }
-
-.menu-image { width: 15vw; height: auto; display: flex; align-items: center; justify-content: center; }
-/* TYPOGRAPHY */
-h1, h2, h3 { color: navy; text-align: center; margin: 1rem; }
-p { color: teal; line-height: 1.65; margin: 0; }
-
-/* HERO */
-.hero {
-  background: navy;
-  text-align: center;
-  padding: 4.5rem 1.5rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    -45deg,
-    transparent, transparent 40px,
-    rgba(0,128,128,0.04) 40px,
-    rgba(0,128,128,0.04) 80px
-  );
-  pointer-events: none;
-}
-
-.hero > * { position: relative; z-index: 1; }
-
-.hero-eyebrow {
-  display: inline-block;
-  background: rgba(0,128,128,0.6);
-  color: mintcream;
-  font-size: 0.82rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 0.32rem 1rem;
-  border-radius: 3px;
-  margin-bottom: 1.2rem;
-  border: 1px solid rgba(173,216,230,0.35);
-}
-
-.hero h1 {
-  color: mintcream;
-  font-size: clamp(1.8rem, 4vw, 2.9rem);
-  max-width: 780px;
-  margin: 0 auto 1rem;
-  line-height: 1.2;
-}
-
-.hero h1 span { color: lightsteelblue; }
-
-.hero p {
-  color: mintcream;
-  opacity: 0.88;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  font-size: 1.05rem;
-}
-
-.hero-buttons a {
-  display: inline-block;
-  background: teal;
-  color: white;
-  padding: 12px 26px;
-  margin: 6px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: background 0.2s, transform 0.15s;
-}
-
-.hero-buttons a:hover { background: #006666; transform: translateY(-2px); }
-
-.hero-buttons a.outline {
-  background: transparent;
-  border: 2px solid mintcream;
-  color: mintcream;
-}
-
-.hero-buttons a.outline:hover { background: rgba(255,255,255,0.1); }
-
-/* SECTIONS */
-.section {
-  max-width: 1100px;
-  margin: 3rem auto;
-  padding: 0 1.5rem;
-}
-
-.section-dark {
-  background: navy;
-  padding: 4rem 1.5rem;
-}
-
-.section-dark h2 { color: lightsteelblue; }
-.section-dark h3 { color: mintcream; }
-.section-dark p  { color: mintcream; opacity: 0.85; }
-
-.section-tint {
-  background: linear-gradient(#f0fafa, #e4f4f4);
-  padding: 4rem 1.5rem;
-}
-
-.section-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.section-sub {
-  text-align: center;
-  color: teal;
-  max-width: 620px;
-  margin: 0 auto 2.5rem;
-  font-size: 0.97rem;
-  line-height: 1.65;
-}
-
-/* OFFERINGS */
-.offerings {
-  display: flex;
-  flex-direction: column;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  max-width: 70vw;
-  margin: 0 auto;
-}
-
-.offering {
-  background: white;
-  border: 1px solid #c0dada;
-  border-top: 4px solid teal;
-  border-radius: 6px;
-  padding: 2.5rem;
-  transition: box-shadow 0.2s, transform 0.2s;
-}
-
-.offering:hover {
-  box-shadow: 0 8px 28px rgba(0,100,100,0.13);
-  transform: translateY(-3px);
-}
-
-.offering.featured { border-top-color: navy; }
-
-.offering-tag {
-  display: inline-block;
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: teal;
-  background: #e0f4f4;
-  padding: 0.2rem 0.65rem;
-  border-radius: 3px;
-  margin-bottom: 0.85rem;
-}
-
-.offering h3 {
-  text-align: left;
-  margin: 0 0 0.3rem;
-  font-size: 1.35rem;
-}
-
-.offering-price {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: teal;
-  margin-bottom: 1.1rem;
-}
-
-.offering-price .price-note {
-  font-size: 0.8rem;
-  font-weight: normal;
-  color: steelblue;
-  margin-left: 0.4rem;
-}
-
-.offering > p {
-  color: #336;
-  font-size: 0.97rem;
-  line-height: 1.68;
-  margin-bottom: 1.5rem;
-}
-
-.offering-features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-top: 1px solid #ddeaea;
-  padding-top: 1.1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.5rem;
-}
-
-.offering-features li {
-  font-size: 0.9rem;
-  color: #225;
-  padding-left: 1.25rem;
-  position: relative;
-  line-height: 1.5;
-}
-
-.offering-features li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: teal;
-  font-size: 0.82rem;
-}
-
-.offering-cta {
-  margin-top: auto;
-  padding-top: 1.75rem;
-}
-
-.offering-cta a {
-  display: inline-block;
-  background: navy;
-  color: white;
-  padding: 11px 28px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 0.97rem;
-  font-weight: bold;
-  transition: background 0.2s, transform 0.15s;
-}
-
-.offering-cta a:hover { background: #001a4d; transform: translateY(-1px); }
-.offering-cta a.teal-btn { background: teal; color: white; }
-.offering-cta a.teal-btn:hover { background: navy; }
-.offering-cta a.navy-btn { background: navy; color: white; }
-.offering-cta a.navy-btn:hover { background: #001a4d; transform: translateY(-1px); }
-
-
-/* RETAINER STRUCTURE */
-.retainer-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.2rem;
-  margin-top: 1.8rem;
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.retainer-item {
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(173,216,230,0.22);
-  border-left: 4px solid teal;
-  border-radius: 0 6px 6px 0;
-  padding: 1.3rem 1.5rem;
-}
-
-.retainer-item h3 {
-  text-align: left;
-  margin: 0 0 0.4rem;
-  font-size: 1rem;
-  color: lightsteelblue;
-}
-
-.retainer-item p { font-size: 0.9rem; opacity: 0.82; }
-
-/* SERVICE MENU */
-.menu-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.menu-item {
-  background: white;
-  border: 1px solid #c0dada;
-  border-radius: 6px;
-  padding: 1.25rem 1.5rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  transition: box-shadow 0.15s;
-}
-
-.menu-item:hover { box-shadow: 0 4px 16px rgba(0,100,100,0.1); }
-
-.menu-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
-
-.menu-item h3 {
-  text-align: left;
-  margin: 0 0 0.25rem;
-  font-size: 0.97rem;
-  color: navy;
-}
-
-.menu-item p {
-  font-size: 0.85rem;
-  color: #448;
-  line-height: 1.55;
-}
-
-/* ── TEAM SECTION ── */
-.team-grid {
-  display: grid;
-  grid-template-rows: 1fr;
-  gap: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.team-card {
-  background: white;
-  border: 1px solid #c0dada;
-  border-radius: 6px;
-  padding: 2rem;
-  display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-  transition: box-shadow 0.2s, transform 0.2s;
-}
-
-.team-card:hover {
-  box-shadow: 0 6px 22px rgba(0,100,100,0.11);
-  transform: translateY(-2px);
-}
-
-.team-avatar {
-  flex-shrink: 0;
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, teal, navy);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  color: white;
-}
-
-.team-card.lead .team-avatar {
-  width: 80px;
-  height: 80px;
-  font-size: 2rem;
-  background: linear-gradient(135deg, navy, #003366);
-  border: 3px solid teal;
-}
-
-.team-info h3 {
-  text-align: left;
-  margin: 0 0 0.15rem;
-  font-size: 1.05rem;
-  color: navy;
-}
-
-.team-role {
-  display: inline-block;
-  font-size: 0.75rem;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: white;
-  background: teal;
-  padding: 0.18rem 0.65rem;
-  border-radius: 3px;
-  margin-bottom: 0.65rem;
-}
-
-.team-card.lead .team-role { background: navy; }
-
-.team-info p {
-  font-size: 0.88rem;
-  color: #448;
-  line-height: 1.6;
-}
-
-.team-info .team-focus {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 0.75rem;
-}
-
-.focus-tag {
-  font-size: 0.75rem;
-  color: teal;
-  background: #e8f7f7;
-  border: 1px solid #b8dede;
-  padding: 0.18rem 0.6rem;
-  border-radius: 12px;
-}
-
-.dog-card {
-  background: linear-gradient(#fffdf8, #fff8ee);
-  border-color: #d4c8a8;
-  border-top: 2px dashed #c8a96e;
-}
-
-.dog-avatar {
-  background: linear-gradient(135deg, #c8a96e, #a07840) !important;
-}
-
-.dog-role {
-  background: #a07840 !important;
-}
-
-/* BIO */
-.bio-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  align-items: start;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.bio-photo {
-  width: 100%;
-  max-width: 220px;
-  border-radius: 6px;
-  display: block;
-  margin: 0 auto;
-  border: 3px solid teal;
-}
-
-.bio-text h2 { text-align: left; margin-left: 0; }
-.bio-text p  { color: #336; margin-bottom: 1rem; }
-
-.bio-credentials {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
-}
-
-.cred-tag {
-  background: #e0f4f4;
-  color: navy;
-  font-size: 0.78rem;
-  padding: 0.28rem 0.7rem;
-  border-radius: 20px;
-  border: 1px solid #b0d8d8;
-}
-
-/* CTA */
-.cta-strip {
-  background: linear-gradient(135deg, teal 0%, #004d4d 100%);
-  padding: 3.5rem 1.5rem;
-  text-align: center;
-}
-
-.cta-strip h2 { color: mintcream; font-size: clamp(1.3rem, 3vw, 1.9rem); }
-.cta-strip p  { color: mintcream; opacity: 0.88; max-width: 520px; margin: 0 auto 1.5rem; }
-
-.cta-strip a {
-  display: inline-block;
-  background: navy;
-  color: white;
-  padding: 13px 32px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 1.05rem;
-  transition: background 0.2s, transform 0.15s;
-}
-
-.cta-strip a:hover { background: #001a4d; transform: translateY(-2px); }
-
-/* FOOTER */
-footer {
-  background-color: teal;
-  color: white;
-  text-align: center;
-  padding: 1%;
-}
-
-footer a { color: lightsteelblue; }
-
-/* DESKTOP */
-@media screen and (min-width: 768px) {
-  nav { flex-direction: row; justify-content: space-between; }
-  nav ul { display: flex; }
-  #myLinks { display: flex; justify-content: flex-end; }
-  .menu-image { width: 7vw; padding: 0.3rem; }
-
-  .offerings          { grid-template-columns: repeat(3, 1fr); }
-  .retainer-grid      { grid-template-columns: repeat(2, 1fr); }
-  .menu-grid          { grid-template-columns: repeat(2, 1fr); }
-  .bio-grid           { grid-template-columns: 220px 1fr; }
-  .offering-features  { grid-template-columns: 1fr 1fr; }
-  .team-grid          { grid-template-columns: repeat(3, 1fr); flex-direction: column; }
-
-  .team-card {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://maxgfx.dog/#service",
+  "name": "MaxGFX AI Search Optimization",
+  "url": "https://maxgfx.dog",
+  "description": "AI search optimization consulting covering AEO, GEO, and LLM visibility. MaxGFX builds the content architecture and entity authority that earns citations from ChatGPT, Google AI Overviews, and Perplexity.",
+  "provider": {
+    "@id": "https://maxgfx.dog/#organization"
+  },
+  "serviceType": [
+    "AI Search Optimization",
+    "AEO Consulting",
+    "GEO Strategy",
+    "LLM Visibility",
+    "SEO Content Strategy",
+    "AI Visibility Audit"
+  ],
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "MaxGFX Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI Visibility Snapshot",
+          "description": "High-level review of current AI search standing, visibility suppressors, and a written strategy overview. Credited in full toward a full Audit."
+        },
+        "price": "200",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI Visibility Audit",
+          "description": "Per-URL diagnostic identifying where a brand stands in AI search and what content is missing at the entity and structure level."
+        },
+        "price": "1500",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI Search Optimization Engagement",
+          "description": "Ongoing monthly AI search optimization strategy and content production built to grow citation share and organic visibility month over month."
+        },
+        "price": "3000",
+        "priceCurrency": "USD"
+      }
+    ]
   }
 }
-
-/* FADE IN */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(14px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-.hero-eyebrow { animation: fadeUp 0.4s ease both 0.1s; }
-.hero h1      { animation: fadeUp 0.4s ease both 0.22s; }
-.hero p       { animation: fadeUp 0.4s ease both 0.36s; }
-.hero-buttons { animation: fadeUp 0.4s ease both 0.48s; }
-
-</style>
+</script>
 </head>
 
 <body>
@@ -576,7 +114,7 @@ footer a { color: lightsteelblue; }
   <ul id="myLinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="about.html">Services</a></li>
+    <li><a href="services.html">Services</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
@@ -693,7 +231,7 @@ footer a { color: lightsteelblue; }
 
         <div class="menu-item">
           <div class="menu-icon">✍️</div>
-          <div>
+          <div class="menu-info">
             <h3>SEO/AEO Content — New Pages</h3>
             <p>Original, LLM-extractable content built around search intent, structured data, and topical authority. Optimized for human search and AI citation simultaneously.</p>
           </div>
@@ -701,7 +239,7 @@ footer a { color: lightsteelblue; }
 
         <div class="menu-item">
           <div class="menu-icon">🔄</div>
-          <div>
+          <div class="menu-info">
             <h3>Page Revisions and Optimization</h3>
             <p>Existing URLs updated for AI visibility, schema compliance, keyword alignment, and Helpful Content standards. Often the fastest path to measurable citation gains.</p>
           </div>
@@ -709,7 +247,7 @@ footer a { color: lightsteelblue; }
 
         <div class="menu-item">
           <div class="menu-icon">🏷️</div>
-          <div>
+          <div class="menu-info">
             <h3>Metadata Optimization</h3>
             <p>Title tags, meta descriptions, and video metadata written to improve click-through in traditional SERP and signal entity relevance to AI engines.</p>
           </div>
@@ -717,7 +255,7 @@ footer a { color: lightsteelblue; }
 
         <div class="menu-item">
           <div class="menu-icon">📱</div>
-          <div>
+          <div class="menu-info">
             <h3>Social Media Content</h3>
             <p>On-brand post batches written to extend content reach, reinforce topical authority signals, and maintain consistent brand voice across channels.</p>
           </div>
@@ -725,7 +263,7 @@ footer a { color: lightsteelblue; }
 
         <div class="menu-item">
           <div class="menu-icon">📝</div>
-          <div>
+          <div class="menu-info">
             <h3>SEO/AEO Content Briefs</h3>
             <p>Structured briefs for internal writers or agencies: keyword targets, intent mapping, heading architecture, and AEO formatting guidance built in.</p>
           </div>
@@ -733,7 +271,7 @@ footer a { color: lightsteelblue; }
 
         <div class="menu-item">
           <div class="menu-icon">🖼️</div>
-          <div>
+          <div class="menu-info">
             <h3>Creative Proofing and Alt-Text</h3>
             <p>Image alt-text and creative asset copy written for accessibility compliance and natural-language image search visibility — a frequently overlooked AI citation signal.</p>
           </div>
@@ -742,7 +280,7 @@ footer a { color: lightsteelblue; }
 
         <div class="menu-item">
           <div class="menu-icon">📈</div>
-          <div>
+          <div class="menu-info">
             <h3>Product Feed Optimization</h3>
             <p>Product titles and descriptions researched and rewritten and audited individually against top-performing competitors in the same Shopping category, then rebuilt for click-through, conversion signal, and AI extractability.</p>
           </div>
@@ -750,7 +288,7 @@ footer a { color: lightsteelblue; }
 
         <div class="menu-item">
           <div class="menu-icon">🗣️</div>
-          <div>
+          <div class="menu-info">
             <h3>Community Engagement Management</h3>
             <p>Authentic, problem-first participation across targeted subreddits and forums. Builds the off-site discussion signals that AI engines scrape and cite. Engagement roadmap and posts written as a contributor, not a brand account.</p>
           </div>

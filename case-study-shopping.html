@@ -2,103 +2,42 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>eCommerce SEO Case Study: Google Shopping +1,328% | MaxGFX</title>
 <meta name="description" content="How a three-phase eCommerce SEO strategy and per-SKU metadata rewrite produced 1,328% organic Google Shopping traffic growth.">
-<style>
-*{font-family:'Trebuchet MS',Helvetica,sans-serif;padding:0;margin:0;box-sizing:border-box}
-:root{--navy:#0B1F3A;--teal:#009999;--mint:mintcream;--accent:#1DBBBB;--text:#22333B;--muted:#546E7A}
-body{background:#F4F8F8;color:var(--text);line-height:1.68}
-nav{background:var(--teal);display:flex;align-items:center;justify-content:space-between;padding:.4rem 1.5rem;position:sticky;top:0;z-index:100}
-nav img{height:42px}
-nav ul{list-style:none;display:flex;gap:0}
-nav ul li a{color:var(--mint);text-decoration:none;padding:.6rem 1.1rem;display:block;font-size:.95rem;transition:background .15s}
-nav ul li a:hover{background:rgba(255,255,255,.15)}
-.breadcrumb{background:#fff;border-bottom:1px solid #d4e6e6;padding:.55rem 1.5rem;font-size:.8rem;color:var(--muted)}
-.breadcrumb a{color:var(--teal);text-decoration:none}
-.hero{background:linear-gradient(135deg,var(--navy) 0%,#0d2a45 55%,#0a3040 100%);padding:5rem 1.5rem 4rem;position:relative;overflow:hidden}
-.hero::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-50deg,transparent,transparent 60px,rgba(29,187,187,.025) 60px,rgba(29,187,187,.025) 120px);pointer-events:none}
-.hi{max-width:840px;margin:0 auto;position:relative;z-index:1}
-.eyebrow{display:inline-block;background:rgba(29,187,187,.18);border:1px solid rgba(29,187,187,.4);color:var(--accent);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:.32rem .9rem;border-radius:3px;margin-bottom:1.3rem}
-.hero h1{color:#fff;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.14;max-width:740px;margin:0 0 1.1rem}
-.hero h1 em{color:var(--accent);font-style:normal}
-.hero-sub{color:rgba(255,255,255,.75);font-size:1.03rem;max-width:580px;margin:0 0 2.2rem}
-.hero-meta{display:flex;flex-wrap:wrap;gap:1.4rem}
-.mi{display:flex;flex-direction:column;gap:.15rem}
-.ml{font-size:.69rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.42)}
-.mv{font-size:.92rem;color:rgba(255,255,255,.88);font-weight:bold}
-.mbar{background:var(--navy);padding:1.8rem 1.5rem}
-.mbar-in{max-width:980px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem}
-.tile{background:rgba(255,255,255,.05);border:1px solid rgba(29,187,187,.2);border-top:3px solid var(--accent);border-radius:6px;padding:1.1rem 1.2rem;text-align:center}
-.tile .n{font-size:2rem;font-weight:bold;color:var(--accent);line-height:1;display:block;margin-bottom:.25rem}
-.tile .l{font-size:.73rem;color:rgba(255,255,255,.58);text-transform:uppercase;letter-spacing:.08em;line-height:1.4}
-.wrap{max-width:820px;margin:0 auto;padding:0 1.5rem}
-section{padding:3.2rem 1.5rem}
-section h2{font-size:1.5rem;color:var(--navy);margin:0 0 .9rem;line-height:1.2}
-section h3{font-size:.82rem;color:var(--teal);margin:1.8rem 0 .45rem;text-transform:uppercase;letter-spacing:.08em}
-section p{color:var(--text);font-size:1rem;line-height:1.72;margin-bottom:1.05rem}
-section p:last-child{margin-bottom:0}
-.sl{display:inline-block;background:var(--accent);color:#fff;font-size:.68rem;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;padding:.28rem .75rem;border-radius:3px;margin-bottom:.8rem}
-hr{border:none;border-top:1px solid #cde0e0;margin:0}
-.callout{background:#EAF7F7;border-left:4px solid var(--accent);border-radius:0 6px 6px 0;padding:1.3rem 1.5rem;margin:1.8rem 0}
-.callout p{color:var(--navy);margin:0;font-size:.97rem;line-height:1.68}
-.callout strong{color:var(--teal)}
-.callout-dark{background:var(--navy);border-left:4px solid var(--accent);border-radius:0 6px 6px 0;padding:1.5rem 1.7rem;margin:1.8rem 0}
-.callout-dark p{color:rgba(255,255,255,.83);margin:0;font-size:.97rem;line-height:1.7}
-.chart{margin:2.2rem 0;background:#fff;border:1px solid #c2dede;border-radius:8px;overflow:hidden;box-shadow:0 2px 14px rgba(0,70,70,.07)}
-.chart img{width:100%;display:block}
-.cap{font-size:.75rem;color:#7a9a9a;padding:.65rem 1rem;border-top:1px solid #d4e6e6;background:#F7FDFD;text-align:center}
-.dark{background:var(--navy);padding:3.2rem 1.5rem}
-.dark h2{color:lightsteelblue;font-size:1.45rem;margin:0 0 .9rem}
-.dark h3{color:var(--accent);font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;margin:1.8rem 0 .45rem}
-.dark p{color:rgba(255,255,255,.8);font-size:.97rem;line-height:1.72;margin-bottom:1rem}
-.dark p:last-child{margin-bottom:0}
-.cta{background:linear-gradient(135deg,var(--teal),#005555);padding:3.5rem 1.5rem;text-align:center}
-.cta h2{color:var(--mint);font-size:clamp(1.25rem,3vw,1.75rem);margin:0 0 .7rem}
-.cta p{color:rgba(255,255,255,.82);max-width:460px;margin:0 auto 1.4rem;font-size:.97rem}
-.cta a{display:inline-block;background:var(--navy);color:#fff;padding:11px 28px;text-decoration:none;border-radius:5px;font-size:.97rem;font-weight:bold}
-.cta a:hover{background:#0a1a30}
-footer{background:var(--teal);color:#fff;text-align:center;padding:.9rem 1.5rem;font-size:.82rem}
-footer a{color:lightsteelblue}
-@media(min-width:768px){.mbar-in{grid-template-columns:repeat(5,1fr)}}
-@keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-.hi>*{animation:fu .4s ease both}
-.eyebrow{animation-delay:.1s}.hero h1{animation-delay:.2s}.hero-sub{animation-delay:.3s}.hero-meta{animation-delay:.4s}
-
-.phases{display:grid;grid-template-columns:1fr;gap:1rem;margin:1.8rem 0}
-.phase{display:flex;gap:1rem;background:#fff;border:1px solid #c2dede;border-radius:6px;padding:1.2rem 1.4rem;align-items:flex-start}
-.phase-num{flex-shrink:0;background:var(--navy);color:var(--accent);border-radius:5px;padding:.35rem .7rem;font-size:.75rem;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
-.phase-body h4{font-size:.9rem;color:var(--navy);margin:0 0 .3rem;font-weight:bold}
-.phase-body p{font-size:.88rem;color:var(--muted);line-height:1.6;margin:0}
-.process-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin:1.8rem 0}
-.step{display:flex;gap:1rem;background:rgba(255,255,255,.06);border:1px solid rgba(29,187,187,.2);border-radius:6px;padding:1.2rem 1.4rem;align-items:flex-start}
-.step-num{flex-shrink:0;width:34px;height:34px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:.9rem}
-.step-body h4{font-size:.9rem;color:rgba(255,255,255,.95);margin:0 0 .3rem;font-weight:bold}
-.step-body p{font-size:.87rem;color:rgba(255,255,255,.7);line-height:1.6;margin:0}
-.params-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin:1.8rem 0}
-.param{background:#fff;border:1px solid #c2dede;border-radius:6px;padding:1.1rem 1.2rem;text-align:center}
-.param .pv{font-size:1.45rem;font-weight:bold;color:var(--navy);line-height:1;display:block;margin-bottom:.2rem}
-.param .pl{font-size:.73rem;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;line-height:1.4}
-.ga4-highlight{background:#EAF7F7;border:2px solid var(--accent);border-radius:8px;padding:2rem;text-align:center;margin:2rem 0}
-.ga4-highlight .big{font-size:3.5rem;font-weight:bold;color:var(--accent);line-height:1;display:block;margin-bottom:.3rem}
-.ga4-highlight .sub{font-size:1rem;color:var(--navy);margin-bottom:.2rem;font-weight:bold}
-.ga4-highlight .note{font-size:.82rem;color:var(--muted)}
-.ba-copy{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
-.bac{background:#fff;border-radius:6px;overflow:hidden;border:1px solid #c2dede}
-.bac .bah{padding:.5rem .9rem;font-size:.7rem;font-weight:bold;letter-spacing:.08em;text-transform:uppercase}
-.bac.bad .bah{background:#c05050;color:#fff}
-.bac.good .bah{background:var(--teal);color:#fff}
-.bac .bab{padding:1rem .9rem;font-size:.87rem;line-height:1.6;color:var(--text)}
-.bac.good .bab{background:#EAF7F7}
-@media(min-width:600px){
-  .phases{grid-template-columns:1fr 1fr 1fr}
-  .process-grid{grid-template-columns:1fr 1fr}
-  .params-grid{grid-template-columns:repeat(4,1fr)}
+<link rel="stylesheet" href="stylish.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://maxgfx.dog/#organization",
+  "name": "MaxGFX",
+  "url": "https://maxgfx.dog",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://maxgfx.dog/images/MaxGFX-dog-Logo-MenuW.png"
+  },
+  "description": "MaxGFX is a boutique AI search optimization consultancy building content architecture and entity authority that earns citations from ChatGPT, Google AI Overviews, and Perplexity.",
+  "founder": {
+    "@type": "Person",
+    "@id": "https://maxgfx.dog/#max-loel",
+    "name": "Max Loel",
+    "jobTitle": "Search Strategist",
+    "url": "https://maxgfx.dog"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "url": "https://maxgfx.dog/contact.html",
+    "contactType": "customer service"
+  },
+  "sameAs": [
+    "https://www.reddit.com/user/maxgfxdotdog"
+  ]
 }
-</style></head><body>
+</script></head><body>
 <nav>
   <img src="images/MaxGFX-dog-Logo-White.png" alt="MaxGFX">
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="about.html">Services</a></li>
+    <li><a href="services.html">Services</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
