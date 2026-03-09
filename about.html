@@ -177,7 +177,8 @@ p { color: teal; line-height: 1.65; margin: 0; }
 
 /* OFFERINGS */
 .offerings {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: 1fr;
   gap: 1rem;
   max-width: 70vw;
@@ -267,8 +268,12 @@ p { color: teal; line-height: 1.65; margin: 0; }
 }
 
 .offering-cta {
+  margin-top: auto;
+  padding-top: 1.75rem;
+}
+
+.offering-cta a {
   display: inline-block;
-  margin-top: 1.75rem;
   background: navy;
   color: white;
   padding: 11px 28px;
@@ -279,9 +284,12 @@ p { color: teal; line-height: 1.65; margin: 0; }
   transition: background 0.2s, transform 0.15s;
 }
 
-.offering-cta:hover { background: #001a4d; transform: translateY(-1px); }
-.offering-cta.teal-btn { background: teal; }
-.offering-cta.teal-btn:hover { background: #006666; }
+.offering-cta a:hover { background: #001a4d; transform: translateY(-1px); }
+.offering-cta a.teal-btn { background: teal; color: white; }
+.offering-cta a.teal-btn:hover { background: navy; }
+.offering-cta a.navy-btn { background: navy; color: white; }
+.offering-cta a.navy-btn:hover { background: #001a4d; transform: translateY(-1px); }
+
 
 /* RETAINER STRUCTURE */
 .retainer-grid {
@@ -594,7 +602,7 @@ footer a { color: lightsteelblue; }
     <div class="offerings">
 
       <div class="offering">
-        <span class="offering-tag">Dip a Toe In</span>
+        <span class="offering-tag">Strategic Insight</span>
         <h3>AI Visibility Snapshot</h3>
         <div class="offering-price">$200 <span class="price-note">· credited toward Audit</span></div>
         <p>High-level review of your brand's current AI search standing, what is suppressing your visibility, and a written strategy overview with estimates and a realistic timeline. If you move forward with a full Audit or retainer, the $200 credits in full.</p>
@@ -603,10 +611,12 @@ footer a { color: lightsteelblue; }
           <li>Entity and semantic footprint assessment</li>
           <li>Full $200 credited toward AI Visibility Audit</li>
         </ul>
-      </div>
+		<div class="offering-cta">
+		<a href="https://maxgfx-109319.square.site/" target="_blank" class="teal-btn">Order a Snapshot in Square</a>
+      </div></div>
 
       <div class="offering">
-        <span class="offering-tag">Start Here</span>
+        <span class="offering-tag">Solutions Roadmap</span>
         <h3>AI Visibility Audit</h3>
         <div class="offering-price">$1,500+ <span class="price-note">one-time · scope-dependent</span></div>
         <p>Something is suppressing your visibility. MaxGFX finds it.The Audit is a per-URL diagnostic that identifies exactly where your brand stands in AI search and what your content is missing at the entity and structure level.</p>
@@ -619,10 +629,12 @@ footer a { color: lightsteelblue; }
           <li>Prioritized fix roadmap with impact estimates</li>
           <li>Results walkthrough call included</li>
         </ul>
-      </div>
+		<div class="offering-cta">
+		<a href="https://maxgfx-109319.square.site/" target="_blank" class="navy-btn">Book Your Audit in Square</a>
+      </div></div>
 
       <div class="offering featured">
-        <span class="offering-tag">Monthly Retainer</span>
+        <span class="offering-tag">Iterative Growth</span>
         <h3>AI Search Optimization</h3>
         <div class="offering-price">$3,000+ <span class="price-note">per month · scope-dependent</span></div>
         <p>Ongoing strategy and AEO content optimization built for humans, but engineered to grow AI citation share and organic visibility month over month. Scope is defined upfront, with flexible deliverables chosen monthly.</p>
@@ -637,7 +649,9 @@ footer a { color: lightsteelblue; }
           <li>Monthly AI visibility and ranking report</li>
           <li>Consultation calls each term</li>
         </ul>
-       </div>
+		<div class="offering-cta">
+		<a href="https://maxgfx.dog/contact.html" class="teal-btn">Contact MaxGFX</a>
+       </div></div>
 
     </div>
   </section>
