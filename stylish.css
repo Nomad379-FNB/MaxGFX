@@ -522,7 +522,7 @@ section p:last-child { margin-bottom: 0; }
   text-align: center;
 }
 
-.process-step { position: relative; }
+.process-step { margin: 1rem; position: relative; }
 
 .step-num {
   display: inline-block;
@@ -533,7 +533,7 @@ section p:last-child { margin-bottom: 0; }
   color: white;
   border-radius: 50%;
   font-weight: bold;
-  margin-bottom: 0.75rem;
+  margin: 0.75rem;
   font-size: 0.95rem;
 }
 
@@ -805,7 +805,7 @@ section p:last-child { margin-bottom: 0; }
 .cs-panel-body p { color: #334; font-size: .95rem; line-height: 1.72; margin-bottom: 1.4rem; }
 
 .cs-panel-cta {
-  display: inline-block;
+  display: grid;
   background: var(--navy);
   color: #fff;
   padding: 10px 24px;
@@ -814,6 +814,7 @@ section p:last-child { margin-bottom: 0; }
   font-size: .92rem;
   font-weight: bold;
   transition: background .2s, transform .15s;
+  text-align:center;
 }
 
 .cs-panel-cta:hover { background: #051229; transform: translateY(-1px); }
@@ -1340,10 +1341,9 @@ tbody tr:hover { background-color: rgba(31,182,178,.1); }
 
   /* Index grids */
   .stats   { grid-template-columns: repeat(3, 1fr); }
-  .process { grid-template-columns: repeat(4, 1fr); }
 
-  /* Cards */
-  .cards { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+
+
 
   /* Services */
   .offerings         { flex-direction: column; grid-template-columns: repeat(3, 1fr); }
@@ -1384,7 +1384,7 @@ tbody tr:hover { background-color: rgba(31,182,178,.1); }
   .pb-divider { display: block; }
 
   /* Metrics bar */
-  .mbar-in { grid-template-columns: repeat(4, 1fr); }
+  .mbar-in { grid-template-columns: repeat(5, 1fr); }
 
   /* Contact */
   .offer { grid-template-columns: 1fr auto; grid-template-rows: auto auto; align-items: start; }
