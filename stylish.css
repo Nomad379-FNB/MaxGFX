@@ -176,7 +176,7 @@ footer a { color: lightsteelblue; }
 
 /* Index hero: background image + dark vignette overlay */
 .hero--imgbg {
-   background: url("images/redwoodHeroStatic.png") center top / cover no-repeat;
+  background: url("images/redwoodHeroStatic.png") center top / cover no-repeat;
   background-color: #0a2a3a;
   display: grid;
   align-items: center;
@@ -397,7 +397,10 @@ section p:last-child { margin-bottom: 0; }
 .wrap { max-width: 820px; margin: 0 auto; padding: 0 1.5rem; }
 
 .sl {
-  display: inline-block;
+  display:block;
+  margin:0 auto;
+  width: 9vw;
+  text-align: center;
   background: var(--accent);
   color: #fff;
   font-size: .68rem;
