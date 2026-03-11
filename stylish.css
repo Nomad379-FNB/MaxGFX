@@ -901,7 +901,7 @@ section p:last-child { margin-bottom: 0; }
 
 .offering-features li::before { content: '☑️ '; position: relative; left: 0;  font-size: 0.82rem; }
 
-.offering-cta { margin-top: auto; padding-top: 1.75rem; }
+.offering-cta { margin-top: 0; padding-top: 1.75rem; }
 
 .offering-cta a {
   display: inline-block;
@@ -920,7 +920,27 @@ section p:last-child { margin-bottom: 0; }
 .offering-cta a.teal-btn:hover { background: navy; }
 .offering-cta a.navy-btn { background: navy; }
 .offering-cta a.navy-btn:hover { background: #001a4d; transform: translateY(-1px); }
+.sq-badge-wrap {display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;}
 
+    .sq-badge-wrap::after {
+      content: '↗ Opens in Square';
+      font-size: 0.67rem;
+      font-weight: 500;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: rgba(91, 138, 245, 0.72);
+      background: rgba(91, 138, 245, 0.08);
+      border-color: rgba(91, 138, 245, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 3px 9px 3px 7px;
+      border-radius: 3px;
+      transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
 
 /* ── RETAINER STRUCTURE (services page) ── */
 .retainer-grid {
@@ -1066,12 +1086,11 @@ flex: 1;
 
 /* ── OFFERS (contact/order page) ── */
 .offers {
-  max-width: 860px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 70vw;
   margin: 3rem auto;
-  padding: 0 1.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
 }
 
 .offer {
@@ -1371,7 +1390,7 @@ tbody tr:hover { background-color: rgba(31,182,178,.1); }
   }
  .offering-cta {
     grid-area: cta;
-    align-self: center;
+    align-self: end;
     padding-top: 0;
     margin-left: 1.5rem;
   }
@@ -1381,7 +1400,7 @@ tbody tr:hover { background-color: rgba(31,182,178,.1); }
   .offering > p      { grid-area: desc; }	
   .offering-features { grid-template-columns: 1fr; grid-area: feats;}
   .bio-grid          { grid-template-columns: 220px 1fr; }
-
+	
   /* Team */
   .team-grid { grid-template-columns: repeat(3, 1fr); }
   .team-card { flex-direction: column; align-items: center; gap: 1rem; }
@@ -1400,8 +1419,20 @@ tbody tr:hover { background-color: rgba(31,182,178,.1); }
   .offer-head  { grid-column: 1; }
   .offer p     { grid-column: 1; }
   .credit-note { grid-column: 1; }
-  .offer a.btn { grid-column: 2; grid-row: 1 / 4; align-self: center; margin-left: 1.5rem; white-space: nowrap; }
+  .offer a.btn { grid-column: unset; grid-row: unset; margin-left: 0; white-space: nowrap; }
   .direct-links { grid-template-columns: repeat(3, 1fr); }
+  .offer .sq-badge-wrap {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  align-self: center;
+  margin-left: 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  white-space: nowrap;
+}
+
 }
 
 @media (min-width: 600px) {

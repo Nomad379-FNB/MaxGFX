@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — AISO.dog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg:        #0c0d0f;
+      --surface:   #13151a;
+      --border:    #232530;
+      --muted:     #3d4055;
+      --dim:       #7a7f9a;
+      --body:      #c8ccdc;
+      --head:      #e8ecf5;
+      --accent:    #5b8af5;
+      --accent-lo: rgba(91,138,245,0.10);
+      --serif:     'Instrument Serif', Georgia, serif;
+      --mono:      'DM Mono', 'Courier New', monospace;
+    }
+
+    html {
+      font-size: 16px;
+      background: var(--bg);
+      color: var(--body);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: var(--mono);
+      font-weight: 300;
+      min-height: 100vh;
+    }
+
+    /* ── Layout ── */
+    .page-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 80px 32px 120px;
+    }
+
+    /* ── Header ── */
+    .site-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 48px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .site-eyebrow::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .doc-title {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--head);
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .doc-meta {
+      font-size: 0.78rem;
+      color: var(--dim);
+      letter-spacing: 0.06em;
+      margin-bottom: 64px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── Intro callout ── */
+    .plain-english {
+      background: var(--accent-lo);
+      border-left: 3px solid var(--accent);
+      padding: 20px 24px;
+      margin-bottom: 56px;
+      border-radius: 0 4px 4px 0;
+    }
+    .plain-english p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--body);
+    }
+    .plain-english strong {
+      color: var(--head);
+      font-weight: 500;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 52px;
+    }
+
+    .section-label {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--dim);
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: 1.45rem;
+      font-weight: 400;
+      color: var(--head);
+      margin-bottom: 18px;
+      line-height: 1.25;
+    }
+
+    p {
+      font-size: 0.92rem;
+      line-height: 1.8;
+      color: var(--body);
+      margin-bottom: 14px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Data table ── */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 0.84rem;
+    }
+    .data-table th {
+      text-align: left;
+      font-weight: 500;
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--dim);
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table td {
+      padding: 14px 16px;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+      color: var(--body);
+      line-height: 1.6;
+    }
+    .data-table tr:last-child td {
+      border-bottom: none;
+    }
+    .data-table td:first-child {
+      color: var(--head);
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    .none-badge {
+      display: inline-block;
+      background: rgba(91,138,245,0.12);
+      color: var(--accent);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      padding: 2px 8px;
+      border-radius: 3px;
+    }
+
+    /* ── Rights list ── */
+    .rights-grid {
+      display: grid;
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .right-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px 20px;
+    }
+    .right-item strong {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--head);
+      margin-bottom: 4px;
+    }
+    .right-item span {
+      font-size: 0.84rem;
+      color: var(--dim);
+      line-height: 1.6;
+    }
+
+    /* ── Contact block ── */
+    .contact-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin-top: 20px;
+    }
+    .contact-block p {
+      font-size: 0.88rem;
+      margin-bottom: 10px;
+    }
+    .contact-block a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 400;
+    }
+    .contact-block a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Divider ── */
+    .rule {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 56px 0;
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .doc-footer a {
+      color: var(--dim);
+      text-decoration: none;
+    }
+    .doc-footer a:hover {
+      color: var(--accent);
+    }
+
+    @media (max-width: 540px) {
+      .page-wrap { padding: 48px 20px 80px; }
+      .data-table td:first-child { white-space: normal; }
+      .contact-block { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <div class="site-eyebrow">AISO.dog</div>
+
+  <h1 class="doc-title">Privacy Policy</h1>
+  <p class="doc-meta">Effective Date: March 10, 2025 &nbsp;&nbsp;|&nbsp;&nbsp; Last Updated: March 10, 2025 &nbsp;&nbsp;|&nbsp;&nbsp; Jurisdiction: California (CCPA / CPRA)</p>
+
+  <div class="plain-english">
+    <p><strong>Plain English first:</strong> This site does not track you. There are no cookies, analytics, ad pixels, or session recorders of any kind on aiso.dog. The only external connections this site makes are a mailto link (which opens your own email client) and links to Square, a third-party payment platform, for purchasing services. What happens on Square is governed by Square's privacy policy, not ours.</p>
+  </div>
+
+  <!-- 1. Who we are -->
+  <section>
+    <p class="section-label">01</p>
+    <h2>Who This Policy Covers</h2>
+    <p>This policy applies to aiso.dog (the "Site"), operated by AISOdog, a boutique AI search optimization consultancy ("we," "us," or "our"). It applies to visitors located anywhere, with particular attention to the rights afforded to California residents under the California Consumer Privacy Act (CCPA) and its amendment, the California Privacy Rights Act (CPRA).</p>
+  </section>
+
+  <!-- 2. Data we collect -->
+  <section>
+    <p class="section-label">02</p>
+    <h2>What Data This Site Collects</h2>
+    <p>Genuinely very little. The table below covers every category of personal information that could touch this site and states honestly what happens.</p>
+
+    <table class="data-table" aria-label="Data collection summary">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Collected by aiso.dog?</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cookies</td>
+          <td><span class="none-badge">None</span></td>
+          <td>No cookies of any kind are set. No consent banner is shown because there is nothing to consent to.</td>
+        </tr>
+        <tr>
+          <td>Analytics / Tracking</td>
+          <td><span class="none-badge">None</span></td>
+          <td>No analytics platform (Google Analytics, Plausible, Fathom, etc.) is installed.</td>
+        </tr>
+        <tr>
+          <td>Advertising Pixels</td>
+          <td><span class="none-badge">None</span></td>
+          <td>No ad networks, retargeting pixels, or conversion trackers are present.</td>
+        </tr>
+        <tr>
+          <td>Server / Access Logs</td>
+          <td>Possible via hosting</td>
+          <td>Web hosts typically log IP addresses and page requests at the server level. We do not access, analyze, or retain these logs beyond what our hosting provider requires for infrastructure integrity.</td>
+        </tr>
+        <tr>
+          <td>Email (mailto link)</td>
+          <td>Only what you send</td>
+          <td>Clicking the email link opens your own email client. No information is transmitted to us until you choose to send a message. We retain email correspondence for business communication purposes only.</td>
+        </tr>
+        <tr>
+          <td>Payment / Purchase Data</td>
+          <td>Handled by Square</td>
+          <td>Purchases are processed through Square, Inc. When you click a purchase link, you leave aiso.dog and enter Square's platform. We receive only the transaction confirmation necessary to fulfill services. Square's privacy policy governs all payment data.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 3. How we use it -->
+  <section>
+    <p class="section-label">03</p>
+    <h2>How We Use What We Receive</h2>
+    <p>If you email us, we use that correspondence to respond to your inquiry and, if you become a client, to provide the services you have contracted for. We do not add email addresses to marketing lists without explicit opt-in. We do not sell, rent, or trade contact information under any circumstances.</p>
+    <p>Transaction confirmations received from Square are used solely to confirm service delivery. They are retained as standard business records for the period required by applicable law and then deleted.</p>
+  </section>
+
+  <!-- 4. Third parties -->
+  <section>
+    <p class="section-label">04</p>
+    <h2>Third-Party Services This Site Links To</h2>
+    <p>Two external services are accessible from this site. Neither is embedded, loaded, or executed on aiso.dog pages. They are linked.</p>
+    <p><strong>Your email client (mailto).</strong> The contact link invokes your device's default mail application. No information leaves your device until you choose to send. Your email provider's privacy policy governs what happens to that message in transit and storage.</p>
+    <p><strong>Square, Inc.</strong> Purchase links direct you to Square-hosted pages for payment processing. Square is a separate controller of your payment and identity data. Review Square's privacy policy at squareup.com/legal/privacy before completing a transaction.</p>
+    <p>We do not receive, store, or process credit card numbers, bank account details, or payment credentials of any kind.</p>
+  </section>
+
+  <!-- 5. California Rights -->
+  <section>
+    <p class="section-label">05</p>
+    <h2>Your Rights Under California Law</h2>
+    <p>California residents have specific rights under CCPA and CPRA. We respect those rights. Because we collect minimal personal information, exercising most of them will return a short answer. That does not diminish the right.</p>
+
+    <div class="rights-grid">
+      <div class="right-item">
+        <strong>Right to Know</strong>
+        <span>You may request a description of what personal information we hold about you, the categories of sources, and the purposes for which it is used.</span>
+      </div>
+      <div class="right-item">
+        <strong>Right to Delete</strong>
+        <span>You may request deletion of personal information we hold. We will comply unless retention is required by law or necessary to complete a transaction you requested.</span>
+      </div>
+      <div class="right-item">
+        <strong>Right to Correct</strong>
+        <span>You may request correction of inaccurate personal information we maintain about you.</span>
+      </div>
+      <div class="right-item">
+        <strong>Right to Opt Out of Sale or Sharing</strong>
+        <span>We do not sell or share personal information. There is nothing to opt out of. We will confirm this in writing upon request.</span>
+      </div>
+      <div class="right-item">
+        <strong>Right to Limit Use of Sensitive Personal Information</strong>
+        <span>We do not collect sensitive personal information as defined by CPRA.</span>
+      </div>
+      <div class="right-item">
+        <strong>Right to Non-Discrimination</strong>
+        <span>Exercising any privacy right will not affect your ability to use our services or the pricing you receive.</span>
+      </div>
+    </div>
+
+    <p>To exercise any of these rights, contact us using the information in the section below. We will respond within 45 days of a verified request. If we need more time (up to 90 days total), we will notify you of the extension and the reason.</p>
+    <p>You may designate an authorized agent to submit requests on your behalf. We may require written proof of authorization before processing an agent-submitted request.</p>
+  </section>
+
+  <!-- 6. Data retention -->
+  <section>
+    <p class="section-label">06</p>
+    <h2>How Long We Keep Information</h2>
+    <p>Email correspondence is retained for as long as the business relationship is active and for a reasonable period thereafter (typically two years) in case of service disputes. Correspondence unrelated to a service engagement is deleted within 90 days of resolution.</p>
+    <p>Transaction records from Square are retained as required by California and federal tax law, generally seven years.</p>
+    <p>Server access logs maintained by our hosting provider are subject to that provider's retention schedule, which is typically 30 to 90 days. We have no control over this retention period.</p>
+  </section>
+
+  <!-- 7. Children -->
+  <section>
+    <p class="section-label">07</p>
+    <h2>Children Under 16</h2>
+    <p>This site is intended for business professionals. We do not knowingly collect personal information from anyone under 16 years of age. If you believe a minor has submitted personal information to us, contact us and we will delete it promptly.</p>
+  </section>
+
+  <!-- 8. Do Not Track -->
+  <section>
+    <p class="section-label">08</p>
+    <h2>Do Not Track Signals</h2>
+    <p>California Business and Professions Code Section 22575 requires disclosure of how we respond to Do Not Track signals. We do not track visitors across third-party websites, so Do Not Track signals have no additional effect on your experience here beyond what is already described in this policy.</p>
+  </section>
+
+  <!-- 9. Changes -->
+  <section>
+    <p class="section-label">09</p>
+    <h2>Changes to This Policy</h2>
+    <p>If this site adds features that change how data is collected or used, this policy will be updated before those features go live. The "Last Updated" date at the top of this page reflects the most recent revision. Material changes that affect California residents will also include a notice on the site homepage for 30 days following the update.</p>
+  </section>
+
+  <!-- 10. Contact -->
+  <section>
+    <p class="section-label">10</p>
+    <h2>How to Contact Us</h2>
+    <p>Privacy requests, questions, or complaints can be directed to:</p>
+    <div class="contact-block">
+      <p><strong>AISOdog</strong></p>
+      <p>Website: <a href="https://aiso.dog">aiso.dog</a></p>
+      <p>Email: <a href="mailto:hello@aiso.dog">hello@aiso.dog</a></p>
+      <p style="margin-top: 14px; color: var(--dim); font-size: 0.82rem;">Responses to verified privacy requests are provided within 45 days. We do not charge a fee to process privacy requests unless they are manifestly unfounded or excessive.</p>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <div class="doc-footer">
+    <span>&copy; 2025 AISOdog. All rights reserved.</span>
+    <a href="https://aiso.dog">Return to aiso.dog</a>
+  </div>
+
+</div>
+
+</body>
+</html>
