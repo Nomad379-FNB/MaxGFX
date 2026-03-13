@@ -1,0 +1,568 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Architecture | AISOdog</title>
+<meta name="description" content="A content architecture designed to earn AI citations, not just rankings. 1,100+ citations on a defunct domain. Verified across six verticals. The system behind every case study.">
+<link rel="icon" type="image/x-icon" href="images/AISOdog-favicon.ico">
+<link rel="canonical" href="https://aiso.dog/methodology.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://aiso.dog/methodology.html">
+<meta property="og:title" content="The Architecture | AISOdog">
+<meta property="og:description" content="A content architecture designed to earn AI citations, not just rankings. 1,100+ citations on a defunct domain. Verified across six verticals.">
+<meta property="og:image" content="https://aiso.dog/images/AISOdog-dog-Logo-White.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Architecture | AISOdog">
+<meta name="twitter:description" content="Designed for AI citations. 1,100+ on a defunct domain. Verified across six verticals.">
+<meta name="twitter:image" content="https://aiso.dog/images/AISOdog-dog-Logo-White.png">
+<link rel="stylesheet" href="stylish.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://aiso.dog/methodology.html#article",
+  "headline": "The Architecture: Designed for AI Citations Before AI Citations Were a Metric",
+  "description": "A documented content architecture producing consistent keyword velocity and AI citation across six verticals — verified on domains from Authority Score 20 to 83.",
+  "url": "https://aiso.dog/methodology.html",
+  "datePublished": "2026-03-12",
+  "dateModified": "2026-03-12",
+  "author": {"@type": "Person", "@id": "https://aiso.dog/#max-loel", "name": "Max Loel", "jobTitle": "Search Strategist"},
+  "publisher": {"@id": "https://aiso.dog/#organization"},
+  "about": [
+    {"@type": "Thing", "name": "Content Architecture"},
+    {"@type": "Thing", "name": "AI Search Optimization"},
+    {"@type": "Thing", "name": "Answer Engine Optimization"},
+    {"@type": "Thing", "name": "Entity SEO"},
+    {"@type": "Thing", "name": "Google AI Overviews"},
+    {"@type": "Thing", "name": "ChatGPT Citation"}
+  ],
+  "isPartOf": {"@type": "WebSite", "url": "https://aiso.dog"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aiso.dog/"},
+    {"@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://aiso.dog/portfolio.html"},
+    {"@type": "ListItem", "position": 3, "name": "The Architecture", "item": "https://aiso.dog/methodology.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://AISO.dog/#organization",
+  "name": "AISOdog",
+  "url": "https://AISO.dog",
+  "logo": {"@type": "ImageObject", "url": "https://AISO.dog/images/AISOdog-dog-Logo-MenuW.png"},
+  "description": "AISOdog is a boutique AI search optimization consultancy building content architecture and entity authority that earns citations from ChatGPT, Google AI Overviews, and Perplexity.",
+  "founder": {"@type": "Person", "@id": "https://AISO.dog/#max-loel", "name": "Max Loel", "jobTitle": "Search Strategist", "url": "https://AISO.dog"},
+  "contactPoint": {"@type": "ContactPoint", "url": "https://AISO.dog/contact.html", "contactType": "customer service"},
+  "sameAs": ["https://www.reddit.com/user/AISOdog", "https://www.linkedin.com/company/aisodog"]
+}
+</script>
+<style>
+/* ── Page-specific components ───────────────────────────────── */
+
+/* Q-card three-col grid */
+.q-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+@media (max-width: 820px) { .q-grid { grid-template-columns: 1fr; } }
+
+.q-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 5px;
+  padding: 1.5rem 1.25rem;
+}
+.q-card .qc-q {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent, #e63946);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.q-card h3 { font-size: 0.95rem; color: teal; margin: 0 0 0.65rem; line-height: 1.38; }
+.q-card p { font-size: 0.84rem; color: navy; margin: 0; line-height: 1.68; }
+.q-card .qc-proof {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.77rem;
+  font-weight: 700;
+  color: navy;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 0.75rem;
+  line-height: 1.5;
+}
+
+/* Velocity gradient — three-column visual */
+.velocity-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+@media (max-width: 640px) { .velocity-grid { grid-template-columns: 1fr; } }
+
+.vg-cell {
+  background: #0d0d0f;
+  padding: 1.75rem 1.5rem;
+  position: relative;
+}
+.vg-cell:hover { background: rgba(255,255,255,0.02); }
+.vg-band {
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.vg-num {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.vg-unit {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.45);
+  display: block;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+.vg-bar-wrap {
+  height: 3px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 2px;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+.vg-bar {
+  height: 100%;
+  background: var(--accent, #e63946);
+  border-radius: 2px;
+}
+.vg-context {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.5;
+}
+
+/* Minnetonka elevated proof */
+.proof-callout {
+  border: 1px solid rgba(230,57,70,0.38);
+  background: rgba(230,57,70,0.06);
+  border-radius: 6px;
+  padding: 2rem 2rem 1.75rem;
+  margin: 2.25rem 0;
+}
+.proof-callout .pc-eyebrow {
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent, #e63946);
+  display: block;
+  margin-bottom: 0.8rem;
+}
+.proof-callout .pc-stat {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 0.85rem;
+  display: block;
+}
+.proof-callout p {
+  margin: 0 0 0.75rem;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.72;
+}
+.proof-callout p:last-child { margin-bottom: 0; }
+.proof-callout .pc-specialist {
+  border-top: 1px solid rgba(255,255,255,0.07);
+  padding-top: 0.9rem;
+  margin-top: 0.9rem;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.45);
+  font-style: italic;
+}
+
+/* Two-col proof pair */
+.proof-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+@media (max-width: 600px) { .proof-pair { grid-template-columns: 1fr; } }
+.proof-block {
+  border-left: 3px solid var(--accent, #e63946);
+  padding: 1.2rem 1.4rem;
+  background: rgba(230,57,70,0.05);
+}
+.pb-num {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+.pb-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); line-height: 1.5; }
+
+/* Platform differentiation — two-col comparison */
+.platform-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 1.75rem 0;
+}
+@media (max-width: 600px) { .platform-split { grid-template-columns: 1fr; } }
+.ps-cell {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 5px;
+  padding: 1.25rem 1.25rem 1rem;
+}
+.ps-platform {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  display: block;
+  margin-bottom: 0.45rem;
+}
+.ps-cell h4 { font-size: 0.9rem; color: teal; margin: 0 0 0.5rem; }
+.ps-cell p { font-size: 0.82rem; color: navy; margin: 0; line-height: 1.6; }
+
+/* Decision signal — the one concrete example */
+.decision-signal {
+  background: rgba(255,255,255,0.03);
+  border-left: 3px solid rgba(255,255,255,0.15);
+  padding: 1.25rem 1.5rem;
+  margin: 1.75rem 0;
+  border-radius: 0 4px 4px 0;
+}
+.ds-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: navy;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.decision-signal p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+}
+.decision-signal strong { color: #fff; }
+
+/* Performance bars */
+.perf-bars { margin: 1.5rem 0; }
+.perf-row {
+  display: grid;
+  grid-template-columns: 220px 1fr 60px;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.55rem;
+}
+@media (max-width: 580px) { .perf-row { grid-template-columns: 120px 1fr 46px; } }
+.pr-label { font-size: 0.79rem; color: navy; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pr-bar-wrap { background: rgba(255,255,255,0.06); border-radius: 2px; height: 7px; overflow: hidden; }
+.pr-bar { height: 100%; background: var(--accent, #e63946); border-radius: 2px; }
+.pr-val { font-size: 0.79rem; font-weight: 700; color: navy; text-align: right; }
+
+/* Case study grid */
+.cs-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(228px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 0;
+}
+.cs-proof-card {
+  display: block;
+  background: var(--teal);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 6px;
+  padding: 1.25rem 1.4rem;
+  text-decoration: none;
+  transition: border-color 0.18s, background 0.18s;
+}
+.cs-proof-card:hover { border-color: rgba(230,57,70,0.42); background: navy; }
+.cpc-tag { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: mintcream; display: block; margin-bottom: 0.45rem; }
+.cpc-title { font-size: 0.88rem; font-weight: 600; color: #fff; margin-bottom: 0.4rem; line-height: 1.42; }
+.cpc-stat { font-size: 0.78rem; color: mintcream; line-height: 1.45; }
+</style>
+</head><body>
+<nav>
+  <img src="images/AISOdog-dog-Logo-White.png" alt="AISOdog">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; <a href="portfolio.html">Portfolio</a> &rsaquo; The Architecture</div>
+
+<section class="hero">
+<div class="hi">
+  <div class="eyebrow">Content Architecture &middot; AI Search &middot; Keyword Systems</div>
+  <h1>Designed for AI Citations <em>Before</em> AI Citations Were a Metric</h1>
+  <p class="hero-sub">The content architecture documented here was built to satisfy search classifiers at the structural level &mdash; entity depth, semantic completeness, answer-forward extraction. That was the design constraint in 2023. The same decisions now earn citations across ChatGPT, Google AI Overviews, and Gemini. The proof is a gardening domain that closed two years ago and still holds 1,100+ pages cited by AI as of March 2026.</p>
+  <div class="hero-meta">
+    <div class="mi"><span class="ml">Primary Client</span><span class="mv">Specialty Outdoor Retailer</span></div>
+    <div class="mi"><span class="ml">Verticals</span><span class="mv">eCommerce &middot; Editorial &middot; Outdoors &middot; Regional &middot; Gaming &middot; App</span></div>
+    <div class="mi"><span class="ml">Scope</span><span class="mv">Data Infrastructure &rarr; Keyword Architecture &rarr; Brief System &rarr; Execution &rarr; Measurement</span></div>
+  </div>
+</div>
+</section>
+
+<div class="mbar"><div class="mbar-in">
+  <div class="tile"><span class="n">1,100+</span><span class="l">AI Citations &middot; Defunct Domain &middot; Zero Traffic &middot; March 2026</span></div>
+  <div class="tile"><span class="n">188</span><span class="l">Ranked Keywords &middot; One Article &middot; Mid-Authority Domain &middot; 2025</span></div>
+  <div class="tile"><span class="n">1,404</span><span class="l">Ranked Keywords &middot; One URL &middot; Month One &middot; AS83</span></div>
+  <div class="tile"><span class="n">529K</span><span class="l">Monthly Organic Visits at Peak &middot; AS20 Domain</span></div>
+  <div class="tile"><span class="n">6</span><span class="l">Verticals &middot; Consistent Structure &middot; Independently Verified</span></div>
+</div></div>
+
+<!-- ── SECTION: Three questions ───────────────────────── -->
+<section><div class="wrap">
+  <div class="sl">What the System Answers</div>
+  <div class="q-grid">
+
+    <div class="q-card">
+      <span class="qc-q">Q1 &mdash; The System</span>
+      <h3>Can you show me a system, not just results?</h3>
+      <p>552 keywords categorized across 19 topical groups and assigned to page type before any brief was written. A custom Looker Studio dashboard built from scratch, tracking 41,994 queries across 2,196 pages weekly. 116 articles tracked by position band, SERP feature count, and revision status. A seasonal editorial calendar derived from a live traffic heatmap.</p>
+      <p style="margin-top:0.65rem; font-size:0.84rem;">The keyword-to-page-type decision happens before the brief. The brief happens before the draft. That sequencing is the system &mdash; and it is documented.</p>
+     </div>
+
+    <div class="q-card">
+      <span class="qc-q">Q2 &mdash; The Transfer</span>
+      <h3>Does it hold across verticals, or just your best domain?</h3>
+      <p>The same content structure produced 1,404 ranked keywords on an Authority Score 83 editorial network in month one, 570 on a mid-authority outdoor domain in month one, and 61&ndash;117 net new keywords per month sustained on an Authority Score 20 gardening domain. Three authority bands. One structure.</p>
+      <p style="margin-top:0.65rem; font-size:0.84rem; ">Domain authority determines the ceiling. The architecture determines whether you reach it.</p>
+      <span class="qc-proof">Gaming &middot; Gardening &middot; Outdoors &middot; Regional &middot; Travel &middot; App &middot; Verified.</span>
+    </div>
+
+    <div class="q-card">
+      <span class="qc-q">Q3 &mdash; The Durability</span>
+      <h3>Does it survive algorithm changes and AI search shifts?</h3>
+      <p>Google's HCU classifier and LLM citation retrieval use different mechanisms &mdash; a content quality classifier versus training-weighted retrieval and RAG &mdash; but both reward the same structural inputs: entity depth, semantic completeness, and extractable answers. This is not an accident to exploit. It is the constraint the architecture was built around first.</p>
+      <p style="margin-top:0.65rem; font-size:0.84rem;">Content optimized for rankings adapts when rankings change. Content built for this standard earns visibility across systems simultaneously.</p>
+    </div>
+
+  </div>
+</div></section>
+
+<hr>
+
+<!-- ── SECTION: Velocity gradient ────────────────────── -->
+<div class="dark"><div class="wrap">
+  <div class="sl">Authority vs. Architecture</div>
+  <h2>Structure Is the Constant. Authority Is the Multiplier.</h2>
+  <p>The most common objection to content architecture as a differentiator: the results come from the domain, not the approach. The velocity gradient below isolates the variable. Same structure. Three authority bands. Each URL measured at its first meaningful ranking window.</p>
+
+  <div class="velocity-grid">
+    <div class="vg-cell">
+      <span class="vg-band">Authority Score 20 &mdash; Gardening</span>
+      <span class="vg-num">61&ndash;117</span>
+      <span class="vg-unit">Net new ranked keywords/month &middot; Sustained across multiple articles</span>
+      <div class="vg-bar-wrap"><div class="vg-bar" style="width:8%"></div></div>
+      <span class="vg-context">Domain Google treats as a local site. Architecture produced 529K monthly visits at peak and 17,351 top-3 positions before publisher closure.</span>
+    </div>
+    <div class="vg-cell">
+      <span class="vg-band">Authority Score 40 &mdash; Outdoors</span>
+      <span class="vg-num">570</span>
+      <span class="vg-unit">Ranked keywords &middot; One URL &middot; Month one</span>
+      <div class="vg-bar-wrap"><div class="vg-bar" style="width:41%"></div></div>
+      <span class="vg-context">Mid-authority publisher. Same structural brief. Month-one velocity consistent with higher-authority outputs at proportional scale.</span>
+    </div>
+    <div class="vg-cell">
+      <span class="vg-band">Authority Score 83 &mdash; Gaming/Editorial</span>
+      <span class="vg-num">1,404</span>
+      <span class="vg-unit">Ranked keywords &middot; One URL &middot; Month one</span>
+      <div class="vg-bar-wrap"><div class="vg-bar" style="width:100%"></div></div>
+      <span class="vg-context">High-authority editorial network. Same architecture, ceiling lifted by domain equity. Velocity reflects both variables in play simultaneously.</span>
+    </div>
+  </div>
+
+  <div class="decision-signal">
+    <span class="ds-label">How an architect reads this data</span>
+    <p>When the monthly traffic heatmap showed the AS20 gardening domain peaking in July at 270 visits on one URL, the brief for that article already had 32 top-3 positions embedded in its keyword footprint. <strong>The decision was made before the article was written: entity-first structure, external corroboration, answer-forward H2s, internal linking to four related topic clusters.</strong> The velocity outcome was a confirmation, not a discovery.</p>
+  </div>
+</div></div>
+
+<!-- ── SECTION: AI platform differentiation ──────────── -->
+<section><div class="wrap">
+  <div class="sl">One Architecture. Two Search Systems. Same Signal.</div>
+  <h2>ChatGPT and Google AI Overviews Are Not the Same Surface.</h2>
+  <p>Treating them as one optimization target is where most AI search strategies break down. ChatGPT citation is primarily a function of training data weight and entity authority across the open web. Google AI Overviews are retrieval-augmented, pulling from indexed pages in real time with quality signals applied at retrieval. They require different inputs to win — but share a common structural prerequisite: content that is semantically complete enough to extract cleanly, and authoritative enough to trust.</p>
+
+  <div class="platform-split">
+    <div class="ps-cell">
+      <span class="ps-platform">ChatGPT &middot; Training + RAG</span>
+      <h4>Entity authority across the open web</h4>
+      <p>Citation likelihood correlates with entity mention frequency across third-party sources, consistent terminology, and topic ownership signals that compound over time. Off-site presence and corroboration matter as much as on-page structure.</p>
+    </div>
+    <div class="ps-cell">
+      <span class="ps-platform">Google AI Overviews &middot; Real-Time RAG</span>
+      <h4>Extractability from indexed pages</h4>
+      <p>AIO citation is retrieval-augmented at query time. The same quality signals that drive traditional ranking apply, with additional weight on structured answers, clear entity relationships, and pages that return a coherent chunk when partially extracted.</p>
+    </div>
+  </div>
+
+  <p>The architecture documented here builds for both: structured on-page content that extracts cleanly for AIO, and entity depth compounded across a domain for ChatGPT and Gemini training signal. The case study below shows both operating simultaneously on the same client.</p>
+</div></section>
+
+<hr>
+
+<!-- ── SECTION: Minnetonka proof ─────────────────────── -->
+<div class="dark"><div class="wrap">
+  <div class="sl">The Proof That Holds</div>
+  <h2>The Architecture Outlasted the Domain.</h2>
+
+  <div class="proof-callout">
+    <span class="pc-eyebrow">Minnetonka Orchards &middot; AS20 &middot; Publisher Closed 2023 &middot; Website Inactive 2+ Years &middot; Verified March 2026</span>
+    <span class="pc-stat">1,100+ pages still cited by ChatGPT<br>and Google AI. Zero organic traffic.<br>Zero active rankings.</span>
+    <p>The publisher closed. The site went inactive. Organic rankings decayed to zero. The AI citations did not. Content built for semantic depth and structured extractability continued earning visibility in AI systems long after every traditional signal was gone.</p>
+    <p>This is the durability argument in data form: competitors optimizing for rankings will adapt when rankings change. Content built at the structural level accumulates citation weight that survives the change.</p>
+    <p class="pc-specialist">For specialists: the citation persistence reflects entity weight in training data and RAG index stability on a crawlable domain &mdash; the structural signals that drove the original rankings are the same signals LLMs weight during retrieval. The page does not need to rank to be retrieved.</p>
+  </div>
+
+  <div class="proof-pair">
+    <div class="proof-block">
+      <span class="pb-num">529K</span>
+      <span class="pb-label">Monthly organic visits at peak &middot; Same AS20 domain &middot; Same content architecture</span>
+    </div>
+    <div class="proof-block">
+      <span class="pb-num">17,351</span>
+      <span class="pb-label">Top-3 keyword positions at peak &middot; Same domain &middot; Pre-closure</span>
+    </div>
+  </div>
+</div></div>
+
+<!-- ── SECTION: 2025 output ───────────────────────────── -->
+<section><div class="wrap">
+  <div class="sl">Current Output</div>
+  <h2>59 Articles. One System. Authority Score 36.</h2>
+  <p>59 articles published in 2025 on a specialty retailer's domain using this architecture. 2,100 total ranked keywords across those articles. Average 35.6 per article. Five cleared 100 ranked keywords within months of publication &mdash; on a domain most content strategies would treat as mid-tier.</p>
+
+  <div class="perf-bars">
+    <div class="perf-row">
+      <span class="pr-label">most-expensive-koi-fish</span>
+      <div class="pr-bar-wrap"><div class="pr-bar" style="width:100%"></div></div>
+      <span class="pr-val">188 KW</span>
+    </div>
+    <div class="perf-row">
+      <span class="pr-label">freshwater-frogs-north-america</span>
+      <div class="pr-bar-wrap"><div class="pr-bar" style="width:96%"></div></div>
+      <span class="pr-val">180 KW</span>
+    </div>
+    <div class="perf-row">
+      <span class="pr-label">pond-algaecide-safe-for-fish</span>
+      <div class="pr-bar-wrap"><div class="pr-bar" style="width:86%"></div></div>
+      <span class="pr-val">161 KW</span>
+    </div>
+    <div class="perf-row">
+      <span class="pr-label">freshwater-turtles-north-america</span>
+      <div class="pr-bar-wrap"><div class="pr-bar" style="width:59%"></div></div>
+      <span class="pr-val">110 KW</span>
+    </div>
+    <div class="perf-row">
+      <span class="pr-label">best-fish-for-small-ponds</span>
+      <div class="pr-bar-wrap"><div class="pr-bar" style="width:58%"></div></div>
+      <span class="pr-val">108 KW</span>
+    </div>
+    <div class="perf-row">
+      <span class="pr-label">how-long-do-koi-fish-live</span>
+      <div class="pr-bar-wrap"><div class="pr-bar" style="width:53%"></div></div>
+      <span class="pr-val">99 KW</span>
+    </div>
+    <div class="perf-row">
+      <span class="pr-label">cost-to-build-a-koi-pond</span>
+      <div class="pr-bar-wrap"><div class="pr-bar" style="width:46%"></div></div>
+      <span class="pr-val">87 KW</span>
+    </div>
+    <div class="perf-row">
+      <span class="pr-label">types-of-pond-pumps-explained</span>
+      <div class="pr-bar-wrap"><div class="pr-bar" style="width:45%"></div></div>
+      <span class="pr-val">84 KW</span>
+    </div>
+    <div class="perf-row">
+      <span class="pr-label">spring-fed-ponds</span>
+      <div class="pr-bar-wrap"><div class="pr-bar" style="width:36%"></div></div>
+      <span class="pr-val">68 KW</span>
+    </div>
+    <div class="perf-row">
+      <span class="pr-label">koi-pond-for-beginners</span>
+      <div class="pr-bar-wrap"><div class="pr-bar" style="width:36%"></div></div>
+      <span class="pr-val">67 KW</span>
+    </div>
+  </div>
+  <p style="font-size:0.8rem; color:teal; margin-top:0.2rem;">Ranked keywords per URL &middot; thepondguy.com (AS36) &middot; 2025 publications &middot; Semrush-verified</p>
+</div></section>
+
+<hr>
+
+<!-- ── SECTION: Case study grid ──────────────────────── -->
+<section><div class="wrap">
+  <div class="sl">Case Studies</div>
+  <h2>Every Result Below Came From the Same Architecture.</h2>
+  <p>Domain authority changes. Vertical changes. The structure that produces citations, rankings, and eCommerce performance does not.</p>
+
+  <div class="cs-proof-grid">
+    <a href="case-study-aeo.html" class="cs-proof-card">
+      <span class="cpc-tag">AEO &middot; LLM Visibility</span>
+      <div class="cpc-title">From Invisible to the Most-Cited Brand Across Every Major AI Platform</div>
+      <div class="cpc-stat">#1 ChatGPT Sentiment &middot; 694 #1 AIO Positions &middot; +574% YoY</div>
+    </a>
+    <a href="case-study-seasonal.html" class="cs-proof-card">
+      <span class="cpc-tag">Seasonal Strategy &middot; Traffic Stabilization</span>
+      <div class="cpc-title">Turning a Seasonal Traffic Cliff Into a Year-Round Ranking Asset</div>
+      <div class="cpc-stat">Traffic heatmap &rarr; editorial calendar &rarr; verified YoY stabilization</div>
+    </a>
+    <a href="case-study-shopping.html" class="cs-proof-card">
+      <span class="cpc-tag">eCommerce SEO &middot; Shopping</span>
+      <div class="cpc-title">Category and Product Page Architecture for a 4,658-Product Retailer</div>
+      <div class="cpc-stat">Three-phase framework &middot; Structured data &middot; CRO &middot; Cross-team delivery</div>
+    </a>
+    <a href="case-study-copy.html" class="cs-proof-card">
+      <span class="cpc-tag">Content Strategy &middot; Multi-Vertical</span>
+      <div class="cpc-title">1,404 Ranked Keywords in Month One. Same Architecture Across Six Verticals.</div>
+      <div class="cpc-stat">AS83 to AS20 &middot; Gaming to Gardening &middot; 1,100+ AI Citations</div>
+    </a>
+  </div>
+</div></section>
+
+<div class="cta">
+  <h2>The Brief Is Where Rankings Are Won or Lost Before Anyone Writes a Word</h2>
+  <p>An AI Visibility Audit surfaces what your current content is missing at the structural level &mdash; and what it would take to earn citations the way the case studies above do.</p>
+  <a href="contact.html#book-audit">Book an AI Visibility Audit</a>
+</div>
+
+<footer>AISOdog &mdash; AI Search Optimization &middot; <a href="index.html">AISO.dog</a><br>
+<small>Performance data from thepondguy.com and minnetonkaorchards.com unless otherwise noted. Semrush-verified where indicated.</small></footer>
+</body></html>

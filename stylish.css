@@ -303,7 +303,7 @@ footer a { color: lightsteelblue; }
 /* Case study meta row */
 .hero-meta { display: flex; flex-wrap: wrap; gap: 1.4rem; }
 .mi { display: flex; flex-direction: column; gap: .15rem; }
-.ml { font-size: .69rem; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.42); }
+.ml { font-size: .69rem; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.42); text-align: left;}
 .mv { font-size: .92rem; color: rgba(255,255,255,.88); font-weight: bold; }
 
 /* Index proof badges */
