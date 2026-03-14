@@ -587,8 +587,17 @@ section p:last-child { margin-bottom: 0; }
   overflow: hidden;
   box-shadow: 0 2px 14px rgba(0,70,70,.07);
 }
-
+.chart2 {
+  margin: 2.2rem 0;
+  background: #fff;
+  border: 1px solid #c2dede;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 14px rgba(0,70,70,.07);
+  
+}
 .chart img { width: 100%; display: block; }
+.chart2 img { width: 50%; display: block; margin: 0 auto; }
 
 .cap {
   font-size: .75rem;
@@ -790,8 +799,8 @@ section p:last-child { margin-bottom: 0; }
 .cs-card.open .cs-chevron svg { transform: rotate(180deg); }
 .cs-card.open .cs-chevron { background: rgba(29,187,187,.25); }
 
-.cs-panel { max-height: 0; overflow: hidden; transition: max-height .35s cubic-bezier(.4,0,.2,1); }
-.cs-card.open .cs-panel { max-height: 900px; }
+.cs-panel { max-height: 0; overflow: scroll; transition: max-height .35s cubic-bezier(.4,0,.2,1); }
+.cs-card.open .cs-panel { max-height: 1200px; }
 
 .cs-metrics { display: grid; grid-template-columns: repeat(2, 1fr); border-bottom: 1px solid var(--border); }
 

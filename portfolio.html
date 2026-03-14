@@ -209,7 +209,7 @@
           </div>
           <div class="metric">
             <span class="metric-value hi">+55%</span>
-            <span class="metric-label">Top-50 Keyword Growth<br>vs. <style="color: red;">-3%</style> in Prior Five Years</span>
+            <span class="metric-label">Top-50 Keyword Growth<br>vs. <span style="color: red;">-3%</span> in Prior Five Years</span>
           </div>
           <div class="metric">
             <span class="metric-value">15.6 &rarr; 8.2</span>
@@ -232,7 +232,7 @@
       <button class="cs-trigger" onclick="toggleCard('cs-copy')" aria-expanded="false">
         <div class="cs-trigger-left">
           <div class="cs-tag">Content Strategy &middot; Keyword Velocity &middot; Multi-Vertical</div>
-          <h3>1,404 Ranked Keywords in the First Month. 305 More on an AS20 Domain. Same Architecture.</h3>
+          <h3>6 Verticals. Consistent Keyword Velocity. Same Architecture.</h3>
           <div class="cs-headline">
             <span class="cs-big">1,404</span>
             <span class="cs-big-label">Ranked Keywords &middot; First Month &middot; Authority Score 83 &middot; Semrush-Verified</span>
@@ -259,8 +259,8 @@
           </div>
         </div>
         <div class="cs-panel-body">
-          <p>The same content architecture that indexed 1,404 keywords on an Authority Score 83 editorial network in its first month put 305 ranked keywords on an Authority Score 20 gardening domain across five months. A mid-authority outdoor publisher reached 570 keywords in month one using the same approach. Stronger domains rank faster. The content structure is what makes them rank at all.</p>
-          <p>The clearest proof is a domain that no longer exists. As of March 2026, minnetonkaorchards.com carries zero organic traffic and zero active rankings &mdash; and still holds 1,100+ pages cited by ChatGPT and Google AI. Built on the same architecture that drove 529K monthly organic visits at peak. The rankings went to zero. The citations did not. Across 100+ articles, 10 publishers, and six independently verified verticals, the architecture is the constant.</p>
+          <p>The same content architecture that indexed 1,404 keywords on an Authority Score 83 editorial network in its first month put 305 ranked keywords on an Authority Score 20 gardening domain. A mid-authority outdoor publisher reached 570 keywords in month one using the same approach. Stronger domains rank faster. The content structure is what makes them rank at all.</p>
+          <p>The clearest proof is a domain that no longer exists. As of March 2026, minnetonkaorchards.com carries zero organic traffic and zero active rankings &mdash; and still holds 1,100+ pages cited by ChatGPT and Google AI. Built on the same architecture that drove 529K monthly organic visits at peak. The rankings went to zero. The citations did not. </p>
           <a href="case-study-copy.html" class="cs-panel-cta" target="_blank">Read Full Case Study (New Tab)</a>
         </div>
       </div>
@@ -335,11 +335,20 @@
 
 <script>
 function toggleCard(id) {
-  const card = document.getElementById(id);
-  const btn  = card.querySelector('.cs-trigger');
+  const card  = document.getElementById(id);
+  const btn   = card.querySelector('.cs-trigger');
+  const panel = card.querySelector('.cs-panel');
   const isOpen = card.classList.contains('open');
-  card.classList.toggle('open', !isOpen);
-  btn.setAttribute('aria-expanded', String(!isOpen));
+
+  if (isOpen) {
+    panel.style.maxHeight = '0';
+    card.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  } else {
+    card.classList.add('open');
+    panel.style.maxHeight = panel.scrollHeight + 'px';
+    btn.setAttribute('aria-expanded', 'true');
+  }
 }
 
 function myFunction() {
