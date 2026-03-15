@@ -352,7 +352,15 @@ footer a { color: lightsteelblue; }
 .hero-buttons a.secondary:hover,
 .hero-buttons a.outline:hover { background: rgba(255,255,255,0.12); }
 
-
+/* Error Pages*/
+.error-image {
+  width: 30vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
 /* ── SECTION WRAPPERS ── */
 .section {
   max-width: 1100px;
