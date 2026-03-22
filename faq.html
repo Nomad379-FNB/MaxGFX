@@ -4,10 +4,208 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="stylish.css">
-<script type="application/ld+json"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is AI Search Optimization?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI search optimization (also called AI SEO or AISO) is the practice of structuring web page content to earn citations and recommendations from AI search engines including ChatGPT, Google AI Overviews, Gemini, and Perplexity. Where traditional SEO earns ranked links, AI search engine optimization earns extracted answers and attributed citations. The core goal is the same: make your content the most useful, parsable resource on a given topic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is AI Search Optimization different from SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The structural foundation is identical. SEO has always been about producing content people want to engage with. AI search optimization does not replace traditional SEO, particularly technical SEO and site responsiveness. Both should run concurrently. AISO adds a focused content layer: page-level entity depth, structured data, and schema markup that make content parsable by AI retrieval systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are AEO, GEO, and LLMO the same thing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They describe the same field through different intent lenses. Answer Engine Optimization (AEO) targets direct question-based queries. Generative Engine Optimization (GEO) addresses broad exploratory searches. Large Language Model Optimization (LLMO) targets conversational prompts inside tools like ChatGPT, Gemini, Claude, and Perplexity. Content built to satisfy one tends to satisfy all three."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the best AI Search Optimization tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most effective AI search optimization tools track how often your brand is cited across AI engines and measure sentiment across ChatGPT, Gemini, and Perplexity. Profound and SEMrush AI Toolkit are the current leaders. Without measurement tools, you are optimizing blind."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What strategies improve brand visibility in AI search engines?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most direct lever is humanizing on-page content. Communicate clearly and completely. Use descriptive headers, thorough image alt text, and define jargon inline. Accessible content is parsable content. AI retrieval systems extract answers the same way a reader scans a page: they follow structure, reward clarity, and skip noise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does AI Search Optimization improve SERP rankings and increase organic traffic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI search optimization and traditional SEO reinforce each other at the structural level. Content built for AI extractability also satisfies Google's Helpful Content classifier. The same page that earns a Google AI Overview citation tends to rank in organic results for the same query. AI Overview appearances drive zero-click awareness that increases branded search volume over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the AI Search Optimization Checklist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The AI Search Optimization Checklist covers on-page, technical, and entity-building actions that improve AI search visibility. Key steps include: leading with a direct answer in the first 40 to 60 words, using question-driven headers, adding descriptive alt text to all images, implementing schema markup and structured data, building entity authority through authoritative citations, and tracking AI citation share using tools like Profound or SEMrush AI Toolkit."
+      }
+    }
+  ]
+}
+</script>
 <title>AISOdog | AI Search Optimization Help | AEO, GEO, LLMO</title>
 <link rel="icon" type="image/x-icon" href="images/AISOdog-favicon.ico">
 <meta name="description" content="AISOdog helps brands get cited by ChatGPT, Google AI Overviews, and Perplexity. AI Search Optimization consulting with documented results: 574% AI Overview growth, #1 ChatGPT category sentiment.">
+
+<style>
+/* ── FAQ ACCORDION ── */
+.faq-section {
+  max-width: 860px;
+  margin: 3rem auto 4rem;
+  padding: 0 1.5rem;
+}
+
+.faq-section > h2 {
+  text-align: left;
+  font-size: clamp(1.2rem, 2.8vw, 1.6rem);
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+
+.faq-section > p.faq-intro {
+  color: var(--muted);
+  margin: 0 0 2rem;
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+details.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  margin-bottom: 0.65rem;
+  overflow: hidden;
+  transition: box-shadow 0.15s;
+}
+
+details.faq-item[open] {
+  box-shadow: 0 2px 12px rgba(0,153,153,0.10);
+}
+
+summary.faq-q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.3rem;
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--navy);
+  user-select: none;
+  transition: background 0.12s;
+}
+
+summary.faq-q::-webkit-details-marker { display: none; }
+
+summary.faq-q:hover {
+  background: #f0fafa;
+}
+
+details.faq-item[open] summary.faq-q {
+  background: #EAF7F7;
+  color: var(--teal);
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-chevron {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.faq-chevron svg {
+  display: block;
+  width: 9px;
+  height: 9px;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  fill: none;
+  transition: transform 0.2s;
+}
+
+details.faq-item[open] .faq-chevron svg {
+  transform: rotate(180deg);
+}
+
+.faq-a {
+  padding: 1.25rem 1.4rem 1.4rem;
+  font-size: 0.92rem;
+  line-height: 1.72;
+  color: var(--text);
+}
+
+.faq-a p {
+  color: var(--text);
+  margin: 0 0 0.85rem;
+  font-size: 0.92rem;
+  line-height: 1.72;
+}
+
+.faq-a p:last-child { margin-bottom: 0; }
+
+.faq-a ul {
+  margin: 0.5rem 0 0.85rem 1.2rem;
+  padding: 0;
+}
+
+.faq-a ul li {
+  color: var(--text);
+  font-size: 0.92rem;
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+.faq-a ul li strong {
+  color: var(--navy);
+}
+
+.faq-a .faq-tag {
+  display: inline-block;
+  background: var(--teal);
+  color: #fff;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 0.12rem 0.5rem;
+  border-radius: 3px;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+</style>
 </head>
 <body>
 <!-- ── NAV () ── -->
@@ -41,15 +239,149 @@
       <a href="contact.html" class="secondary">Ask AISOdog</a>
     </div>
   </section>
-   <a href="index.html" class="error-image">
-    <picture>
-      <source media="(min-width: 768px)" srcset="images/LogoAudit.png" class="error-image">
-      <img src="images/LogoAudit.png" class="error-image" alt="AISOdog logo with a magnifying glass,">
-    </picture>
-  </a>
+  
+<!-- ── FAQ ACCORDION ── -->
+<section class="faq-section">
+  <h2>AI Search Optimization Questions, Answered</h2>
+  <p class="faq-intro">Everything you need to know about AI SEO, AEO, GEO, and LLMO, and what it takes to get your brand cited by ChatGPT, Google AI Overviews, and Perplexity.</p>
 
-<h2>Coming Soon...</h2><br>
-<p style="text-align: center"><a href="aiso.dog" color="teal">Go Home</a></p>
+  <!-- Q1 -->
+  <details class="faq-item" id="faq-what-is-aiso">
+    <summary class="faq-q">
+      What is AI Search Optimization?
+      <span class="faq-chevron"><svg viewBox="0 0 10 10"><polyline points="2 3 5 7 8 3"/></svg></span>
+    </summary>
+    <div class="faq-a">
+      <p>AI search optimization (aka AI SEO or AISO) is the practice of structuring web page content to earn citations and recommendations from AI search engines, including ChatGPT, Google AI Overviews, Gemini, and Perplexity.</p>
+      <p>Where traditional SEO earns a ranked link, AI search engine optimization earns an extracted answer with your brand attributed as the source. The intent behind both is to make your content the most useful, parsable resource on a given topic. The mechanism for getting there is where AISO adds its own layer.</p>
+      <p>AI strategic visibility is not a separate goal from search visibility. For most brands, it is the same goal expressed in a new retrieval environment.</p>
+    </div>
+  </details>
+
+  <!-- Q2 -->
+  <details class="faq-item" id="faq-aiso-vs-seo">
+    <summary class="faq-q">
+      How is AI Search Optimization different from SEO?
+      <span class="faq-chevron"><svg viewBox="0 0 10 10"><polyline points="2 3 5 7 8 3"/></svg></span>
+    </summary>
+    <div class="faq-a">
+      <p>The structural foundation is identical. SEO has always been about producing content people want to engage with. What went sideways was the misapplication of SEO principles to rank pages designed to sell rather than serve. If your site was already built for humans — clear, direct, genuinely helpful — you have a stronger AI search optimization foundation than most brands that spent years chasing rankings.</p>
+      <p>AI and SEO are not competing disciplines. AI search optimization services should run concurrently with traditional SEO, not replace it. Technical SEO fundamentals still matter: site responsiveness, page speed, crawlability. Those do not change.</p>
+      <p>What AISO adds is a focused content layer. Page-level entity depth, structured data, and schema markup make content parsable by AI retrieval systems. That is the delta between a page that ranks and a page that gets cited.</p>
+    </div>
+  </details>
+
+  <!-- Q3 -->
+  <details class="faq-item" id="faq-aeo-geo-llmo">
+    <summary class="faq-q">
+      Are AEO, GEO, and LLMO the same thing?
+      <span class="faq-chevron"><svg viewBox="0 0 10 10"><polyline points="2 3 5 7 8 3"/></svg></span>
+    </summary>
+    <div class="faq-a">
+      <p>They describe the same field through different intent lenses. A few terms have emerged among practitioners to define AI search optimization by query type:</p>
+      <ul>
+        <li><strong>AEO (Answer Engine Optimization)</strong> targets direct, question-based queries — "what is," "how to," "why does." These are the high-volume SERP features and AI Overview triggers.</li>
+        <li><strong>GEO (Generative Engine Optimization)</strong> addresses broad informational or exploratory searches where a user wants context and depth rather than a single answer.</li>
+        <li><strong>LLMO (Large Language Model Optimization)</strong> targets conversational prompts and open-ended queries inside tools like ChatGPT, Gemini, Claude, and Perplexity. LLMO services focus on how your brand is represented inside model training data and retrieval layers.</li>
+      </ul>
+      <p>In practice, content built to satisfy one tends to satisfy all three. The structural requirements converge: entity depth, semantic completeness, and extractable answers. The LLMO checklist and the AEO checklist point to the same page-level decisions.</p>
+    </div>
+  </details>
+
+  <!-- Q4 -->
+  <details class="faq-item" id="faq-best-tools">
+    <summary class="faq-q">
+      What are the best AI Search Optimization tools?
+      <span class="faq-chevron"><svg viewBox="0 0 10 10"><polyline points="2 3 5 7 8 3"/></svg></span>
+    </summary>
+    <div class="faq-a">
+      <p>The most effective AI search optimization tools are platforms that track how often your brand is cited across AI search engines and measure brand sentiment across ChatGPT, Gemini, Perplexity, and other LLMs. That measurement layer is the intelligence on which a successful AISO strategy is built.</p>
+      <p>Two platforms lead the category right now. <strong>Profound</strong> provides competitive citation analysis — you can see your share of AI mentions relative to competitors and identify gaps by topic. <strong>SEMrush AI Toolkit</strong> layers AI visibility data into an existing SEO workflow, making it easier to connect citation performance to organic ranking trends.</p>
+      <p>Without measurement tools, you are optimizing blind. You may be improving content quality, but you have no signal on whether AI search engines are extracting and attributing it. These tools close that loop.</p>
+    </div>
+  </details>
+
+  <!-- Q5 -->
+  <details class="faq-item" id="faq-brand-visibility-strategies">
+    <summary class="faq-q">
+      What strategies improve brand visibility in AI search engines?
+      <span class="faq-chevron"><svg viewBox="0 0 10 10"><polyline points="2 3 5 7 8 3"/></svg></span>
+    </summary>
+    <div class="faq-a">
+      <p>The most direct lever is humanizing on-page content. Communicate directly and completely. Give users full answers with minimal padding. That is not vague advice. From there, the specific actions that improve AI strategic visibility:</p>
+      <ul>
+        <li>Use descriptive, question-driven headers that simplify navigation and signal topic scope</li>
+        <li>Write image alt text that is specific and thorough, not decorative</li>
+        <li>Define jargon inline when it cannot be avoided — do not assume shared vocabulary</li>
+        <li>Lead each page or major section with a direct answer before supporting detail</li>
+        <li>Implement structured data and schema markup so AI systems can confirm what a page is about</li>
+      </ul>
+      <p>Accessible content is parsable content. AI retrieval systems extract answers the same way a reader scans a page: they follow structure, reward clarity, and skip noise. The work of improving brand visibility in AI search engines is almost entirely a content quality problem — and it starts at the sentence level, not the domain level.</p>
+    </div>
+  </details>
+
+  <!-- Q6 -->
+  <details class="faq-item" id="faq-serp-organic-traffic">
+    <summary class="faq-q">
+      How does AI Search Optimization improve SERP rankings and increase organic traffic?
+      <span class="faq-chevron"><svg viewBox="0 0 10 10"><polyline points="2 3 5 7 8 3"/></svg></span>
+    </summary>
+    <div class="faq-a">
+      <p>AI search optimization and traditional SEO reinforce each other at the structural level. Content built for AI extractability, with entity depth, semantic completeness, clear direct answers, also satisfies Google's Helpful Content classifier.</p>
+      <p>Pages optimized for AI search citations tend to rank in organic results for the same queries, since the content quality signals overlap. You are not building for two separate systems, but satisfying one shared standard that both systems reward.</p>
+      <p>The organic traffic benefit compounds in a second way. AI Overview appearances and ChatGPT citations drive zero-click brand awareness — users see your brand attributed in an AI answer without clicking through. Over time, that increased exposure raises branded search volume, which in turn signals authority back to Google's ranking systems. AI search optimization tools help you track this compounding effect before it shows up in traditional analytics.</p>
+      <p>How AI search optimization tools increase organic traffic is less about any single ranking move and more about building the kind of content equity that earns citations across systems simultaneously.</p>
+    </div>
+  </details>
+
+  <!-- Q7 -->
+  <details class="faq-item" id="faq-aiso-checklist">
+    <summary class="faq-q">
+      The AI Search Optimization Checklist
+      <span class="faq-chevron"><svg viewBox="0 0 10 10"><polyline points="2 3 5 7 8 3"/></svg></span>
+    </summary>
+    <div class="faq-a">
+      <p>Work through these in order. On-page decisions are the highest-leverage starting point, followed by technical foundation, then entity and authority building.</p>
+
+      <p><strong>On-Page Content</strong></p>
+      <ul>
+        <li>Lead every page with a direct, complete answer in the first 40 to 60 words</li>
+        <li>Use headers that answer questions, not just label sections</li>
+        <li>Define key terms and jargon inline — do not assume shared vocabulary</li>
+        <li>Write accessible, complete, human-readable sentences throughout</li>
+        <li>Reference specific named entities, such as brands, tools, people, and places wherever relevant</li>
+        <li>Match content depth to query complexity — short questions deserve short answers</li>
+      </ul>
+
+      <p><strong>Technical Foundation</strong></p>
+      <ul>
+        <li>Confirm pages are fully mobile-responsive</li>
+        <li>Implement and validate schema markup and structured data (FAQPage, Article, Organization)</li>
+        <li>Add descriptive, specific alt text to all images</li>
+        <li>Verify Core Web Vitals pass on key pages</li>
+      </ul>
+
+      <p><strong>Entity and EEAT Authority Building</strong></p>
+      <ul>
+        <li>Complete brand profiles on authoritative platforms: LinkedIn, Crunchbase, industry directories</li>
+        <li>Earn editorial citations from high-authority domains in your vertical</li>
+        <li>Seed expert answers in community platforms like Reddit and Quora</li>
+        <li>Build consistent brand information across all public-facing properties</li>
+      </ul>
+
+      <p><strong>Measurement</strong></p>
+      <ul>
+        <li>Track AI citation share using Profound or SEMrush AI Toolkit</li>
+        <li>Monitor brand sentiment across ChatGPT, Gemini, and Perplexity quarterly</li>
+        <li>Track AI Overview appearances in Google Search Console</li>
+        <li>Review search with AI results for your core queries monthly</li>
+      </ul>
+
+      <p>The LLMO checklist and the AEO checklist converge here. Each item above improves performance across answer engines, generative search, and large language model retrieval simultaneously. That convergence is the point.</p>
+    </div>
+  </details>
+
+</section>
 
 </main>
 <!-- ── FOOTER () ── -->
