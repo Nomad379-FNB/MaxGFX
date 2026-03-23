@@ -22,25 +22,50 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://AISO.dog/#organization",
+  "@type": "WebSite",
+  "@id": "https://aiso.dog/#website",
+  "url": "https://aiso.dog",
   "name": "AISOdog",
-  "url": "https://AISO.dog",
+  "description": "AI Search Optimization consulting covering AEO, GEO, and LLM visibility.",
+  "publisher": {
+    "@id": "https://aiso.dog/#organization"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://aiso.dog/?s={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://aiso.dog/#organization",
+  "name": "AISOdog",
+  "url": "https://aiso.dog",
   "logo": {
     "@type": "ImageObject",
-    "url": "https://AISO.dog/images/AISOdog-dog-Logo-MenuW.png"
+    "url": "https://aiso.dog/images/AISOdog-dog-Logo-White.png"
   },
   "description": "AISOdog is a boutique AI search optimization consultancy building content architecture and entity authority that earns citations from ChatGPT, Google AI Overviews, and Perplexity.",
   "founder": {
     "@type": "Person",
-    "@id": "https://AISO.dog/#max-loel",
+    "@id": "https://aiso.dog/#max-loel",
     "name": "Max Loel",
     "jobTitle": "Search Strategist",
-    "url": "https://AISO.dog"
+    "url": "https://aiso.dog",
+    "sameAs": [
+      "https://www.linkedin.com/in/maxgfx/"
+    ]
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "url": "https://AISO.dog/contact.html",
+    "url": "https://aiso.dog/contact.html",
     "contactType": "customer service"
   },
   "sameAs": [
@@ -49,16 +74,17 @@
   ]
 }
 </script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "@id": "https://AISO.dog/#service",
+  "@id": "https://aiso.dog/#service",
   "name": "AISOdog AI Search Optimization",
-  "url": "https://AISO.dog",
+  "url": "https://aiso.dog",
   "description": "AI search optimization consulting covering AEO, GEO, and LLM visibility. AISOdog builds the content architecture and entity authority that earns citations from ChatGPT, Google AI Overviews, and Perplexity.",
   "provider": {
-    "@id": "https://AISO.dog/#organization"
+    "@id": "https://aiso.dog/#organization"
   },
   "serviceType": [
     "AI Search Optimization",
@@ -68,10 +94,7 @@
     "SEO Content Strategy",
     "AI Visibility Audit"
   ],
-  "areaServed": {
-    "@type": "Country",
-    "name": "United States"
-  },
+  "areaServed": "Worldwide",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "AISOdog Services",
@@ -103,7 +126,7 @@
           "name": "AI Search Optimization Engagement",
           "description": "Ongoing monthly AI search optimization strategy and content production built to grow citation share and organic visibility month over month."
         },
-        "price": "3000",
+        "price": "3500",
         "priceCurrency": "USD"
       }
     ]
